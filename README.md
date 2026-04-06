@@ -1,53 +1,96 @@
-# OpenClaw Career-Ops Skill
+# Career-Ops for OpenClaw
 
-`career-ops` is a full OpenClaw-native port of the **career-ops** workflow, implemented as a first-class reusable skill package (no Go dashboard included). It preserves the same operational model: mode-based routing, source-of-truth onboarding, script-backed deterministic processing, and controlled application workflows for a practical job search system.
+`career-ops` is an OpenClaw skill for managing the job search process end to end.
 
-This package is designed to be installed/used as a standalone repository, not just a local hack.
+It helps you:
 
-## What this skill includes
+- review a job description
+- judge fit before applying
+- prepare application materials
+- generate CV and supporting PDFs
+- track opportunities and pipeline status
+- scan and organize job sources
+- run batch workflows over many roles
 
-This repository contains:
+This repository is the standalone skill package. It is meant to be shared, installed, and reused as a productized OpenClaw skill.
 
-- `SKILL.md` — OpenClaw routing and mode definitions.
-- `references/modes/*.md` — mode-level instructions and operational guidance:
-  - `_shared.md`
-  - `auto-pipeline.md`
-  - `oferta.md`
-  - `ofertas.md`
-  - `contacto.md`
-  - `deep.md`
-  - `pdf.md`
-  - `training.md`
-  - `project.md`
-  - `tracker.md`
-  - `pipeline.md`
-  - `apply.md`
-  - `scan.md`
-  - `batch.md`
-- `references/setup.md` — onboarding and setup guidance.
-- `scripts/*.mjs` deterministic utilities:
-  - `cv-sync-check.mjs`
-  - `generate-pdf.mjs`
-  - `merge-tracker.mjs`
-  - `verify-pipeline.mjs`
-  - `normalize-statuses.mjs`
-  - `dedup-tracker.mjs`
-- `scripts/batch/` — batch runner and prompt template.
-- `templates/`:
-  - `cv-template.html`
-  - `portals.example.yml`
-  - `states.yml`
-- `config/profile.example.yml` and example data/assets under `examples/`, `fonts/`, `data/`, `config/`.
+## What this skill is for
 
-## Capabilities (by mode)
+Use this skill when you want a structured job-search assistant that behaves consistently from one role to the next.
 
-Invoke via:
+It is built for people who want:
 
-- `/career-ops` (menu/discovery mode)
-- `/career-ops <mode>` (explicit mode)
-- `/career-ops <raw JD text or job URL>` (auto-pipeline route)
+- fewer random one-off job applications
+- more deliberate application decisions
+- repeatable tracking and status management
+- a clear process for CV and pipeline updates
+- script-backed reliability instead of ad hoc manual steps
 
-Supported mode family:
+It is not a generic chat prompt. It is a workflow package with named modes, shared rules, and deterministic helper scripts.
+
+## Core capabilities
+
+### 1. Job description review
+
+The skill can take a job description, a job post URL, or raw role text and turn it into a structured evaluation.
+
+Typical outcomes:
+
+- summarize the role clearly
+- identify fit and risk factors
+- highlight missing requirements
+- suggest whether it is worth pursuing
+- prepare the next steps if the role looks good
+
+### 2. Application preparation
+
+The skill supports preparing the materials and context needed before applying.
+
+This includes:
+
+- tailoring the CV for a specific role
+- preparing cover-letter or supporting materials
+- capturing company and role details
+- organizing the application into the tracker and pipeline
+
+### 3. Tracking and pipeline management
+
+The skill keeps job-search state organized across files so the process stays understandable and auditable.
+
+It supports:
+
+- pipeline review
+- tracker updates
+- status normalization
+- duplicate cleanup
+- merge handling
+- verification of pipeline integrity
+
+### 4. CV and PDF output
+
+The skill can prepare polished output artifacts, including PDF generation for CV-based workflows.
+
+This is useful when you need:
+
+- a shareable document
+- a clean application attachment
+- a repeatable document generation workflow
+
+### 5. Scanning and batch processing
+
+The skill can scan sources and process multiple opportunities in a controlled batch flow.
+
+This is useful when you want to:
+
+- review many roles efficiently
+- avoid manually handling each one from scratch
+- keep status and tracking consistent across a queue
+
+## How it behaves
+
+The skill uses named modes rather than a single monolithic prompt.
+
+Main modes:
 
 - `oferta`
 - `ofertas`
@@ -61,160 +104,124 @@ Supported mode family:
 - `apply`
 - `scan`
 - `batch`
-- `auto-pipeline` (JD/url inferred route)
+- `auto-pipeline`
 
-### Routing behavior
+How routing works:
 
-- If no argument is given: opens discovery mode.
-- If argument equals a mode keyword: direct mode routing.
-- Otherwise, if input resembles a job description or URL, route to `auto-pipeline`.
-- Otherwise: show discovery/menu and ask for clarification.
+- If you call `/career-ops` with no extra input, it shows the command menu.
+- If you call `/career-ops <mode>`, it goes directly to that workflow.
+- If you paste a job description or a job URL, it automatically routes into `auto-pipeline`.
 
-### Mode behavior summary
+## What users need to set up
 
-- **oferta / ofertas**
-  - JD ingestion and role evaluation workflows.
-  - Offer-level structuring, fit assessment, and decision guidance.
-- **contacto**
-  - Contact and outreach prep guidance.
-- **deep**
-  - Deep analysis flows with more expansive reasoning and refinement.
-- **pdf**
-  - Resume/document preparation support and PDF generation support.
-- **training**
-  - Interview/project training preparation guidance.
-- **project**
-  - Project narrative and matching workflow support.
-- **tracker**
-  - Tracker review and deterministic operations.
-- **pipeline**
-  - Pipeline queue processing, status integrity checks, and handoff flow.
-- **apply**
-  - Controlled application workflow (review-first, not auto-submit).
-- **scan**
-  - Candidate/application source scanning, extraction, and updates.
-- **batch**
-  - Batch orchestration over tracker-like queues using `batch-runner.sh` and worker hooks.
-- **auto-pipeline**
-  - Converts raw JD/link input into pipeline-ready artifacts, then moves into canonical tracker/pipeline flows.
+This skill expects a small set of working files so it can operate as a real job-search system.
 
-## Source-of-truth and onboarding requirements
-
-Before doing substantive work, the skill enforces or recommends the presence of:
+Required source-of-truth files:
 
 - `cv.md`
 - `config/profile.yml`
 - `portals.yml`
 
-and required runtime data files:
+Required working files used by the workflow:
 
 - `data/applications.md`
 - `data/pipeline.md`
 - `data/scan-history.tsv`
-- `interview-prep/story-bank.md` (optional, encouraged)
-- `reports/` directory
 
-If missing, the user is directed to follow `references/setup.md`.
+Helpful supporting files:
 
-## Deterministic script flow
+- `interview-prep/story-bank.md`
+- `reports/`
 
-These scripts are part of the canonical behavior and are intended to be executed for reproducible outcomes:
+If the required files are missing, the skill points users to the setup guidance in `references/setup.md`.
 
-```bash
-node scripts/cv-sync-check.mjs [--project-root .]
-node scripts/normalize-statuses.mjs [--project-root .]
-node scripts/dedup-tracker.mjs [--project-root .]
-node scripts/merge-tracker.mjs [--project-root .]
-node scripts/verify-pipeline.mjs [--project-root .]
-node scripts/generate-pdf.mjs [--project-root .]
-```
+## What is included in this repository
 
-Batch mode uses:
+This repository includes the full skill package needed to use and share the workflow:
 
-```bash
-scripts/batch/batch-runner.sh [--project-root .]
-```
+- `SKILL.md` for skill routing and behavior
+- mode-specific guidance in `references/modes/`
+- setup guidance in `references/setup.md`
+- deterministic scripts in `scripts/`
+- batch workflow support in `scripts/batch/`
+- templates for state and document generation
+- example configuration and example content
+- fonts and other assets needed for document output
 
-`--project-root` points the scripts to the working user project folder so the skill can run from a shared install location while acting on per-user state.
+## The user experience
 
-## Runtime dependencies
+The intended experience is simple:
+
+1. Open the skill in OpenClaw.
+2. Start with a job post, a URL, or a mode name.
+3. Let the skill decide whether the role is worth pursuing.
+4. Use the follow-up workflow to organize the application.
+5. Keep the tracker, pipeline, and documents consistent as you move forward.
+
+The emphasis is quality over quantity.
+
+## Important behavior rules
+
+The skill intentionally avoids weak or low-confidence behavior.
+
+It follows these rules:
+
+- no blind mass-apply behavior
+- no auto-submit without human review
+- discourage weak-fit applications
+- prioritize fit and quality over volume
+- verify live job state with browser-backed checks when needed
+
+## Deterministic operations
+
+Some actions are handled by scripts so the results are consistent.
+
+These scripts cover:
+
+- CV sync checking
+- PDF generation
+- tracker merging
+- tracker deduplication
+- pipeline verification
+- status normalization
+
+This matters because job-search state needs to stay clean and reliable over time.
+
+## Dependencies
+
+This skill expects:
 
 - Node.js
-- Playwright runtime dependency (`playwright` declared in `package.json`)
-- Browser runtime for any browser-backed checks (as required by workflow specifics)
+- Playwright
+- a browser runtime for browser-backed checks
 
-Install dependencies:
+Most users will only need to install the package dependencies and browser binaries once.
 
-```bash
-npm install
-```
+## Why this exists as a standalone package
 
-Install browser binaries (if needed by your Playwright flow):
+This repository is designed to be posted and reused as a public skill package.
 
-```bash
-npx playwright install
-```
+That means:
 
-## Data model and integrity rules carried from source
+- the workflow is self-contained
+- the behavior is documented in one place
+- the scripts and templates travel with the skill
+- the package can be shared without the original OpenClaw workspace
 
-- Maintains report numbering conventions.
-- Preserves canonical statuses from `templates/states.yml`.
-- Keeps merge/dedup/verify ordering and idempotence patterns.
-- Normalization and dedupe are explicit operations, not just natural-language suggestions.
-- Tracker and pipeline files are treated as mutable state with controlled update semantics.
+## If you are a user, start here
 
-## Safety / ethics policy in behavior
+1. Read `SKILL.md` for the routing behavior.
+2. Review `references/setup.md` if your files are not ready yet.
+3. Start with `/career-ops` or paste a job description or URL.
+4. Use the mode the skill routes you into.
 
-The skill enforces or follows:
+## If you are publishing this skill
 
-- No blind mass-apply behavior.
-- No auto-submission without human review.
-- Weak-fit filtering guidance (score-aware caution).
-- Offer-quality-first decision bias.
-- Browser-backed verification is used for offer/job activation checks instead of weak static-only inference where available.
+This repository is the publishable package.
 
-## Local use and cloning
+It is meant to be cloned, installed, and used as:
 
-This directory is a standalone OpenClaw skill package:
-
-```bash
-git clone https://github.com/rahulvs4000/career-ops-openclaw-.git
-cd career-ops-openclaw-
-npm install
-npx playwright install
-```
-
-Use from an OpenClaw environment configured with this skill path and invoke `/career-ops`.
-
-## File layout
-
-```text
-├── SKILL.md
-├── package.json
-├── README.md
-├── references/
-│   ├── setup.md
-│   └── modes/
-├── scripts/
-│   ├── *.mjs
-│   └── batch/
-├── templates/
-├── examples/
-├── fonts/
-├── config/
-├── data/
-└── .gitkeep placeholders for expected working dirs/files
-```
-
-## Why this maps to “career-ops for OpenClaw”
-
-This package is intentionally parity-oriented:
-
-- Same mode set and routing model
-- Same deterministic helpers and helper scripts
-- Same source-of-truth checks and flow files
-- Same integrity constraints and safety defaults
-- No Go dashboard component included
-
-The only changes are runtime adaptation to OpenClaw-native execution (invocation contract, script pathing, and skill metadata/gating where applicable).
+- a GitHub-hosted skill repository
+- a ClawHub.ai skill package
+- a reusable OpenClaw workflow for job search operations
 
