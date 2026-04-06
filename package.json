@@ -1,0 +1,18 @@
+{
+  "name": "career-ops-openclaw-skill",
+  "version": "1.0.0",
+  "description": "OpenClaw-native career-ops skill runtime package (ported from Claude-native career-ops).",
+  "scripts": {
+    "verify": "node scripts/verify-pipeline.mjs --project-root .",
+    "normalize": "node scripts/normalize-statuses.mjs --project-root .",
+    "dedup": "node scripts/dedup-tracker.mjs --project-root .",
+    "merge": "node scripts/merge-tracker.mjs --project-root .",
+    "pdf": "node scripts/generate-pdf.mjs",
+    "sync-check": "node scripts/cv-sync-check.mjs --project-root ."
+  },
+  "keywords": ["ai", "job-search", "career", "automation"],
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.58.1"
+  }
+}
