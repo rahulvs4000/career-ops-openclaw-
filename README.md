@@ -4,12 +4,12 @@
 
 It helps you:
 
+- find relevant jobs
 - review a job description
 - judge fit before applying
 - prepare application materials
 - generate CV and supporting PDFs
 - track opportunities and pipeline status
-- scan and organize job sources
 - run batch workflows over many roles
 
 This repository is the standalone skill package. It is meant to be shared, installed, and reused as a productized OpenClaw skill.
@@ -28,26 +28,11 @@ It is built for people who want:
 
 It is not a generic chat prompt. It is a workflow package with named modes, shared rules, and deterministic helper scripts.
 
-## What it actually does
+## 1. Find relevant jobs
 
-This skill is built around a simple idea: every opportunity should go through the same disciplined workflow.
+The skill searches in a focused way, not by scraping the whole internet blindly.
 
-When you paste a job post or URL, it can:
-
-- extract the job description
-- score the role against your background
-- create a report for that specific opportunity
-- generate a tailored CV PDF
-- prepare application answers when the fit is strong enough
-- register the role in your tracker and pipeline
-
-When you use it over time, it becomes a job-search operating system rather than a one-off assistant.
-
-## What it searches automatically
-
-The scanner is opinionated. It does not search the entire internet randomly.
-
-Out of the box, it searches public job sources such as:
+Out of the box, it looks across public sources such as:
 
 - Ashby
 - Greenhouse
@@ -56,57 +41,9 @@ Out of the box, it searches public job sources such as:
 - Workable
 - RemoteFront
 
-It also ships with a preloaded company watchlist so it can check real career pages directly. The default list is focused on AI, agent, solutions, forward-deployed, automation, and AI-product roles.
+It also ships with a built-in company watchlist aimed at AI, automation, solutions, forward-deployed, and AI product roles. That list includes companies such as OpenAI, Anthropic, PolyAI, ElevenLabs, Deepgram, Retool, Airtable, Vercel, Arize AI, Cohere, LangChain, Pinecone, Mistral AI, Palantir, n8n, Zapier, and others defined in `portals.yml`.
 
-That watchlist includes companies such as:
-
-- OpenAI
-- Anthropic
-- PolyAI
-- Parloa
-- Intercom
-- Hume AI
-- ElevenLabs
-- Deepgram
-- Vapi
-- Bland AI
-- Retool
-- Airtable
-- Vercel
-- Temporal
-- Arize AI
-- RunPod
-- Glean
-- Ada
-- LivePerson
-- Sierra
-- Decagon
-- Talkdesk
-- Twilio
-- Dialpad
-- Gong
-- Genesys
-- Salesforce
-- Langfuse
-- Lindy
-- Cognigy
-- Speechmatics
-- n8n
-- Zapier
-- Make.com
-- Cohere
-- LangChain
-- Pinecone
-- Mistral AI
-- Weights & Biases
-- Palantir
-- Factorial
-- Attio
-- Tinybird
-- Clarity AI
-- TravelPerk
-
-The default search patterns are aimed at roles like:
+By default, it searches for titles such as:
 
 - AI Product Manager
 - Solutions Architect
@@ -114,284 +51,158 @@ The default search patterns are aimed at roles like:
 - Forward Deployed Engineer
 - AI Engineer
 - LLM Engineer
-- Agentic / automation roles
-- Voice AI and conversational AI roles
-- GTM engineer and business-systems automation roles
+- agentic and automation roles
+- voice AI and conversational AI roles
+- GTM and business-systems automation roles
 
-It also filters out obvious noise, such as junior roles, internships, mobile roles, crypto/Web3, and unrelated tech stacks.
+It filters out obvious noise like junior roles, internships, mobile roles, crypto/Web3, and unrelated stacks.
 
-Users can customize this search behavior without changing the core skill.
+Searches only run when you ask for them, typically with `/career-ops scan`. There is no silent background scanning. Each run checks:
 
-The main knobs are in `portals.yml`:
+- enabled built-in search queries
+- enabled tracked companies
+- any companies or queries you added yourself
 
-- `search_queries` controls the broad discovery searches
-- `tracked_companies` controls which specific company career pages are checked directly
-- `title_filter` controls which job titles are considered relevant and which are ignored
+After each scan, the skill reports what happened: how many queries ran, how many jobs were found, how many were filtered out, how many were duplicates, and how many were added to the pipeline. If nothing relevant was found, the summary makes that explicit.
 
-That means if your search universe is different, you can:
+To customize job discovery, edit `portals.yml`:
 
-- add new search queries for new boards or keywords
-- remove default queries you do not care about
-- disable specific default sources
-- add your own company list
-- tighten or loosen the title filter so the scanner reflects your real target roles
+- `search_queries` to add or remove broad searches
+- `tracked_companies` to add your own target companies
+- `title_filter` to tighten or widen what counts as relevant
 
-This is the main way to turn the skill from the shipped default into your own search system.
+If you want a specific company site checked every time, add it to `tracked_companies` with its careers URL. If it has a public Greenhouse API, the skill can use that too. If the page is behind login or SSO, the skill does not fake access. It falls back to a manual path: paste the JD, provide screenshots, or use a logged-in browser session.
 
-## How company-site scanning works
+## 2. Review a job description
 
-The skill does not rely on just one method.
+When you paste a job post, a job URL, or raw JD text, the skill turns it into a structured review.
 
-It uses three layers:
+It can:
 
-1. Direct career-page scanning for specific companies.
-2. Structured Greenhouse API access when a company exposes a public Greenhouse feed.
-3. Broad search queries as a fallback for discovery.
+- extract the JD from the page
+- summarize the role clearly
+- identify requirements and signals that matter
+- pull out the parts of the job worth responding to directly
 
-In practice, that means:
+For public pages, it prefers browser-based reading because many job sites are dynamic. If the page is simple, it can use lighter retrieval. If the page is inaccessible, it asks for the JD manually instead of pretending it read it.
 
-- if a company has a clean public jobs page, the skill can read it directly
-- if a company uses Greenhouse and exposes a public feed, the skill can read the structured listing faster
-- if the site is harder to parse, the skill falls back to web search and public indexing
+## 3. Judge fit before applying
 
-This is important because many modern job sites are dynamic, not simple text pages.
+This skill is built to help users decide whether a role is worth pursuing before spending time on it.
 
-Out of the box, these sources are not scanned on a timer or in the background.
+It compares the role against your actual background, then produces a role-specific evaluation. That evaluation feeds the next steps: whether to ignore the role, track it, prepare materials, or move toward application.
 
-The search happens when you explicitly run the scan workflow, typically through `/career-ops scan`.
+This is where the workflow stays intentionally selective:
 
-On each scan, the skill works through:
+- it prefers strong-fit roles over high volume
+- it discourages weak-fit applications
+- it uses the same evaluation logic each time so decisions stay consistent
 
-- all enabled default search queries in your `portals.yml`
-- all enabled tracked companies in your `portals.yml`
-- your own added companies and queries, if you have customized the file
+## 4. Prepare application materials
 
-So the frequency is user-controlled. If you want daily scans, you run it daily. If you want a focused weekly sweep, you run it weekly.
+Once a role looks worthwhile, the skill helps with application prep.
 
-## What happens if you want a specific company
+That includes:
 
-If you want the skill to focus on a company you care about, it can do that.
+- role-specific application context
+- draft answers for common form questions
+- support for live application sessions
+- reuse of earlier report context when the same role is already in the system
 
-The intended product behavior is:
-
-- add the company to your tracked company list
-- point the skill at that company’s careers page
-- let the scanner check that company directly on future runs
-
-You can be quite specific here. A tracked company entry can include:
-
-- the company name
-- its public careers page
-- an optional public Greenhouse API endpoint if it has one
-- a search query for fallback discovery
-- an `enabled` switch so you can keep companies in your list without actively scanning them
-
-If the company uses a common recruiting platform such as Greenhouse, Ashby, or Lever, the skill is usually able to work with that pattern immediately.
-
-If the company has its own custom careers page, the skill can still work, but the quality depends on how accessible the page is publicly.
-
-If the job page is behind login, SSO, or an employee-only portal, the skill does not pretend it can see through that. In those cases it falls back to a manual flow:
-
-- you paste the job description
-- or you provide screenshots
-- or you open the page in a logged-in browser session and use the live application flow
-
-If a role is private but still worth keeping, the workflow preserves it instead of dropping it. The scan guidance stores inaccessible or private roles as a local JD file reference and keeps them in the pipeline for manual handling.
-
-## How it handles your resume and profile
-
-The skill treats your resume as a source of truth, not something to rewrite carelessly.
-
-It expects three main inputs from you:
-
-- `cv.md` for your actual resume content
-- `config/profile.yml` for personal details, target roles, compensation range, and narrative
-- `article-digest.md` if you want to include deeper proof points, case studies, or fresher metrics
-
-These files are not decorative. The mode system is built to read them before evaluation work.
-
-In practice:
-
-- `cv.md` is the baseline factual record of your experience
-- `config/profile.yml` is the baseline factual record of who you are targeting and how you present yourself
-- `article-digest.md`, if present, is treated as the fresher source for detailed proof points and updated metrics
-
-Its resume behavior is very specific:
-
-- it reads your base resume before evaluating any role
-- it matches job requirements against your real experience
-- it uses your stored proof points and metrics
-- it can tailor a CV for a specific role
-- it generates a polished PDF version for applications
-
-What it does not do:
-
-- it does not invent experience
-- it does not invent metrics
-- it does not silently overwrite your base resume as the truth source
-
-If both `cv.md` and `article-digest.md` mention the same project or metric, the workflow is designed to prefer the more detailed or newer proof point from `article-digest.md`.
-
-For tailored CV output, it adjusts language and emphasis to the job description. It can:
-
-- extract role keywords
-- rewrite the summary for the role
-- reorder bullets by relevance
-- select the most relevant projects
-- build a cleaner competency section
-
-But it is meant to stay grounded in what is already true in your underlying material.
-
-Users can customize how the skill reads and frames their profile by editing `config/profile.yml`.
-
-That file controls product-level behavior such as:
-
-- your name, email, phone, location, LinkedIn, portfolio, and public links
-- your target roles and role archetypes
-- your headline and transition narrative
-- your proof points and hero metrics
-- your target compensation range
-- your location and work-authorization context
-
-This matters because the skill uses that profile during evaluation, PDF generation, and application drafting. If you want it to frame you as an AI PM, Solutions Architect, or Forward Deployed candidate, this is where that direction is set.
-
-## How application support works
-
-This skill is not just for evaluating roles. It also helps when you are actually filling out an application.
-
-In live apply mode, it can:
-
-- read the current application page
-- identify the company and role
-- look up the matching report if one already exists
-- generate answers for visible form questions
-- adapt previous draft answers if you already evaluated the role earlier
-
-This includes common application questions such as:
+In live apply mode, it can read the current form, identify the company and role, and generate answers for visible questions like:
 
 - why this role
 - why this company
-- relevant project or achievement
+- relevant achievement
 - work authorization
 - salary expectations
-- how did you hear about us
+- how you heard about the role
 
-If the role on screen has changed from the one previously evaluated, the skill flags that and asks whether to adapt or re-evaluate.
+If the role on screen does not match the role previously evaluated, it flags that and asks whether to adapt or re-evaluate.
 
-This is also where your profile settings matter in a visible way. For example:
+## 5. Generate CV and supporting PDFs
 
-- compensation guidance comes from your profile settings
-- work-authorization and location answers come from your profile settings
-- portfolio or demo links come from your profile settings
-- the underlying achievement examples come from your resume and proof-point files
+The skill treats your materials as source-of-truth inputs, not as disposable text.
 
-## How the pipeline and tracker behave
+It reads:
 
-The skill keeps a real operating history of your job search.
+- `cv.md` as the baseline record of your experience
+- `config/profile.yml` as the record of your identity, target roles, narrative, compensation, and location context
+- `article-digest.md`, if you use it, as a richer source of proof points and fresher metrics
+
+That means users can customize how the skill reads and presents them by editing those files. In particular, `config/profile.yml` is where you change:
+
+- your public profile details
+- your target role direction
+- your headline and transition story
+- your proof points
+- your compensation range
+- your work-authorization and location context
+
+For tailored output, the skill can:
+
+- extract keywords from the JD
+- rewrite the professional summary
+- reorder experience bullets by relevance
+- choose the most relevant projects
+- generate a polished PDF for the application
+
+It does not invent experience or metrics. If both `cv.md` and `article-digest.md` mention the same proof point, the richer or newer detail from `article-digest.md` is preferred.
+
+## 6. Track opportunities and pipeline status
+
+The skill keeps the search organized as an operating system, not a pile of notes.
 
 It maintains:
 
-- a pipeline of roles to review
+- a pipeline of roles to process
 - an applications tracker
-- scan history to avoid rediscovering the same jobs
-- reports for evaluated roles
-- generated PDFs and related output
+- scan history so the same jobs are not rediscovered endlessly
+- reports for evaluated opportunities
+- generated outputs tied to those opportunities
 
-It also enforces cleanup rules so the system does not drift over time:
+It also runs cleanup and integrity rules so the system stays usable over time:
 
 - deduplicate repeated entries
 - normalize statuses
 - merge batch additions cleanly
-- verify pipeline integrity
-- prefer updating existing entries instead of creating duplicates
+- verify pipeline consistency
+- update existing records instead of multiplying duplicates
 
-This is one of the main reasons the skill feels operational rather than conversational.
+This is what makes repeated use practical.
 
-The scan workflow also gives explicit confirmation of what happened.
+## 7. Run batch workflows over many roles
 
-After a scan, the expected summary includes:
+The skill can also process larger queues in batch mode.
 
-- how many queries were executed
-- how many openings were found
-- how many were filtered out by title rules
-- how many were skipped as duplicates
-- how many were added to the pipeline as new opportunities
+This is for cases where you already have a prepared list of opportunities or want to work through a large set systematically.
 
-So users get a concrete answer whether the run found something or found nothing.
+Batch mode is designed to:
 
-The workflow also records scan history so repeated runs stay explainable over time. Entries are marked as:
+- evaluate many roles through the same core workflow
+- generate reports and outputs per role
+- create tracker additions safely
+- merge the results back into the main system after processing
 
-- added
-- skipped because the title did not match
-- skipped because the role was already known
+If a role fails because the JD is inaccessible, login-gated, or the page layout breaks, the batch flow records the failure and keeps going instead of collapsing the whole run.
 
-## What credentials or secrets are needed
+## What users need
 
-For normal use, there are very few secrets.
+Most users need only:
 
-Most users only need:
+- `cv.md`
+- `config/profile.yml`
+- `portals.yml`
+- the tracker and pipeline files used by the workflow
+- Playwright/browser support for live job pages
 
-- their own profile information
-- their resume content
-- Playwright/browser support so the skill can read live job pages when needed
+There is no required API key for normal scanning, evaluation, tracker management, or PDF generation.
 
-There is no required API key for basic scanning, evaluation, tracker management, or PDF generation inside this package.
+Optional credentials matter only in a few cases:
 
-Optional credentials may matter in a few cases:
-
-- if you want the skill to read a page that only appears after login, you need an active logged-in browser session
-- if you want to reference a private demo or dashboard in applications, you can store its URL and password in your profile
-- if you want fully automated batch worker execution, you need to configure the batch worker command in your environment
-
-The important product point is that secrets are not the main operating model here. This skill is designed to work primarily with public job pages, public company career pages, your own application materials, and your own browser session when needed.
-
-What the skill does when credentials are missing:
-
-- for public sites, it continues normally
-- for login-gated pages, it marks the role for manual follow-up instead of faking a result
-- for private or inaccessible job descriptions, it asks you to paste the JD or provide a screenshot
-
-## What setup users actually need
-
-From a product point of view, the setup is straightforward.
-
-You need:
-
-- your resume in `cv.md`
-- your personal profile in `config/profile.yml`
-- your portal and company watchlist in `portals.yml`
-- the standard tracker and pipeline files used by the workflow
-
-For most users, the two most important customization files are:
-
-- `config/profile.yml` for who you are and what roles you want
-- `portals.yml` for where the skill looks and what it treats as relevant
-
-That split is intentional:
-
-- profile customization changes how the skill presents and evaluates you
-- portal customization changes where the skill searches and what it includes
-
-Once that is in place, users can:
-
-- start with `/career-ops`
-- paste a job URL
-- paste a raw job description
-- run a scan over configured portals and tracked companies
-- use apply mode while filling out an actual application
-
-## How the skill decides what to do
-
-The skill supports several named workflows, but the most important user-facing behavior is simple:
-
-- `/career-ops` shows the menu
-- `/career-ops` plus a job URL or pasted JD starts the automatic pipeline
-- `/career-ops scan` checks configured portals and tracked companies
-- `/career-ops apply` helps on a live application form
-- `/career-ops pdf` creates a tailored application-ready PDF
-- `/career-ops pipeline` works through queued opportunities
-
-For users thinking operationally, `/career-ops scan` is the point where the out-of-the-box sources and your own custom sources get checked together. That is the moment when the scanner confirms whether there were new matches, only duplicates, only filtered roles, or nothing relevant at all.
+- a logged-in browser session for login-gated pages
+- demo credentials if you want to share a private demo in applications
+- a configured batch worker command if you want fully automated batch execution
 
 ## Guardrails
 
