@@ -7,7 +7,7 @@ Lee y muestra `data/applications.md`.
 | # | Fecha | Empresa | Rol | Score | Estado | PDF | Report |
 ```
 
-`Score` y `Report` pueden quedar vacios si el usuario usa este paquete solo para descubrimiento, tracking y PDFs.
+Las columnas `PDF` y `Report` pueden quedar vacias. Se mantienen por compatibilidad con trackers existentes.
 
 Estados posibles: `Evaluada` -> `Aplicado` -> `Respondido` -> `Contacto` -> `Entrevista` -> `Oferta` / `Rechazada` / `Descartada` / `NO APLICAR`
 
@@ -20,4 +20,3 @@ Si el usuario pide actualizar un estado, editar la fila correspondiente.
 Mostrar tambien estadisticas:
 - Total de aplicaciones
 - Por estado
-- % con PDF generado

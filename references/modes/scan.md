@@ -1,6 +1,6 @@
 # Modo: scan - Portal Scanner (Descubrimiento, scoring y delivery)
 
-Escanea portales configurados, puntua relevancia, elimina duplicados, guarda solo roles nuevos de alta relevancia y los devuelve como digest para que OpenClaw los envie por el canal ya configurado en la sesion.
+Escanea portales configurados de forma deterministica, puntua relevancia, elimina duplicados, guarda solo roles nuevos de alta relevancia y los devuelve como digest para que OpenClaw los envie por el canal ya configurado en la sesion.
 
 ## Configuracion
 
@@ -11,29 +11,27 @@ Leer:
 - `data/applications.md`
 - `data/pipeline.md`
 
-## Extraccion
+## Ejecucion escalable
 
-1. Ejecutar discovery con 3 niveles:
-   - Playwright/directo sobre `careers_url`
-   - Greenhouse API cuando exista
-   - WebSearch como fallback
-2. Para cada resultado, capturar al menos:
-   - `title`
-   - `company`
-   - `url`
-   - `source`
-   - `location` si esta disponible
-   - `summary` o texto corto si esta disponible
+No leer cientos o miles de career pages dentro del contexto del modelo.
 
-## Post-procesamiento obligatorio
-
-Despues de extraer candidatos, escribir un JSON temporal con la lista encontrada y ejecutar:
+Para scans grandes, ejecutar siempre el flujo en dos pasos:
 
 ```bash
-node scripts/process-scan-results.mjs --project-root . --input /tmp/career-ops-scan-results.json
+node scripts/scan-sources.mjs --project-root . --output ./data/scan-candidates.json
+node scripts/process-scan-results.mjs --project-root . --input ./data/scan-candidates.json
 ```
 
-Ese script hace la parte deterministica del flujo:
+`scan-sources.mjs` hace el trabajo pesado de discovery:
+- recorre `search_queries`
+- recorre `tracked_companies`
+- usa concurrencia limitada
+- consulta Greenhouse API cuando existe
+- usa Playwright para páginas de careers dinámicas
+- usa web search para entradas marcadas como `scan_method: websearch`
+- escribe un JSON normalizado con los candidatos
+
+`process-scan-results.mjs` hace la segunda mitad:
 - dedup contra `scan-history.tsv`, `pipeline.md` y `applications.md`
 - scoring con `config/profile.yml` + `portals.yml`
 - filtra por `minimum_relevance_score`

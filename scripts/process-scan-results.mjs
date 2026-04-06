@@ -10,7 +10,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 function hasCareerOpsLayout(dir) {
   return (
     existsSync(join(dir, 'config', 'profile.yml')) ||
-    existsSync(join(dir, 'cv.md')) ||
     existsSync(join(dir, 'data', 'applications.md')) ||
     existsSync(join(dir, 'templates', 'states.yml'))
   );
@@ -382,3 +381,5 @@ for (const job of deferredJobs) {
 
 appendHistory(projectRoot, historyRows);
 console.log(digest);
+
+

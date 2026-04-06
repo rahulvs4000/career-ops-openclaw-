@@ -18,7 +18,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 function hasCareerOpsLayout(dir) {
   return (
     existsSync(join(dir, 'config', 'profile.yml')) ||
-    existsSync(join(dir, 'cv.md')) ||
     existsSync(join(dir, 'data', 'applications.md')) ||
     existsSync(join(dir, 'templates', 'states.yml'))
   );
@@ -219,3 +218,5 @@ if (!DRY_RUN && removed > 0) {
 } else {
   console.log('✅ No duplicates found');
 }
+
+

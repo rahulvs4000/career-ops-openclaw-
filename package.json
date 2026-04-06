@@ -1,15 +1,14 @@
 {
   "name": "career-ops-openclaw-skill",
   "version": "1.0.0",
-  "description": "OpenClaw-native career-ops skill runtime package for job discovery, relevance scoring, deduplicated delivery through OpenClaw channels, pipeline tracking, and CV PDF generation.",
+  "description": "OpenClaw-native career-ops skill runtime package for job discovery, relevance scoring, deduplicated delivery through OpenClaw channels, and pipeline tracking.",
   "scripts": {
-    "process-scan": "node scripts/process-scan-results.mjs --project-root . --input ./tmp-scan-results.json",
+    "scan-sources": "node scripts/scan-sources.mjs --project-root . --output ./data/scan-candidates.json",
+    "process-scan": "node scripts/process-scan-results.mjs --project-root . --input ./data/scan-candidates.json",
     "verify": "node scripts/verify-pipeline.mjs --project-root .",
     "normalize": "node scripts/normalize-statuses.mjs --project-root .",
     "dedup": "node scripts/dedup-tracker.mjs --project-root .",
-    "merge": "node scripts/merge-tracker.mjs --project-root .",
-    "pdf": "node scripts/generate-pdf.mjs",
-    "sync-check": "node scripts/cv-sync-check.mjs --project-root ."
+    "merge": "node scripts/merge-tracker.mjs --project-root ."
   },
   "keywords": ["ai", "job-search", "career", "automation"],
   "license": "MIT",

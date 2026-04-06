@@ -1,6 +1,6 @@
 ---
 name: career-ops
-description: AI job search command center for focused job discovery, relevance scoring, deduplicated delivery through OpenClaw-configured channels, pipeline and tracker operations, and CV PDF generation.
+description: AI job search command center for focused job discovery, relevance scoring, deduplicated delivery through OpenClaw-configured channels, and pipeline and tracker operations.
 user-invocable: true
 metadata: { "openclaw": { "emoji": "CO", "requires": { "bins": ["node"] }, "install": [ { "id": "node-playwright", "kind": "node", "package": "playwright", "label": "Install Playwright runtime dependency (npm/yarn/pnpm/bun)" } ] } }
 ---
@@ -18,7 +18,7 @@ Mode routing:
 
 Mode keywords:
 
-`pdf`, `training`, `project`, `tracker`, `pipeline`, `scan`
+`training`, `project`, `tracker`, `pipeline`, `scan`
 
 ## Pipeline intake detection
 
@@ -31,7 +31,7 @@ If input is not a mode keyword and contains one or more URLs that look like job 
 ## Context loading by mode
 
 - Shared mode files: load `[modes/_shared.md](references/modes/_shared.md)` plus `[mode.md](references/modes/{mode}.md)`.
-  Applies to: `pdf`, `pipeline`, `scan`.
+  Applies to: `pipeline`, `scan`.
 - Standalone mode files only: load `[mode.md](references/modes/{mode}.md)`.
   Applies to: `tracker`, `training`, `project`.
 
@@ -41,7 +41,6 @@ If input is not a mode keyword and contains one or more URLs that look like job 
 - `/career-ops scan` => discover roles, score them, deduplicate them, save them, and surface only the new high-relevance ones through the active OpenClaw channel.
 - `/career-ops pipeline` => verify, normalize, and organize pending job URLs in `data/pipeline.md`.
 - `/career-ops tracker` => read and update `data/applications.md`.
-- `/career-ops pdf` => generate a polished CV/supporting PDF from source-of-truth files.
 - `/career-ops training` / `/career-ops project`.
 - `/career-ops {job URL or list of job URLs}` => add them to `pipeline`.
 
@@ -52,13 +51,11 @@ Before doing substantive work, verify the required files for the selected mode e
 - `scan`: `portals.yml`, `config/profile.yml`, `data/pipeline.md`, `data/scan-history.tsv`
 - `pipeline`: `data/pipeline.md`, `data/applications.md`
 - `tracker`: `data/applications.md`
-- `pdf`: `cv.md`, `config/profile.yml`
 
 If any required file is missing, instruct the user to run setup steps in `references/setup.md` and stop further action.
 
 Also support these optional shared files when present:
 
-- `article-digest.md`
 - `reports/`
 
 ## Script-backed deterministic operations
@@ -66,8 +63,6 @@ Also support these optional shared files when present:
 When the user asks for scripted checks, run directly from this folder:
 
 - `{baseDir}/scripts/process-scan-results.mjs`
-- `{baseDir}/scripts/cv-sync-check.mjs`
-- `{baseDir}/scripts/generate-pdf.mjs`
 - `{baseDir}/scripts/merge-tracker.mjs`
 - `{baseDir}/scripts/verify-pipeline.mjs`
 - `{baseDir}/scripts/normalize-statuses.mjs`
@@ -77,7 +72,6 @@ When the user asks for scripted checks, run directly from this folder:
 
 - No auto-submit behavior.
 - Never claim a login-gated or private job page was read when it was not.
-- Never invent experience or metrics in generated PDFs.
 - Preserve canonical status rules from `templates/states.yml`.
 - Use browser-backed extraction when verifying dynamic career pages or job-active state.
 - Never surface duplicates through outbound channels.
