@@ -1,22 +1,29 @@
-# Modo: tracker - Tracker de Aplicaciones
+# Modo: tracker - Application Tracker
 
-Lee y muestra `data/applications.md`.
+Read and show `data/applications.md`.
 
-**Formato compatible del tracker:**
+**Compatible tracker format:**
 ```markdown
-| # | Fecha | Empresa | Rol | Score | Estado | PDF | Report |
+| # | Date | Company | Role | Score | Status | PDF | Report |
 ```
 
-Las columnas `PDF` y `Report` pueden quedar vacias. Se mantienen por compatibilidad con trackers existentes.
+The `PDF` and `Report` columns may be empty. They remain only for compatibility with existing tracker layouts.
 
-Estados posibles: `Evaluada` -> `Aplicado` -> `Respondido` -> `Contacto` -> `Entrevista` -> `Oferta` / `Rechazada` / `Descartada` / `NO APLICAR`
+Write only these canonical status labels from `templates/states.yml`:
 
-- `Aplicado` = el candidato envio su candidatura
-- `Respondido` = un recruiter o empresa contacto y el candidato respondio
-- `Contacto` = el candidato contacto proactivamente a alguien de la empresa
+- `Evaluated`
+- `Applied`
+- `Responded`
+- `Interview`
+- `Offer`
+- `Rejected`
+- `Discarded`
+- `SKIP`
 
-Si el usuario pide actualizar un estado, editar la fila correspondiente.
+Do not write aliases, translations, extra text, markdown, or dates into the status column.
 
-Mostrar tambien estadisticas:
-- Total de aplicaciones
-- Por estado
+If the user asks to update a status, edit the corresponding row.
+
+Also show summary stats:
+- Total applications
+- Count by status
