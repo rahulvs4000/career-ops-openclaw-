@@ -495,843 +495,3352 @@ tracked_companies:
     scan_query: 'site:jobs.ashbyhq.com/travelperk'
     notes: "Barcelona. Business travel unicorn."
     enabled: true
-
-
   # -- Imported company career pages from startup_jobs_companies.csv --
-`n  - name: "10up"`n    careers_url: "https://10up.com/careers/"`n    enabled: true
-`n  - name: "15Five"`n    careers_url: "https://www.15five.com/careers/"`n    enabled: true
-`n  - name: "1Password"`n    careers_url: "https://1password.com/jobs/"`n    enabled: true
-`n  - name: "37signals"`n    careers_url: "https://37signals.com/jobs"`n    enabled: true
-`n  - name: "3Blocks"`n    careers_url: "https://www.linkedin.com/company/3blocks-io/jobs/"`n    enabled: true
-`n  - name: "90 Seconds"`n    careers_url: "https://90seconds.com/about/careers/"`n    enabled: true
-`n  - name: "A-1 Auto Transport"`n    careers_url: "https://www.a1autotransport.com/a-1-auto-transport-employment-opportunities/"`n    enabled: true
-`n  - name: "abiturma GmbH"`n    careers_url: "https://www.abiturma.de/jobs"`n    enabled: true
-`n  - name: "Ably"`n    careers_url: "http://jobs.ably.io"`n    enabled: true
-`n  - name: "Acquia"`n    careers_url: "https://www.acquia.com/careers/open-positions"`n    enabled: true
-`n  - name: "activecampaign"`n    careers_url: "https://www.activecampaign.com/about/careers#openings"`n    enabled: true
-`n  - name: "Ad Hoc"`n    careers_url: "https://adhocteam.us/join/"`n    enabled: true
-`n  - name: "Adaface"`n    careers_url: "https://angel.co/company/adaface/jobs"`n    enabled: true
-`n  - name: "addstructure"`n    careers_url: "https://www.bazaarvoice.com/company/careers/"`n    enabled: true
-`n  - name: "Adeva"`n    careers_url: "https://adevait.com/careers/job-openings"`n    enabled: true
-`n  - name: "Adzuna"`n    careers_url: "https://apply.workable.com/adzuna-2/"`n    enabled: true
-`n  - name: "Aerolab"`n    careers_url: "http://careers.aerolab.co/"`n    enabled: true
-`n  - name: "Aerostrat"`n    careers_url: "https://aerostratsoftware.com/careers/"`n    enabled: true
-`n  - name: "AEStudio"`n    careers_url: "https://ae.studio/join-us"`n    enabled: true
-`n  - name: "Aha!"`n    careers_url: "http://www.aha.io/company/careers/current-openings"`n    enabled: true
-`n  - name: "Aiir"`n    careers_url: "https://aiir.com/about/working-at-aiir/"`n    enabled: true
-`n  - name: "AIM India"`n    careers_url: "https://www.aimincorp.com/carrers.php/"`n    enabled: true
-`n  - name: "Airbyte"`n    careers_url: "https://airbyte.com/careers"`n    enabled: true
-`n  - name: "AirGarage"`n    careers_url: "https://www.airgarage.com/careers"`n    enabled: true
-`n  - name: "airtreks"`n    careers_url: "https://airtreks.com/about/jobs-at-airtreks/"`n    enabled: true
-`n  - name: "Akamai Technologies Inc"`n    careers_url: "https://www.akamai.com/careers]\\"`n    enabled: true
-`n  - name: "Alami"`n    careers_url: "https://alamisharia.co.id/en/career/"`n    enabled: true
-`n  - name: "Alan"`n    careers_url: "https://jobs.lever.co/alan"`n    enabled: true
-`n  - name: "Algorand"`n    careers_url: "https://www.algorand.com/about/careers/our-jobs"`n    enabled: true
-`n  - name: "Algorithmia"`n    careers_url: "https://algorithmia.bamboohr.com/jobs/"`n    enabled: true
-`n  - name: "ALICE"`n    careers_url: "https://www.aliceplatform.com/careers"`n    enabled: true
-`n  - name: "Alight Solutions"`n    careers_url: "https://careers.alight.com"`n    enabled: true
-`n  - name: "Alley"`n    careers_url: "https://alley.co/careers/,"`n    enabled: true
-`n  - name: "ALLYDVM"`n    careers_url: "https://weworkremotely.com/jobs/2867-senior-software-engineer"`n    enabled: true
-`n  - name: "Amazon"`n    careers_url: "https://www.amazon.jobs/"`n    enabled: true
-`n  - name: "Ambaum"`n    careers_url: "https://ambaum.com/careers"`n    enabled: true
-`n  - name: "Andela"`n    careers_url: "https://andela.com/join-andela/"`n    enabled: true
-`n  - name: "animalz"`n    careers_url: "https://www.animalz.co/jobs/"`n    enabled: true
-`n  - name: "Annertech"`n    careers_url: "https://www.annertech.com/careers"`n    enabled: true
-`n  - name: "Anomali"`n    careers_url: "https://jobs.lever.co/anomali"`n    enabled: true
-`n  - name: "Apartment Therapy"`n    careers_url: "http://www.apartmenttherapy.com/jobs"`n    enabled: true
-`n  - name: "Appcues"`n    careers_url: "https://www.appcues.com/company#jobs-open"`n    enabled: true
-`n  - name: "Appen"`n    careers_url: "https://jobs.lever.co/appen-2"`n    enabled: true
-`n  - name: "Appinio"`n    careers_url: "https://www.appinio.com/en/careers"`n    enabled: true
-`n  - name: "Appstractor"`n    careers_url: "https://www.appstractor.com/careers/"`n    enabled: true
-`n  - name: "Appwrite"`n    careers_url: "https://appwrite.io/company/careers"`n    enabled: true
-`n  - name: "Argyle"`n    careers_url: "https://argyle.com/careers#open-positions"`n    enabled: true
-`n  - name: "Arkency"`n    careers_url: "https://blog.arkency.com/join-our-team/"`n    enabled: true
-`n  - name: "Art & Logic"`n    careers_url: "https://artandlogic.com/careers/"`n    enabled: true
-`n  - name: "Articulate"`n    careers_url: "https://en-uk.articulate.com/company/careers.php"`n    enabled: true
-`n  - name: "Asana"`n    careers_url: "https://asana.com/jobs"`n    enabled: true
-`n  - name: "Astronomer"`n    careers_url: "https://astronomer.recruitee.com/"`n    enabled: true
-`n  - name: "Atento"`n    careers_url: "https://atento.gupy.io"`n    enabled: true
-`n  - name: "Audiense"`n    careers_url: "https://aboutus.audiense.com/careers"`n    enabled: true
-`n  - name: "Aula Education"`n    careers_url: "https://aulaatcoventry.notion.site/career](https://aulaatcoventry.notion.site/Aula-Work-with-us-b5f19ee874c5435591ac70b804aff8f9"`n    enabled: true
-`n  - name: "Auth0"`n    careers_url: "https://auth0.com/jobs"`n    enabled: true
-`n  - name: "Axelerant"`n    careers_url: "https://www.axelerant.com/careers"`n    enabled: true
-`n  - name: "Axios"`n    careers_url: "https://www.axios.com/careers/"`n    enabled: true
-`n  - name: "Bairesdev"`n    careers_url: "https://www.bairesdev.com/careers/"`n    enabled: true
-`n  - name: "Balena"`n    careers_url: "https://balena.workable.com/"`n    enabled: true
-`n  - name: "Balsamiq"`n    careers_url: "https://balsamiq.com/company/jobs/"`n    enabled: true
-`n  - name: "Bandcamp"`n    careers_url: "https://bandcamp.com/jobs"`n    enabled: true
-`n  - name: "BandLab"`n    careers_url: "https://apply.workable.com/bandlabtechnologies/"`n    enabled: true
-`n  - name: "Bandzoogle"`n    careers_url: "https://bandzoogle.com/jobs"`n    enabled: true
-`n  - name: "Baremetrics"`n    careers_url: "https://baremetrics.com/jobs"`n    enabled: true
-`n  - name: "Basecamp"`n    careers_url: "https://basecamp.com/about/jobs"`n    enabled: true
-`n  - name: "Bear Group"`n    careers_url: "https://www.beargroup.com/careers"`n    enabled: true
-`n  - name: "BeBanjo"`n    careers_url: "https://bebanjo.com/careers/"`n    enabled: true
-`n  - name: "BeenVerified"`n    careers_url: "https://www.beenverified.com/careers/"`n    enabled: true
-`n  - name: "Best Practical Solutions"`n    careers_url: "https://bestpractical.com/jobs"`n    enabled: true
-`n  - name: "Betable"`n    careers_url: "https://corp.betable.com/careers"`n    enabled: true
-`n  - name: "BetterUp"`n    careers_url: "https://www.betterup.com/about-us/careers"`n    enabled: true
-`n  - name: "BeyondPricing"`n    careers_url: "https://www.beyondpricing.com/about/careers"`n    enabled: true
-`n  - name: "BharatPe"`n    careers_url: "https://bharatpe.com/careers/"`n    enabled: true
-`n  - name: "Big Cartel"`n    careers_url: "https://www.bigcartel.com/jobs/"`n    enabled: true
-`n  - name: "BigData Boutique"`n    careers_url: "https://bigdataboutique.com/careers"`n    enabled: true
-`n  - name: "Bill"`n    careers_url: "https://www.bill.com/about-us/careers/"`n    enabled: true
-`n  - name: "bilstein group"`n    careers_url: "https://bilsteingroup.com/en/career/"`n    enabled: true
-`n  - name: "Bit Zesty"`n    careers_url: "https://bitzesty.com/careers/"`n    enabled: true
-`n  - name: "Bitnami"`n    careers_url: "https://bitnami.com/careers"`n    enabled: true
-`n  - name: "Bitovi"`n    careers_url: "http://bitovi.com/jobs"`n    enabled: true
-`n  - name: "Bizink"`n    careers_url: "https://bizinkonline.com/careers/"`n    enabled: true
-`n  - name: "Blameless"`n    careers_url: "https://www.blameless.com/careers"`n    enabled: true
-`n  - name: "BlueCat Networks"`n    careers_url: "https://bluecatnetworks.com/careers/"`n    enabled: true
-`n  - name: "Bluespark"`n    careers_url: "https://www.bluespark.com/careers"`n    enabled: true
-`n  - name: "Boldare"`n    careers_url: "https://boldare.com/career/"`n    enabled: true
-`n  - name: "Bounteous"`n    careers_url: "https://www.bounteous.com/careers/"`n    enabled: true
-`n  - name: "Brainstorm Force"`n    careers_url: "https://brainstormforce.com/join/"`n    enabled: true
-`n  - name: "Bright Funds"`n    careers_url: "https://www.brightfunds.org/jobs"`n    enabled: true
-`n  - name: "Brikl"`n    careers_url: "https://www.brikl.com/jobs"`n    enabled: true
-`n  - name: "BriteCore"`n    careers_url: "https://www.britecore.com/about-us/careers#positions"`n    enabled: true
-`n  - name: "Bugfender"`n    careers_url: "https://mobilejazz.com/jobs"`n    enabled: true
-`n  - name: "BuySellAds"`n    careers_url: "https://careers.jobscore.com/careers/buysellads"`n    enabled: true
-`n  - name: "Cabify"`n    careers_url: "https://cabify.com/en/jobs"`n    enabled: true
-`n  - name: "Calendly"`n    careers_url: "https://calendly.com/careers"`n    enabled: true
-`n  - name: "Calibre"`n    careers_url: "https://calibreapp.com/careers"`n    enabled: true
-`n  - name: "CANCOM"`n    careers_url: "https://career.cancom.com/"`n    enabled: true
-`n  - name: "Canonical"`n    careers_url: "http://www.canonical.com/careers/all-vacancies"`n    enabled: true
-`n  - name: "Capgemini"`n    careers_url: "https://www.capgemini.com/careers/"`n    enabled: true
-`n  - name: "Capital One"`n    careers_url: "https://www.capitalonecareers.com/tech"`n    enabled: true
-`n  - name: "Capital Placement"`n    careers_url: "https://capital-placement.com/careers"`n    enabled: true
-`n  - name: "Capmo"`n    careers_url: "https://capmo.jobs.personio.de"`n    enabled: true
-`n  - name: "Carbon Black"`n    careers_url: "https://www.carbonblack.com/company/careers/"`n    enabled: true
-`n  - name: "Cards Against Humanity"`n    careers_url: "https://www.cardsagainsthumanity.com/careers"`n    enabled: true
-`n  - name: "CareCru"`n    careers_url: "https://www.linkedin.com/company/carecru/jobs/"`n    enabled: true
-`n  - name: "CareMessage"`n    careers_url: "http://caremessage.org/careers"`n    enabled: true
-`n  - name: "Carmatec"`n    careers_url: "https://www.carmatec.com/careers/."`n    enabled: true
-`n  - name: "CartoDB"`n    careers_url: "https://cartodb.com/jobs/"`n    enabled: true
-`n  - name: "CartStack"`n    careers_url: "https://www.cartstack.com/careers/"`n    enabled: true
-`n  - name: "Casumo"`n    careers_url: "http://www.casumocareers.com/"`n    enabled: true
-`n  - name: "ChainLink Labs"`n    careers_url: "https://chainlinklabs.com/jobs"`n    enabled: true
-`n  - name: "Chargify"`n    careers_url: "https://www.chargify.com/jobs"`n    enabled: true
-`n  - name: "charity: water"`n    careers_url: "https://my.hirehive.io/charity-water/jobs/38223/software-engineer-new-york"`n    enabled: true
-`n  - name: "ChatGen"`n    careers_url: "https://www.linkedin.com/company/chatgen/jobs/"`n    enabled: true
-`n  - name: "Checkly"`n    careers_url: "https://www.checklyhq.com/jobs"`n    enabled: true
-`n  - name: "Chef"`n    careers_url: "https://www.chef.io/careers/"`n    enabled: true
-`n  - name: "Chess"`n    careers_url: "https://www.chess.com/jobs"`n    enabled: true
-`n  - name: "Chroma"`n    careers_url: "https://www.chromatic.com/company/careers"`n    enabled: true
-`n  - name: "CircleCI"`n    careers_url: "https://boards.greenhouse.io/circleci"`n    enabled: true
-`n  - name: "Circonus"`n    careers_url: "https://jobs.lever.co/circonus"`n    enabled: true
-`n  - name: "CivicActions"`n    careers_url: "https://civicactions.com/careers/"`n    enabled: true
-`n  - name: "Civo"`n    careers_url: "https://www.civo.com/careers"`n    enabled: true
-`n  - name: "Clevertech"`n    careers_url: "https://clevertech.biz/careers"`n    enabled: true
-`n  - name: "ClickUp"`n    careers_url: "https://clickup.com/careers"`n    enabled: true
-`n  - name: "Clootrack"`n    careers_url: "https://www.clootrack.com/careers"`n    enabled: true
-`n  - name: "Close"`n    careers_url: "http://jobs.close.com"`n    enabled: true
-`n  - name: "CloudApp"`n    careers_url: "https://www.getcloudapp.com/careers"`n    enabled: true
-`n  - name: "CloudEra"`n    careers_url: "https://cloudera.wd5.myworkdayjobs.com/External_Career?remoteType=648856a73acb1001a30bbdb5cbb70002"`n    enabled: true
-`n  - name: "CloudLinux"`n    careers_url: "https://www.cloudlinux.com/about-us-company-jobs/"`n    enabled: true
-`n  - name: "Coalition Technologies"`n    careers_url: "https://coalitiontechnologies.com/jobs"`n    enabled: true
-`n  - name: "Code Like a Girl"`n    careers_url: "https://www.codelikeagirl.com/about/join-our-team/"`n    enabled: true
-`n  - name: "CodeSandbox"`n    careers_url: "https://codesandbox.io/jobs"`n    enabled: true
-`n  - name: "Codeship"`n    careers_url: "https://codeship.com/jobs"`n    enabled: true
-`n  - name: "Cofense"`n    careers_url: "https://cofense.com/company/careers"`n    enabled: true
-`n  - name: "Coforma"`n    careers_url: "https://coforma.io/careers"`n    enabled: true
-`n  - name: "Cognizant"`n    careers_url: "https://careers.cognizant.com/in/en"`n    enabled: true
-`n  - name: "Coinbase"`n    careers_url: "https://www.coinbase.com/careers/positions"`n    enabled: true
-`n  - name: "Coingape"`n    careers_url: "https://coingape.com/careers/"`n    enabled: true
-`n  - name: "Collabora"`n    careers_url: "https://www.collabora.com/careers.html"`n    enabled: true
-`n  - name: "Comet"`n    careers_url: "https://www.welcometothejungle.co/fr/companies/comet/jobs/spontaneous-applications"`n    enabled: true
-`n  - name: "Compucorp"`n    careers_url: "https://careers.compuco.io/open-roles"`n    enabled: true
-`n  - name: "ConsenSys Inc"`n    careers_url: "https://consensys.net/open-positions/"`n    enabled: true
-`n  - name: "Consumer Financial Protection Bureau"`n    careers_url: "https://www.consumerfinance.gov/about-us/careers/current-openings/"`n    enabled: true
-`n  - name: "Continu"`n    careers_url: "https://www.continu.com/careers"`n    enabled: true
-`n  - name: "Convert"`n    careers_url: "https://www.convert.com/jobs"`n    enabled: true
-`n  - name: "Coodesh"`n    careers_url: "https://www.linkedin.com/company/coodesh/jobs/"`n    enabled: true
-`n  - name: "Core-Apps"`n    careers_url: "https://www.core-apps.com/event-technology-company/jobs/"`n    enabled: true
-`n  - name: "Corgibytes"`n    careers_url: "http://corgibytes.com/careers/"`n    enabled: true
-`n  - name: "Cosmic Chimps"`n    careers_url: "https://www.linkedin.com/company/cosmic-chimps/jobs/"`n    enabled: true
-`n  - name: "Coursera"`n    careers_url: "https://about.coursera.org/careers/"`n    enabled: true
-`n  - name: "CrateDB"`n    careers_url: "https://cratedb.com/company/career"`n    enabled: true
-`n  - name: "CrazyGames"`n    careers_url: "https://jobs.crazygames.com/"`n    enabled: true
-`n  - name: "Crossover"`n    careers_url: "https://www.crossover.com/jobs"`n    enabled: true
-`n  - name: "Crowdstrike"`n    careers_url: "https://jobs.jobvite.com/crowdstrike/jobs"`n    enabled: true
-`n  - name: "Customer.io"`n    careers_url: "http://customer.io/careers"`n    enabled: true
-`n  - name: "CVS Health"`n    careers_url: "https://jobs.cvshealth.com/"`n    enabled: true
-`n  - name: "CWT"`n    careers_url: "https://careers.mycwt.com/"`n    enabled: true
-`n  - name: "Cyber Whale"`n    careers_url: "https://weloveremotejobs.com/employer/cyber-whale/"`n    enabled: true
-`n  - name: "Daktronics"`n    careers_url: "https://www.daktronics.com/en-us/employment/careers"`n    enabled: true
-`n  - name: "DappRadar"`n    careers_url: "https://dappradar.com/careers"`n    enabled: true
-`n  - name: "darecode"`n    careers_url: "https://darecode.com/job"`n    enabled: true
-`n  - name: "Dashlane"`n    careers_url: "https://www.dashlane.com/about/careers"`n    enabled: true
-`n  - name: "Data Science Dojo"`n    careers_url: "https://datasciencedojo.com/about/careers"`n    enabled: true
-`n  - name: "DataCamp"`n    careers_url: "https://datacamp.com/careers"`n    enabled: true
-`n  - name: "Datadog"`n    careers_url: "https://www.datadoghq.com/careers/detail/"`n    enabled: true
-`n  - name: "DataStax"`n    careers_url: "https://www.datastax.com/company/careers"`n    enabled: true
-`n  - name: "Dave"`n    careers_url: "https://dave.com/careers"`n    enabled: true
-`n  - name: "DealDash"`n    careers_url: "https://www.dealdash.com/careers"`n    enabled: true
-`n  - name: "Deel"`n    careers_url: "https://jobs.ashbyhq.com/Deel"`n    enabled: true
-`n  - name: "Delighted"`n    careers_url: "https://delighted.com/jobs"`n    enabled: true
-`n  - name: "Deskpass"`n    careers_url: "https://jobs.deskpass.com"`n    enabled: true
-`n  - name: "Devsquad"`n    careers_url: "https://apply.workable.com/devsquad"`n    enabled: true
-`n  - name: "DGraph"`n    careers_url: "http://dgraph.io/#jobs"`n    enabled: true
-`n  - name: "DigitalOcean"`n    careers_url: "https://www.digitalocean.com/company/careers/"`n    enabled: true
-`n  - name: "Discord"`n    careers_url: "https://discord.com/jobs"`n    enabled: true
-`n  - name: "Docker"`n    careers_url: "https://www.docker.com/careers"`n    enabled: true
-`n  - name: "Doist"`n    careers_url: "https://doist.com/jobs/"`n    enabled: true
-`n  - name: "Doit"`n    careers_url: "https://careers.doit.com/jobs"`n    enabled: true
-`n  - name: "Dow jones"`n    careers_url: "https://dowjones.jobs/"`n    enabled: true
-`n  - name: "Dropbox"`n    careers_url: "https://www.dropbox.com/jobs"`n    enabled: true
-`n  - name: "Drupal Jedi"`n    careers_url: "https://drupaljedi.com/careers"`n    enabled: true
-`n  - name: "DuckDuckGo"`n    careers_url: "https://duckduckgo.com/hiring/"`n    enabled: true
-`n  - name: "EatStreet"`n    careers_url: "https://eatstreet.com/careers"`n    enabled: true
-`n  - name: "EBSCO Information Services"`n    careers_url: "https://careers.ebscoind.com/ebscoinformationservices"`n    enabled: true
-`n  - name: "Ebury"`n    careers_url: "https://careers.ebury.com"`n    enabled: true
-`n  - name: "Edgar"`n    careers_url: "http://meetedgar.com/careers/"`n    enabled: true
-`n  - name: "Elastic"`n    careers_url: "https://www.elastic.co/about/careers"`n    enabled: true
-`n  - name: "Elsewhen"`n    careers_url: "https://careers.elsewhen.com/jobs"`n    enabled: true
-`n  - name: "Embraer"`n    careers_url: "https://embraer.gupy.io/"`n    enabled: true
-`n  - name: "Employment Hero"`n    careers_url: "https://employmenthero.com/careers"`n    enabled: true
-`n  - name: "Emsisoft"`n    careers_url: "https://www.emsisoft.com/en/company/jobs/"`n    enabled: true
-`n  - name: "Encora"`n    careers_url: "https://careers.encora.com/find-more-than-job"`n    enabled: true
-`n  - name: "Enjoei"`n    careers_url: "https://enjoei.gupy.io/"`n    enabled: true
-`n  - name: "Envato"`n    careers_url: "https://careers.envato.com/"`n    enabled: true
-`n  - name: "Epic Games"`n    careers_url: "https://www.epicgames.com/site/en-US/careers"`n    enabled: true
-`n  - name: "Episource"`n    careers_url: "https://www.episource.com/careers/"`n    enabled: true
-`n  - name: "Epsy Health"`n    careers_url: "https://epsyhealth.com/careers"`n    enabled: true
-`n  - name: "Ergeon"`n    careers_url: "https://www.ergeon.com/careers"`n    enabled: true
-`n  - name: "Etch"`n    careers_url: "https://etch.co/jobs"`n    enabled: true
-`n  - name: "Etsy"`n    careers_url: "https://careers.etsy.com/"`n    enabled: true
-`n  - name: "Exoscale"`n    careers_url: "https://www.exoscale.com/jobs/"`n    enabled: true
-`n  - name: "Extreme Networks"`n    careers_url: "https://www.extremenetworks.com/about-extreme-networks/career/"`n    enabled: true
-`n  - name: "Eyeo"`n    careers_url: "https://eyeo.com/en/jobs/"`n    enabled: true
-`n  - name: "FactorialHR"`n    careers_url: "https://careers.factorialhr.com"`n    enabled: true
-`n  - name: "Fairwinds Ops"`n    careers_url: "https://www.fairwinds.com/careers"`n    enabled: true
-`n  - name: "Faithlife"`n    careers_url: "https://faithlife.com/careers"`n    enabled: true
-`n  - name: "Fastly"`n    careers_url: "https://www.fastly.com/about/careers"`n    enabled: true
-`n  - name: "FFW Agency"`n    careers_url: "https://ffwagency.com/careers"`n    enabled: true
-`n  - name: "Figma"`n    careers_url: "https://www.figma.com/careers/"`n    enabled: true
-`n  - name: "Findem"`n    careers_url: "https://jobs.lever.co/findem"`n    enabled: true
-`n  - name: "Findify"`n    careers_url: "https://careers.findify.io"`n    enabled: true
-`n  - name: "Fingerprint"`n    careers_url: "https://fingerprint.com/careers/"`n    enabled: true
-`n  - name: "FIS GLOBAL"`n    careers_url: "https://careers.fisglobal.com/"`n    enabled: true
-`n  - name: "Fiverr"`n    careers_url: "https://www.fiverr.com/jobs/teams"`n    enabled: true
-`n  - name: "fleetio"`n    careers_url: "https://www.fleetio.com/careers"`n    enabled: true
-`n  - name: "Flexera"`n    careers_url: "https://www.flexera.com/about-us/careers.html"`n    enabled: true
-`n  - name: "FlightAware"`n    careers_url: "https://flightaware.com/about/careers/"`n    enabled: true
-`n  - name: "Flip"`n    careers_url: "https://career.flip.id/jobs"`n    enabled: true
-`n  - name: "Flowing"`n    careers_url: "https://www.flowing.it/job-opportunity"`n    enabled: true
-`n  - name: "Fly.io"`n    careers_url: "https://fly.io/jobs/"`n    enabled: true
-`n  - name: "FMX"`n    careers_url: "https://www.gofmx.com/careers/"`n    enabled: true
-`n  - name: "folotop"`n    careers_url: "https://www.folotop.com/job/"`n    enabled: true
-`n  - name: "Formidable"`n    careers_url: "https://formidable.com/careers/"`n    enabled: true
-`n  - name: "Formstack"`n    careers_url: "https://www.formstack.com/careers"`n    enabled: true
-`n  - name: "Four Kitchens"`n    careers_url: "https://www.fourkitchens.com/careers/"`n    enabled: true
-`n  - name: "Fraudio"`n    careers_url: "https://www.linkedin.com/company/fraudio/jobs/"`n    enabled: true
-`n  - name: "Freeagent"`n    careers_url: "http://www.freeagent.com/company/jobs/"`n    enabled: true
-`n  - name: "Freeletics"`n    careers_url: "https://www.freeletics.com/en/corporate/jobs/"`n    enabled: true
-`n  - name: "Fuel Made"`n    careers_url: "https://fuelmade.com/pages/jobs"`n    enabled: true
-`n  - name: "Full Fabric"`n    careers_url: "http://fullfabric.com/careers"`n    enabled: true
-`n  - name: "Functionize"`n    careers_url: "https://www.functionize.com/careers/"`n    enabled: true
-`n  - name: "Fyle"`n    careers_url: "https://www.fylehq.com/company/team/join"`n    enabled: true
-`n  - name: "Gaggle"`n    careers_url: "https://www.gaggle.net/careers-culture/"`n    enabled: true
-`n  - name: "Geckoboard"`n    careers_url: "https://www.geckoboard.com/careers/"`n    enabled: true
-`n  - name: "General Assembly"`n    careers_url: "https://generalassemb.ly/careers"`n    enabled: true
-`n  - name: "GEO Jobe"`n    careers_url: "https://www.geo-jobe.com/careers/"`n    enabled: true
-`n  - name: "GFT"`n    careers_url: "https://jobs.gft.com/"`n    enabled: true
-`n  - name: "Ghost Inspector"`n    careers_url: "https://ghostinspector.com/jobs/"`n    enabled: true
-`n  - name: "Giant Swarm"`n    careers_url: "https://www.giantswarm.io/careers#open-positions"`n    enabled: true
-`n  - name: "Gitbook"`n    careers_url: "https://jobs.gitbook.com/"`n    enabled: true
-`n  - name: "GitHub"`n    careers_url: "https://github.com/about/jobs"`n    enabled: true
-`n  - name: "GitLab"`n    careers_url: "https://about.gitlab.com/jobs/"`n    enabled: true
-`n  - name: "GitPrime"`n    careers_url: "https://gitprime.com/jobs/"`n    enabled: true
-`n  - name: "Glitch"`n    careers_url: "https://glitch.bamboohr.com/jobs/"`n    enabled: true
-`n  - name: "GMBapi"`n    careers_url: "https://gmbapi.com/vacancies/"`n    enabled: true
-`n  - name: "GoDaddy"`n    careers_url: "https://careers.godaddy.com/"`n    enabled: true
-`n  - name: "GoHiring"`n    careers_url: "https://www.gohiring.com/jobs/#jobs"`n    enabled: true
-`n  - name: "Gorman Health Group"`n    careers_url: "https://conveyhealthsolutions.com/careers/"`n    enabled: true
-`n  - name: "Grafana Labs"`n    careers_url: "https://grafana.com/about/careers/?plcmt=footer#jobs"`n    enabled: true
-`n  - name: "Granicus"`n    careers_url: "https://granicus.com/careers/"`n    enabled: true
-`n  - name: "Graylog"`n    careers_url: "https://www.graylog.org/careers"`n    enabled: true
-`n  - name: "Grou.ps"`n    careers_url: "https://build.gr.ps/careers/"`n    enabled: true
-`n  - name: "Grubhub"`n    careers_url: "https://careers.grubhub.com/"`n    enabled: true
-`n  - name: "GuideSmiths"`n    careers_url: "https://guidesmiths.bamboohr.com/jobs/"`n    enabled: true
-`n  - name: "Hack Reactor Remote"`n    careers_url: "http://www.hackreactor.com/careers"`n    enabled: true
-`n  - name: "Hanzo Archives"`n    careers_url: "https://www.hanzo.co/about-us/careers-uk"`n    enabled: true
-`n  - name: "Happy Cog"`n    careers_url: "https://www.happycog.com/careers/"`n    enabled: true
-`n  - name: "Harris Consult"`n    careers_url: "http://harrisconsultium.com/career"`n    enabled: true
-`n  - name: "Harvest"`n    careers_url: "https://www.getharvest.com/careers"`n    enabled: true
-`n  - name: "Hashex"`n    careers_url: "https://hashex.org/company/careers"`n    enabled: true
-`n  - name: "HashiCorp"`n    careers_url: "https://www.hashicorp.com/jobs"`n    enabled: true
-`n  - name: "Headforwards"`n    careers_url: "https://www.headforwards.com/careers/"`n    enabled: true
-`n  - name: "Headway"`n    careers_url: "https://headway.io/careers"`n    enabled: true
-`n  - name: "Healthfinch"`n    careers_url: "https://www.healthfinch.com/careers"`n    enabled: true
-`n  - name: "Heap"`n    careers_url: "https://heapanalytics.com/jobs#engineer"`n    enabled: true
-`n  - name: "Heetch"`n    careers_url: "https://jobs.heetch.com"`n    enabled: true
-`n  - name: "Help Scout"`n    careers_url: "https://www.helpscout.com/company/careers/"`n    enabled: true
-`n  - name: "Heroku"`n    careers_url: "https://www.heroku.com/careers"`n    enabled: true
-`n  - name: "Hireology"`n    careers_url: "http://www.hireology.com/careers"`n    enabled: true
-`n  - name: "Homeflic wegrow"`n    careers_url: "https://www.homeflicwegrow.com/hiring/"`n    enabled: true
-`n  - name: "Honeybadger"`n    careers_url: "https://www.honeybadger.io/careers/"`n    enabled: true
-`n  - name: "Hopper"`n    careers_url: "https://www.hopper.com/careers"`n    enabled: true
-`n  - name: "Hotjar"`n    careers_url: "https://careers.hotjar.com/"`n    enabled: true
-`n  - name: "Hubspot"`n    careers_url: "https://www.hubspot.com/careers/jobs?hubs_signup-url=www.hubspot.com%2Fcareers%2Fremote&hubs_signup-cta=careers-location-hero&page=1"`n    enabled: true
-`n  - name: "Hubstaff"`n    careers_url: "https://hubstaff.com/jobs"`n    enabled: true
-`n  - name: "Hudl"`n    careers_url: "http://public.hudl.com/jobs"`n    enabled: true
-`n  - name: "Hugo"`n    careers_url: "http://hugo.events/careers"`n    enabled: true
-`n  - name: "Human Made"`n    careers_url: "https://hmn.md/hiring/"`n    enabled: true
-`n  - name: "Hypergiant"`n    careers_url: "https://www.hypergiant.com/careers/"`n    enabled: true
-`n  - name: "Hyperion Development South Africa"`n    careers_url: "https://hyperiondev.com/jobs"`n    enabled: true
-`n  - name: "Hypothesis"`n    careers_url: "https://hypothes.is/jobs/"`n    enabled: true
-`n  - name: "I-Stem"`n    careers_url: "https://wellfound.com/company/i-stem/jobs"`n    enabled: true
-`n  - name: "IBM"`n    careers_url: "https://www.ibm.com/employment/?lnk=fab#jobs"`n    enabled: true
-`n  - name: "iFit"`n    careers_url: "https://www.iconfitness.com/careers.html?brand=ifit"`n    enabled: true
-`n  - name: "Igalia"`n    careers_url: "https://www.igalia.com/jobs/"`n    enabled: true
-`n  - name: "Imagine Learning"`n    careers_url: "https://www.imaginelearning.com/en/us/about/careers"`n    enabled: true
-`n  - name: "Impala"`n    careers_url: "https://boards.greenhouse.io/impala"`n    enabled: true
-`n  - name: "Impira"`n    careers_url: "https://www.impira.com/careers"`n    enabled: true
-`n  - name: "Incsub"`n    careers_url: "http://incsub.com/careers/"`n    enabled: true
-`n  - name: "inDrive"`n    careers_url: "https://careers.indrive.com/"`n    enabled: true
-`n  - name: "InfluxData"`n    careers_url: "https://boards.greenhouse.io/influxdb?gh_src=ygda3s"`n    enabled: true
-`n  - name: "Inshorts"`n    careers_url: "https://inshorts.zohorecruit.com/careers"`n    enabled: true
-`n  - name: "Instamobile"`n    careers_url: "https://www.instamobile.io/react-native-jobs/"`n    enabled: true
-`n  - name: "Instructure"`n    careers_url: "https://www.instructure.com/about/careers"`n    enabled: true
-`n  - name: "Intellum"`n    careers_url: "https://apply.workable.com/intellum-inc/"`n    enabled: true
-`n  - name: "Intent"`n    careers_url: "https://withintent.com/careers"`n    enabled: true
-`n  - name: "Inter.link"`n    careers_url: "https://inter.link/careers"`n    enabled: true
-`n  - name: "Interactive Intelligence"`n    careers_url: "https://www.inin.com/careers"`n    enabled: true
-`n  - name: "Intercom"`n    careers_url: "https://www.intercom.io/careers"`n    enabled: true
-`n  - name: "Intevity"`n    careers_url: "https://www.intevity.com/careers"`n    enabled: true
-`n  - name: "Intuit Inc."`n    careers_url: "https://www.intuit.com/careers/"`n    enabled: true
-`n  - name: "Intuition Machines, Inc."`n    careers_url: "https://jobs.imachines.com/"`n    enabled: true
-`n  - name: "Invesco"`n    careers_url: "https://careers.invesco.com/"`n    enabled: true
-`n  - name: "IOHK"`n    careers_url: "https://iohk.io/careers/"`n    enabled: true
-`n  - name: "iOS App Templates"`n    careers_url: "https://www.iosapptemplates.com/ios-developers-jobs-remote"`n    enabled: true
-`n  - name: "IPInfo"`n    careers_url: "https://ipinfo.io/jobs"`n    enabled: true
-`n  - name: "IPS Group, Inc."`n    careers_url: "https://www.ipsgroupinc.com/careers/"`n    enabled: true
-`n  - name: "IQVIA"`n    careers_url: "https://jobs.iqvia.com/"`n    enabled: true
-`n  - name: "iRonin"`n    careers_url: "https://careers.ironin.it/"`n    enabled: true
-`n  - name: "Iterative"`n    careers_url: "https://jobs.lever.co/iterative?lever-origin=applied&lever-source%5B%5D=remoteintech"`n    enabled: true
-`n  - name: "iwantmyname"`n    careers_url: "https://iwantmyname.com/jobs"`n    enabled: true
-`n  - name: "Jackson River"`n    careers_url: "http://jacksonriver.com/about/jobs"`n    enabled: true
-`n  - name: "JBS Custom Software Solutions"`n    careers_url: "https://www.jbssolutions.com/careers/"`n    enabled: true
-`n  - name: "Jitera"`n    careers_url: "https://angel.co/company/iruuza/jobs"`n    enabled: true
-`n  - name: "Jobsity"`n    careers_url: "https://recruitment.jobsity.com/applylp"`n    enabled: true
-`n  - name: "JOOR"`n    careers_url: "https://joor.com/careers/"`n    enabled: true
-`n  - name: "journy.io"`n    careers_url: "https://angel.co/company/journy-io/jobs"`n    enabled: true
-`n  - name: "Joyent"`n    careers_url: "https://www.joyent.com/careers"`n    enabled: true
-`n  - name: "JupiterOne"`n    careers_url: "https://www.jupiterone.com/careers"`n    enabled: true
-`n  - name: "Kake"`n    careers_url: "https://kake.co/jobs"`n    enabled: true
-`n  - name: "Kaufland e-commerce"`n    careers_url: "https://kaufland-ecommerce.com/en/career/jobs/"`n    enabled: true
-`n  - name: "kea"`n    careers_url: "https://careers.kea.ai"`n    enabled: true
-`n  - name: "Keen IO"`n    careers_url: "https://scaleworks.com/careers/"`n    enabled: true
-`n  - name: "Kentik Technologies Inc."`n    careers_url: "https://www.kentik.com/careers"`n    enabled: true
-`n  - name: "Kestra"`n    careers_url: "https://www.kestra.io/careers"`n    enabled: true
-`n  - name: "Khan Academy"`n    careers_url: "https://www.khanacademy.org/careers"`n    enabled: true
-`n  - name: "KickBack Rewards Systems"`n    careers_url: "https://kickbacksystems.com/careers.html"`n    enabled: true
-`n  - name: "Kindred"`n    careers_url: "https://jobs.ashbyhq.com/kindred"`n    enabled: true
-`n  - name: "Kinsta"`n    careers_url: "https://kinsta.com/careers/"`n    enabled: true
-`n  - name: "Kiprosh"`n    careers_url: "https://kiprosh.com/careers"`n    enabled: true
-`n  - name: "KissMetrics"`n    careers_url: "https://www.kissmetrics.com/careers/"`n    enabled: true
-`n  - name: "Klanik"`n    careers_url: "https://www.klanik.com/en/jobs?"`n    enabled: true
-`n  - name: "Klaviyo"`n    careers_url: "https://www.klaviyo.com/careers#open-roles"`n    enabled: true
-`n  - name: "Kodify"`n    careers_url: "https://www.linkedin.com/jobs/search?f_C=2771097&locationType=Y&trk=careers_promo_module_see_jobs"`n    enabled: true
-`n  - name: "Kona"`n    careers_url: "https://www.heykona.com/careers"`n    enabled: true
-`n  - name: "Konkurenta"`n    careers_url: "https://konkurenta.com/jobs"`n    enabled: true
-`n  - name: "Kraken"`n    careers_url: "https://jobs.lever.co/kraken"`n    enabled: true
-`n  - name: "Kuali"`n    careers_url: "https://jobs.kuali.co"`n    enabled: true
-`n  - name: "Labelbox"`n    careers_url: "https://labelbox.com/company/careers"`n    enabled: true
-`n  - name: "Lambda School"`n    careers_url: "https://lambdaschool.com/careers/"`n    enabled: true
-`n  - name: "Lambert Labs"`n    careers_url: "https://lambertlabs.com/careers/"`n    enabled: true
-`n  - name: "LaterPay"`n    careers_url: "https://www.laterpay.net/careers"`n    enabled: true
-`n  - name: "Launch Potato"`n    careers_url: "https://launchpotato.com/careers"`n    enabled: true
-`n  - name: "Leadfeeder"`n    careers_url: "https://www.leadfeeder.com/jobs/"`n    enabled: true
-`n  - name: "LeadIQ"`n    careers_url: "https://leadiq.com/careers"`n    enabled: true
-`n  - name: "Let's Encrypt"`n    careers_url: "https://letsencrypt.org/jobs/"`n    enabled: true
-`n  - name: "Lifen"`n    careers_url: "https://jobs.lever.co/lifen"`n    enabled: true
-`n  - name: "Lifetime Value Company"`n    careers_url: "https://www.ltvco.com/careers.html"`n    enabled: true
-`n  - name: "Lightspeed"`n    careers_url: "https://www.lightspeedhq.com/careers/"`n    enabled: true
-`n  - name: "Linaro"`n    careers_url: "https://www.linaro.org/careers/"`n    enabled: true
-`n  - name: "LINE Plus Corporation"`n    careers_url: "https://career.linecorp.com/linecorp/career/list"`n    enabled: true
-`n  - name: "Link11"`n    careers_url: "https://www.link11.com/en/career/"`n    enabled: true
-`n  - name: "Linux Foundation"`n    careers_url: "https://www.linuxfoundation.org/about/careers/"`n    enabled: true
-`n  - name: "LionSher"`n    careers_url: "https://lionsher.com/careers"`n    enabled: true
-`n  - name: "Litmus Software"`n    careers_url: "https://litmus.com/careers"`n    enabled: true
-`n  - name: "LivePerson"`n    careers_url: "https://www.liveperson.com/company/careers"`n    enabled: true
-`n  - name: "Locus Robotics"`n    careers_url: "https://locusrobotics.com/company/careers"`n    enabled: true
-`n  - name: "LogRocket"`n    careers_url: "https://logrocket.com/careers"`n    enabled: true
-`n  - name: "Lullabot"`n    careers_url: "https://www.lullabot.com/jobs"`n    enabled: true
-`n  - name: "Luxor Technology"`n    careers_url: "https://jobs.ashbyhq.com/luxor"`n    enabled: true
-`n  - name: "Lytx"`n    careers_url: "https://www.lytx.com/en-us/about-us/careers"`n    enabled: true
-`n  - name: "madewithlove"`n    careers_url: "https://madewithlove.com/careers/"`n    enabled: true
-`n  - name: "MailerLite"`n    careers_url: "https://www.mailerlite.com/jobs/"`n    enabled: true
-`n  - name: "Mapbox"`n    careers_url: "https://www.mapbox.com/jobs/"`n    enabled: true
-`n  - name: "Marco Polo"`n    careers_url: "https://marcopolo.me/jobs"`n    enabled: true
-`n  - name: "MariaDB"`n    careers_url: "https://mariadb.com/about-us/careers/"`n    enabled: true
-`n  - name: "Marketade"`n    careers_url: "https://www.marketade.com/jobs/"`n    enabled: true
-`n  - name: "MarsBased"`n    careers_url: "https://marsbased.com/jobs"`n    enabled: true
-`n  - name: "Massive Pixel Creation"`n    careers_url: "https://massivepixel.io/career/"`n    enabled: true
-`n  - name: "Mattermost"`n    careers_url: "https://mattermost.com/careers/"`n    enabled: true
-`n  - name: "Maxicus"`n    careers_url: "https://remoters.net/jobs/maxicus/"`n    enabled: true
-`n  - name: "Mayvue Solutions"`n    careers_url: "https://mayvue.com/careers/"`n    enabled: true
-`n  - name: "Meant4"`n    careers_url: "https://meant4.com/jobs"`n    enabled: true
-`n  - name: "Mediacurrent Interactive Solutions, LLC"`n    careers_url: "https://www.mediacurrent.com/about/careers"`n    enabled: true
-`n  - name: "Mediavine"`n    careers_url: "https://mediavine.workable.com/"`n    enabled: true
-`n  - name: "Medium"`n    careers_url: "https://jobs.lever.co/medium?team=Engineering"`n    enabled: true
-`n  - name: "Memberful"`n    careers_url: "https://memberful.com/jobs/"`n    enabled: true
-`n  - name: "Memory"`n    careers_url: "https://memory.ai/jobs"`n    enabled: true
-`n  - name: "Mercari"`n    careers_url: "https://careers.mercari.com/job-categories/engineering/?utm_source=remoteintech.company&utm_medium=Referral&utm_campaign=remote-in-tech"`n    enabled: true
-`n  - name: "MeridianLink"`n    careers_url: "https://www.meridianlink.com/careers"`n    enabled: true
-`n  - name: "messagebird"`n    careers_url: "https://messagebird.com/careers#jobs"`n    enabled: true
-`n  - name: "MetaLab"`n    careers_url: "https://www.metalab.co/careers"`n    enabled: true
-`n  - name: "MetaMask"`n    careers_url: "https://boards.greenhouse.io/consensys/jobs/1990589"`n    enabled: true
-`n  - name: "MeteorOps"`n    careers_url: "https://meteorops.com/careers"`n    enabled: true
-`n  - name: "Microsoft"`n    careers_url: "https://careers.microsoft.com/us/en"`n    enabled: true
-`n  - name: "Mindful"`n    careers_url: "https://getmindful.com/careers/"`n    enabled: true
-`n  - name: "Mixcloud"`n    careers_url: "https://apply.workable.com/mixcloud-limited/"`n    enabled: true
-`n  - name: "Mixmax"`n    careers_url: "https://careers.mixmax.com/"`n    enabled: true
-`n  - name: "Mobile Jazz"`n    careers_url: "https://mobilejazz.com/jobs"`n    enabled: true
-`n  - name: "Modern Health"`n    careers_url: "https://boards.greenhouse.io/modernhealth"`n    enabled: true
-`n  - name: "Modern Tribe"`n    careers_url: "https://tri.be/careers/"`n    enabled: true
-`n  - name: "MODSQUAD"`n    careers_url: "https://modsquad.com/careers/"`n    enabled: true
-`n  - name: "MongoDB"`n    careers_url: "https://www.mongodb.com/careers"`n    enabled: true
-`n  - name: "Monthly"`n    careers_url: "https://monthly.com/careers"`n    enabled: true
-`n  - name: "Mozilla"`n    careers_url: "https://careers.mozilla.org/"`n    enabled: true
-`n  - name: "mtc."`n    careers_url: "http://www.mtcmedia.co.uk/careers."`n    enabled: true
-`n  - name: "Muck Rack"`n    careers_url: "https://muckrack.com/careers"`n    enabled: true
-`n  - name: "Mux"`n    careers_url: "https://mux.com/jobs"`n    enabled: true
-`n  - name: "Mycelium"`n    careers_url: "https://jobs.lever.co/Mycelium/"`n    enabled: true
-`n  - name: "MySQL"`n    careers_url: "https://www.mysql.com/about/jobs/"`n    enabled: true
-`n  - name: "Nagarro"`n    careers_url: "https://www.nagarro.com/en/careers"`n    enabled: true
-`n  - name: "Namecheap"`n    careers_url: "https://www.namecheap.com/careers/openings/"`n    enabled: true
-`n  - name: "Nationwide"`n    careers_url: "https://nationwide.eightfold.ai/careers"`n    enabled: true
-`n  - name: "Nearform"`n    careers_url: "https://www.nearform.com/careers/"`n    enabled: true
-`n  - name: "nerdwallet"`n    careers_url: "https://www.nerdwallet.com/careers/teams"`n    enabled: true
-`n  - name: "NetApp"`n    careers_url: "https://www.netapp.com/company/careers/"`n    enabled: true
-`n  - name: "Netguru"`n    careers_url: "https://www.netguru.com/career"`n    enabled: true
-`n  - name: "Netlify"`n    careers_url: "https://www.netlify.com/careers"`n    enabled: true
-`n  - name: "Netris"`n    careers_url: "https://www.netris.io/jobs/"`n    enabled: true
-`n  - name: "Netsparker"`n    careers_url: "https://www.netsparker.com/jobs/"`n    enabled: true
-`n  - name: "New Context"`n    careers_url: "https://www.newcontext.com/careers/"`n    enabled: true
-`n  - name: "NEXT"`n    careers_url: "https://www.nexttrucking.com/careers/"`n    enabled: true
-`n  - name: "NodeSource"`n    careers_url: "https://nodesource.com/careers"`n    enabled: true
-`n  - name: "NoRedInk"`n    careers_url: "https://www.noredink.com/jobs"`n    enabled: true
-`n  - name: "Novoda"`n    careers_url: "https://www.novoda.com/hiring"`n    enabled: true
-`n  - name: "npm"`n    careers_url: "https://www.npmjs.com/jobs?utm_source=nodeweekly&utm_medium=email"`n    enabled: true
-`n  - name: "Nuage"`n    careers_url: "https://nuagebiz.tech/careers/"`n    enabled: true
-`n  - name: "Nuharbor Security"`n    careers_url: "https://www.nuharborsecurity.com/careers#job-openings"`n    enabled: true
-`n  - name: "Nuna Inc"`n    careers_url: "https://www.nuna.com/careers"`n    enabled: true
-`n  - name: "Nvidia"`n    careers_url: "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"`n    enabled: true
-`n  - name: "O'Reilly Media"`n    careers_url: "https://www.oreilly.com/careers/"`n    enabled: true
-`n  - name: "O'Reilly Online Learning"`n    careers_url: "https://www.oreilly.com/careers/#positions"`n    enabled: true
-`n  - name: "Ocient"`n    careers_url: "https://ocient.com/job-postings/"`n    enabled: true
-`n  - name: "Octopus Deploy"`n    careers_url: "https://octopus.com/company/careers"`n    enabled: true
-`n  - name: "Oddball"`n    careers_url: "https://oddball.io/jobs"`n    enabled: true
-`n  - name: "Okta"`n    careers_url: "https://www.okta.com/company/careers/"`n    enabled: true
-`n  - name: "Olark"`n    careers_url: "https://www.olark.com/jobs"`n    enabled: true
-`n  - name: "Ollie"`n    careers_url: "https://jobs.lever.co/myollie"`n    enabled: true
-`n  - name: "Olo"`n    careers_url: "https://www.olo.com/company/#careers."`n    enabled: true
-`n  - name: "Ombu Labs"`n    careers_url: "https://www.ombulabs.com/jobs"`n    enabled: true
-`n  - name: "OmniTI"`n    careers_url: "https://omniti.com/is/hiring"`n    enabled: true
-`n  - name: "On The Go Systems"`n    careers_url: "https://onthegosystems.com/jobs/"`n    enabled: true
-`n  - name: "Onna"`n    careers_url: "https://onna.com/careers/"`n    enabled: true
-`n  - name: "Opencity Labs Srl"`n    careers_url: "https://link.opencontent.it/jobs?utm_source=remoteintech&utm_campaign=recruiting"`n    enabled: true
-`n  - name: "OpenCraft"`n    careers_url: "https://opencraft.com/jobs/open-source-developer/"`n    enabled: true
-`n  - name: "OpenZeppelin"`n    careers_url: "https://openzeppelin.com/jobs/#openings"`n    enabled: true
-`n  - name: "Optoro"`n    careers_url: "https://www.optoro.com/careers/"`n    enabled: true
-`n  - name: "Oracle"`n    careers_url: "https://www.oracle.com/in/corporate/careers/"`n    enabled: true
-`n  - name: "Ordermentum"`n    careers_url: "https://www.linkedin.com/careersite/ordermentum"`n    enabled: true
-`n  - name: "Our-Hometown Inc."`n    careers_url: "https://our-hometown.com/job-opportunities/"`n    enabled: true
-`n  - name: "OutsourcingDev"`n    careers_url: "https://www.outsourcingdev.com/careers/"`n    enabled: true
-`n  - name: "Over"`n    careers_url: "https://www.madewithover.com/jobs"`n    enabled: true
-`n  - name: "Packlink"`n    careers_url: "https://careers.packlink.com/jobs"`n    enabled: true
-`n  - name: "PagerDuty"`n    careers_url: "https://www.pagerduty.com/careers/"`n    enabled: true
-`n  - name: "Paktor"`n    careers_url: "http://gopaktor.com/#/career"`n    enabled: true
-`n  - name: "Palantir.net"`n    careers_url: "https://palantir.bamboohr.com/jobs/view.php?id=11"`n    enabled: true
-`n  - name: "Panther Labs"`n    careers_url: "https://runpanther.io/careers"`n    enabled: true
-`n  - name: "Parabol"`n    careers_url: "https://www.parabol.co/join"`n    enabled: true
-`n  - name: "Parexel"`n    careers_url: "https://jobs.parexel.com/"`n    enabled: true
-`n  - name: "Park Assist"`n    careers_url: "http://tech.parkassist.com/jobs/"`n    enabled: true
-`n  - name: "Parsely"`n    careers_url: "https://www.parse.ly/careers"`n    enabled: true
-`n  - name: "Particular Software"`n    careers_url: "https://particular.net/careers"`n    enabled: true
-`n  - name: "Pathable"`n    careers_url: "https://pathable.com/careers/"`n    enabled: true
-`n  - name: "Payfully"`n    careers_url: "https://angel.co/payfully/jobs/"`n    enabled: true
-`n  - name: "Paylocity"`n    careers_url: "https://www.paylocity.com/careers/career-opportunities/"`n    enabled: true
-`n  - name: "PayPay Corporation"`n    careers_url: "https://about.paypay.ne.jp/career/en/"`n    enabled: true
-`n  - name: "PayScale"`n    careers_url: "https://jobs.smartrecruiters.com/PayScale/743999782844766-associate-software-engineer-remote-"`n    enabled: true
-`n  - name: "Paytm Labs"`n    careers_url: "https://paytmlabs.com/#careers"`n    enabled: true
-`n  - name: "PayU"`n    careers_url: "https://corporate.payu.com/job-board/"`n    enabled: true
-`n  - name: "PeachWorks"`n    careers_url: "https://careers.getbeyond.com/apply-now"`n    enabled: true
-`n  - name: "Percona"`n    careers_url: "http://percona.com/careers"`n    enabled: true
-`n  - name: "Pex"`n    careers_url: "https://pex.com/careers/"`n    enabled: true
-`n  - name: "Pindrop"`n    careers_url: "https://www.pindrop.com/company/careers"`n    enabled: true
-`n  - name: "Platform Builders"`n    careers_url: "https://jobs.kenoby.com/sejabuilder"`n    enabled: true
-`n  - name: "platform.sh"`n    careers_url: "https://platform.sh/company/careers/"`n    enabled: true
-`n  - name: "Pleo"`n    careers_url: "https://www.pleo.io/da/careers/"`n    enabled: true
-`n  - name: "Plex"`n    careers_url: "https://www.plex.tv/about/careers/"`n    enabled: true
-`n  - name: "PNC Financial Services"`n    careers_url: "https://careers.pnc.com/"`n    enabled: true
-`n  - name: "Polygon"`n    careers_url: "https://polygon.technology/careers/#all-roles"`n    enabled: true
-`n  - name: "Positiwise"`n    careers_url: "https://positiwise.com/careers"`n    enabled: true
-`n  - name: "PowerSchool"`n    careers_url: "https://www.powerschool.com/company/careers/"`n    enabled: true
-`n  - name: "Precision Nutrition"`n    careers_url: "https://www.precisionnutrition.com/jobs"`n    enabled: true
-`n  - name: "Prelude"`n    careers_url: "https://www.prelude.co/careers"`n    enabled: true
-`n  - name: "Prezi"`n    careers_url: "https://prezi.com/jobs"`n    enabled: true
-`n  - name: "Prezly"`n    careers_url: "https://www.prezly.com/careers"`n    enabled: true
-`n  - name: "Primer"`n    careers_url: "https://primer.io/careers"`n    enabled: true
-`n  - name: "Primotly"`n    careers_url: "https://primotly.com/career/"`n    enabled: true
-`n  - name: "Prisma"`n    careers_url: "https://www.prisma.io/careers"`n    enabled: true
-`n  - name: "PrivacyCloud"`n    careers_url: "https://github.com/privacycloud/jobs"`n    enabled: true
-`n  - name: "Procenge"`n    careers_url: "https://jobs.solides.com/procenge#"`n    enabled: true
-`n  - name: "Procurify"`n    careers_url: "https://www.procurify.com/careers"`n    enabled: true
-`n  - name: "Prominent Edge"`n    careers_url: "https://prominentedge.com/careers"`n    enabled: true
-`n  - name: "Puppet"`n    careers_url: "https://puppet.com/company/careers"`n    enabled: true
-`n  - name: "PwC"`n    careers_url: "https://www.pwc.com/gx/en/careers.html"`n    enabled: true
-`n  - name: "Qatium"`n    careers_url: "https://qatium.recruitee.com/"`n    enabled: true
-`n  - name: "Quaderno"`n    careers_url: "https://quaderno.io/jobs/"`n    enabled: true
-`n  - name: "QuestDB"`n    careers_url: "https://questdb.io/careers"`n    enabled: true
-`n  - name: "QuickTrials"`n    careers_url: "https://www.quicktrials.com/open-jobs/"`n    enabled: true
-`n  - name: "Quora"`n    careers_url: "https://www.quora.com/careers/"`n    enabled: true
-`n  - name: "Rackspace"`n    careers_url: "https://github.com/rackspace/rackspace_jobs"`n    enabled: true
-`n  - name: "Raft"`n    careers_url: "https://goraft.tech/join/"`n    enabled: true
-`n  - name: "Railscarma"`n    careers_url: "https://www.railscarma.com/careers/."`n    enabled: true
-`n  - name: "Rainforest QA"`n    careers_url: "https://www.rainforestqa.com/jobs"`n    enabled: true
-`n  - name: "Rakuten Travel Xchange"`n    careers_url: "https://solutions.travel.rakuten.com/jobs"`n    enabled: true
-`n  - name: "Ramp"`n    careers_url: "https://ramp.com/careers"`n    enabled: true
-`n  - name: "Reaction Commerce"`n    careers_url: "http://reactioncommerce.com/careers"`n    enabled: true
-`n  - name: "ReactiveOps, Inc."`n    careers_url: "https://www.reactiveops.com/careers/site-reliability-engineer/"`n    enabled: true
-`n  - name: "RebelMouse"`n    careers_url: "https://www.linkedin.com/company/rebelmouse/jobs/"`n    enabled: true
-`n  - name: "ReCharge Payments"`n    careers_url: "https://boards.greenhouse.io/recharge"`n    enabled: true
-`n  - name: "Recurly"`n    careers_url: "https://recurly.com/jobs/"`n    enabled: true
-`n  - name: "Red Hat"`n    careers_url: "https://www.redhat.com/en/jobs"`n    enabled: true
-`n  - name: "Reddit"`n    careers_url: "https://www.redditinc.com/careers"`n    enabled: true
-`n  - name: "Redlio Designs"`n    careers_url: "https://redliodesigns.com/career"`n    enabled: true
-`n  - name: "Redox"`n    careers_url: "https://www.redoxengine.com/company/careers/"`n    enabled: true
-`n  - name: "Refundid"`n    careers_url: "https://www.linkedin.com/company/refundid/jobs/"`n    enabled: true
-`n  - name: "reinteractive"`n    careers_url: "https://reinteractive.com/careers"`n    enabled: true
-`n  - name: "RemoteBase"`n    careers_url: "https://apply.workable.com/remotebase/"`n    enabled: true
-`n  - name: "RemoteMore"`n    careers_url: "https://remotemore.com/careers/"`n    enabled: true
-`n  - name: "Renaissance"`n    careers_url: "https://careers.smartrecruiters.com/Renaissance"`n    enabled: true
-`n  - name: "RenoFi"`n    careers_url: "https://renofi.com/careers/"`n    enabled: true
-`n  - name: "Replit"`n    careers_url: "https://replit.com/site/careers"`n    enabled: true
-`n  - name: "Research Square"`n    careers_url: "https://www.researchsquare.com/company/careers"`n    enabled: true
-`n  - name: "Revolgy"`n    careers_url: "https://www.revolgy.com/career#open-positions"`n    enabled: true
-`n  - name: "Revolut"`n    careers_url: "https://www.revolut.com/careers/"`n    enabled: true
-`n  - name: "Roadpass Digital"`n    careers_url: "https://roadtrippers.applytojob.com/apply"`n    enabled: true
-`n  - name: "Roadtrippers"`n    careers_url: "https://www.roadtrippers.com/careers"`n    enabled: true
-`n  - name: "Rocket.Chat"`n    careers_url: "https://rocket.chat/jobs"`n    enabled: true
-`n  - name: "rtCamp Solutions"`n    careers_url: "https://rtcamp.com/careers/"`n    enabled: true
-`n  - name: "SadaPay"`n    careers_url: "https://sadapay.pk/careers/"`n    enabled: true
-`n  - name: "Safeguard Global"`n    careers_url: "https://www.safeguardglobal.com/careers/"`n    enabled: true
-`n  - name: "Salesforce"`n    careers_url: "https://salesforce.wd1.myworkdayjobs.com/External_Career_Site"`n    enabled: true
-`n  - name: "Sandhills Development"`n    careers_url: "http://sandhillsdev.com/careers/"`n    enabled: true
-`n  - name: "Sardine.ai"`n    careers_url: "https://www.sardine.ai/careers"`n    enabled: true
-`n  - name: "Scalac"`n    careers_url: "https://scalac.io/careers/"`n    enabled: true
-`n  - name: "Scandit"`n    careers_url: "https://www.scandit.com/careers/"`n    enabled: true
-`n  - name: "Scopic Software"`n    careers_url: "https://scopicsoftware.com/careers/"`n    enabled: true
-`n  - name: "Scrapinghub"`n    careers_url: "https://apply.workable.com/scrapinghub/"`n    enabled: true
-`n  - name: "ScyllaDB"`n    careers_url: "https://www.scylladb.com/company/careers/"`n    enabled: true
-`n  - name: "Seaplane"`n    careers_url: "https://careers.smartrecruiters.com/SeaplaneIOInc"`n    enabled: true
-`n  - name: "SeatGeek"`n    careers_url: "https://seatgeek.com/jobs?departments=softwareengineering&locations=all"`n    enabled: true
-`n  - name: "SecurityScorecard"`n    careers_url: "https://securityscorecard.com/company/careers"`n    enabled: true
-`n  - name: "Seeq"`n    careers_url: "https://www.seeq.com/about/careers"`n    enabled: true
-`n  - name: "Semaphore"`n    careers_url: "https://semaphoreci.com/about/careers"`n    enabled: true
-`n  - name: "Sendwave (International Remittance)"`n    careers_url: "https://www.sendwave.com/careers"`n    enabled: true
-`n  - name: "SerpApi"`n    careers_url: "https://serpapi.com/careers"`n    enabled: true
-`n  - name: "Server Density"`n    careers_url: "https://www.serverdensity.com/jobs/"`n    enabled: true
-`n  - name: "Shareup"`n    careers_url: "https://shareup.app/jobs/"`n    enabled: true
-`n  - name: "Shippabo"`n    careers_url: "https://apply.workable.com/shippabo/?lng=en#jobs"`n    enabled: true
-`n  - name: "Shogun"`n    careers_url: "https://angel.co/shogun/jobs"`n    enabled: true
-`n  - name: "Shopify"`n    careers_url: "https://www.shopify.com/careers"`n    enabled: true
-`n  - name: "Sigma Defense"`n    careers_url: "https://sigmadefense.com/careers/"`n    enabled: true
-`n  - name: "SignEasy"`n    careers_url: "https://signeasy.com/jobs/"`n    enabled: true
-`n  - name: "Silverfin"`n    careers_url: "https://www.silverfin.com/careers"`n    enabled: true
-`n  - name: "Sketch"`n    careers_url: "https://jobs.ashbyhq.com/sketch/3cd3f073-2fae-40be-a072-65d56e89a1dd"`n    enabled: true
-`n  - name: "Skillshare"`n    careers_url: "https://jobs.lever.co/skillshare?location=Anywhere"`n    enabled: true
-`n  - name: "Skyrocket Ventures"`n    careers_url: "https://www.linkedin.com/jobs/view/jr-to-lead-backend-software-engineer-productivity-startup-at-skyrocket-ventures-1959922824/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"`n    enabled: true
-`n  - name: "Slack"`n    careers_url: "https://slack.com/careers"`n    enabled: true
-`n  - name: "Smile.io"`n    careers_url: "https://smile.io/careers"`n    enabled: true
-`n  - name: "Smmile Digital"`n    careers_url: "https://smmile.com/career-digital-marketing-agency-singapore/"`n    enabled: true
-`n  - name: "SmugMug"`n    careers_url: "https://jobs.smugmug.com/"`n    enabled: true
-`n  - name: "Socket Supply Co"`n    careers_url: "https://socketsupply.co/jobs/"`n    enabled: true
-`n  - name: "SoftwareMill"`n    careers_url: "https://softwaremill.com/join-us"`n    enabled: true
-`n  - name: "Sonatype"`n    careers_url: "https://www.sonatype.com/company/careers"`n    enabled: true
-`n  - name: "Soshace, LLC."`n    careers_url: "https://soshace.com/careers"`n    enabled: true
-`n  - name: "Sourcegraph"`n    careers_url: "https://sourcegraph.com/careers"`n    enabled: true
-`n  - name: "Spoqa, Inc."`n    careers_url: "https://spoqa.co.kr/careers/#recruit"`n    enabled: true
-`n  - name: "Spotify"`n    careers_url: "https://www.lifeatspotify.com/jobs"`n    enabled: true
-`n  - name: "Spreaker"`n    careers_url: "https://careers.spreaker.com/opportunities/"`n    enabled: true
-`n  - name: "Spreedly"`n    careers_url: "https://spreedly.com/jobs"`n    enabled: true
-`n  - name: "Spruce"`n    careers_url: "https://getspruce.com/careers/"`n    enabled: true
-`n  - name: "Stairlin"`n    careers_url: "https://stairlin.com/jobs.html"`n    enabled: true
-`n  - name: "Status"`n    careers_url: "https://status.im/open-positions.html"`n    enabled: true
-`n  - name: "Sticker Mule"`n    careers_url: "https://www.stickermule.com/careers"`n    enabled: true
-`n  - name: "Stitch Fix"`n    careers_url: "https://www.stitchfix.com/careers/jobs"`n    enabled: true
-`n  - name: "StoneCo"`n    careers_url: "https://www.stone.co/careers.html"`n    enabled: true
-`n  - name: "StormX"`n    careers_url: "https://stormx.io/careers"`n    enabled: true
-`n  - name: "Strapi"`n    careers_url: "https://strapi.io/careers"`n    enabled: true
-`n  - name: "StreamNative"`n    careers_url: "https://streamnative.io/careers"`n    enabled: true
-`n  - name: "Stripe"`n    careers_url: "https://stripe.com/jobs"`n    enabled: true
-`n  - name: "Surevine"`n    careers_url: "https://www.surevine.com/jobs/"`n    enabled: true
-`n  - name: "SUSE"`n    careers_url: "https://jobs.suse.com"`n    enabled: true
-`n  - name: "Sutherland CloudSource"`n    careers_url: "https://www.sutherlandglobal.com/careers"`n    enabled: true
-`n  - name: "Svix"`n    careers_url: "https://www.svix.com/careers/"`n    enabled: true
-`n  - name: "SweetRush"`n    careers_url: "https://www.sweetrush.com/join-us/"`n    enabled: true
-`n  - name: "Swif.ai"`n    careers_url: "https://www.ycombinator.com/companies/swif-ai/jobs"`n    enabled: true
-`n  - name: "Swiggy"`n    careers_url: "https://careers.swiggy.com/#/"`n    enabled: true
-`n  - name: "Swimlane"`n    careers_url: "https://swimlane.com/about/careers/"`n    enabled: true
-`n  - name: "Syde"`n    careers_url: "https://syde.com/career/"`n    enabled: true
-`n  - name: "Sysdig"`n    careers_url: "https://sysdig.com/jobs"`n    enabled: true
-`n  - name: "Tag1 Consulting"`n    careers_url: "https://www.linkedin.com/company/tag1consulting/jobs/"`n    enabled: true
-`n  - name: "Taledo"`n    careers_url: "https://www.taledo.com/careers"`n    enabled: true
-`n  - name: "Taplytics"`n    careers_url: "https://jobs.lever.co/taplytics"`n    enabled: true
-`n  - name: "TatvaSoft"`n    careers_url: "https://www.tatvasoft.com/career"`n    enabled: true
-`n  - name: "TaxJar"`n    careers_url: "https://www.taxjar.com/jobs/"`n    enabled: true
-`n  - name: "TeamSnap"`n    careers_url: "https://www.teamsnap.com/company/careers"`n    enabled: true
-`n  - name: "TeamUltra - an Elite ServiceNow Partner"`n    careers_url: "https://www.computacenter.com/en-gb/careers"`n    enabled: true
-`n  - name: "TED"`n    careers_url: "https://tedconferencesllc.applytojob.com/apply"`n    enabled: true
-`n  - name: "Telerik"`n    careers_url: "https://www.progress.com/company/careers"`n    enabled: true
-`n  - name: "Telestax Inc."`n    careers_url: "https://telestax.com/careers/"`n    enabled: true
-`n  - name: "Tenable"`n    careers_url: "https://careers.tenable.com/search/jobs/in/remote"`n    enabled: true
-`n  - name: "Teravision Technologies"`n    careers_url: "https://www.teravisiontech.com/careers/results"`n    enabled: true
-`n  - name: "TestGorilla"`n    careers_url: "https://www.testgorilla.com/careers/"`n    enabled: true
-`n  - name: "The Ghost Foundation"`n    careers_url: "https://ghost.workable.com"`n    enabled: true
-`n  - name: "The Home Depot"`n    careers_url: "https://careers.homedepot.com/career-areas/technology/"`n    enabled: true
-`n  - name: "The Publisher Desk"`n    careers_url: "https://www.linkedin.com/company/publisher-desk/jobs/"`n    enabled: true
-`n  - name: "The Scale Factory"`n    careers_url: "http://www.scalefactory.com/team/careers"`n    enabled: true
-`n  - name: "The Wirecutter"`n    careers_url: "https://thewirecutter.com/jobs/"`n    enabled: true
-`n  - name: "TheoremOne"`n    careers_url: "https://jobs.lever.co/theoremonellc"`n    enabled: true
-`n  - name: "Thinkful"`n    careers_url: "https://www.thinkful.com/about/careers/"`n    enabled: true
-`n  - name: "Third Iron"`n    careers_url: "https://thirdiron.com/careers/"`n    enabled: true
-`n  - name: "Thorn"`n    careers_url: "https://www.thorn.org/careers/"`n    enabled: true
-`n  - name: "Thrive Market"`n    careers_url: "https://thrivemarketjobs.com/"`n    enabled: true
-`n  - name: "Tide"`n    careers_url: "https://www.tide.co/careers/#jobs"`n    enabled: true
-`n  - name: "TimeSpot"`n    careers_url: "https://timespothq.com/careers/"`n    enabled: true
-`n  - name: "Tipe"`n    careers_url: "https://angel.co/tipe/jobs"`n    enabled: true
-`n  - name: "Toast"`n    careers_url: "https://careers.toasttab.com/"`n    enabled: true
-`n  - name: "toggl"`n    careers_url: "http://jobs.toggl.com"`n    enabled: true
-`n  - name: "Toptal"`n    careers_url: "https://www.toptal.com/careers"`n    enabled: true
-`n  - name: "Tower"`n    careers_url: "https://www.git-tower.com/company/jobs/"`n    enabled: true
-`n  - name: "Travis"`n    careers_url: "https://www.travistravis.co/career"`n    enabled: true
-`n  - name: "Travis CI"`n    careers_url: "https://www.linkedin.com/company/travis-ci/jobs/"`n    enabled: true
-`n  - name: "Treehouse"`n    careers_url: "https://teamtreehouse.com/jobs"`n    enabled: true
-`n  - name: "Treez"`n    careers_url: "https://www.treez.io/careers"`n    enabled: true
-`n  - name: "Trello"`n    careers_url: "https://www.atlassian.com/company/careers/trello#job-list"`n    enabled: true
-`n  - name: "Tribe"`n    careers_url: "https://www.tribexyz.com/careers"`n    enabled: true
-`n  - name: "Truelogic"`n    careers_url: "https://boards.greenhouse.io/truelogic"`n    enabled: true
-`n  - name: "TrussWorks"`n    careers_url: "https://truss.works/jobs"`n    enabled: true
-`n  - name: "Tuft & Needle"`n    careers_url: "https://careers.tn.com/"`n    enabled: true
-`n  - name: "Turing"`n    careers_url: "https://careers.turing.com/"`n    enabled: true
-`n  - name: "Turtlemint"`n    careers_url: "https://careers.turtlemint.com/jobs"`n    enabled: true
-`n  - name: "Twilio"`n    careers_url: "https://www.twilio.com/company/jobs"`n    enabled: true
-`n  - name: "Two"`n    careers_url: "https://www.two.ai/careers"`n    enabled: true
-`n  - name: "Udacity"`n    careers_url: "https://www.udacity.com/jobs"`n    enabled: true
-`n  - name: "Uhuru"`n    careers_url: "https://uhurunetwork.com/careers/"`n    enabled: true
-`n  - name: "Uncapped"`n    careers_url: "https://www.weareuncapped.com/careers"`n    enabled: true
-`n  - name: "Upwork Pro"`n    careers_url: "https://careers.upwork.com/jobs/search"`n    enabled: true
-`n  - name: "USAA"`n    careers_url: "https://www.usaajobs.com/"`n    enabled: true
-`n  - name: "Ushahidi"`n    careers_url: "https://ushahidi.workable.com/"`n    enabled: true
-`n  - name: "uShip"`n    careers_url: "https://about.uship.com/careers/"`n    enabled: true
-`n  - name: "Valimail"`n    careers_url: "https://www.valimail.com/careers/"`n    enabled: true
-`n  - name: "Varnish Software"`n    careers_url: "https://www.varnish-software.com/careers/"`n    enabled: true
-`n  - name: "vast limits"`n    careers_url: "https://vastlimits.com/#jobs"`n    enabled: true
-`n  - name: "Veeva Systems"`n    careers_url: "https://careers.veeva.com"`n    enabled: true
-`n  - name: "Vercel"`n    careers_url: "https://vercel.com/careers"`n    enabled: true
-`n  - name: "Veryfi"`n    careers_url: "https://angel.co/company/veryfi/jobs"`n    enabled: true
-`n  - name: "VGS"`n    careers_url: "http://verygoodsecurity.com/careers"`n    enabled: true
-`n  - name: "Viperdev"`n    careers_url: "https://viperdev.io/en/jobs/"`n    enabled: true
-`n  - name: "Virta Health"`n    careers_url: "https://www.virtahealth.com/careers"`n    enabled: true
-`n  - name: "Vivo"`n    careers_url: "https://vivo.gupy.io"`n    enabled: true
-`n  - name: "VMware"`n    careers_url: "https://careers.vmware.com/main/"`n    enabled: true
-`n  - name: "Vox Media (Product Team)"`n    careers_url: "https://www.voxmedia.com/pages/careers-jobs"`n    enabled: true
-`n  - name: "Voxy"`n    careers_url: "https://jobs.lever.co/voxy"`n    enabled: true
-`n  - name: "VSHN AG"`n    careers_url: "https://vshn.ch/jobs"`n    enabled: true
-`n  - name: "WalletHub"`n    careers_url: "https://wallethub.com/jobs"`n    enabled: true
-`n  - name: "WebDevStudios"`n    careers_url: "https://webdevstudios.com/careers/"`n    enabled: true
-`n  - name: "WebFX"`n    careers_url: "https://www.webfx.com/careers/"`n    enabled: true
-`n  - name: "Webrunners GmbH"`n    careers_url: "https://www.webrunners.de/jobs/"`n    enabled: true
-`n  - name: "Wells Fargo"`n    careers_url: "https://www.wellsfargo.com/about/careers/"`n    enabled: true
-`n  - name: "wemake.services"`n    careers_url: "https://wemake.services/meta/job-application"`n    enabled: true
-`n  - name: "Whitecap SEO"`n    careers_url: "https://www.whitecapseo.com/careers"`n    enabled: true
-`n  - name: "WikiHow"`n    careers_url: "https://www.wikihow.com/wikiHow:Jobs"`n    enabled: true
-`n  - name: "Wikimedia Foundation"`n    careers_url: "https://wikimediafoundation.org/wiki/Work_with_us#Wikimedia_Careers"`n    enabled: true
-`n  - name: "Wildbit"`n    careers_url: "http://wildbit.com/jobs"`n    enabled: true
-`n  - name: "Willings Inc"`n    careers_url: "https://willings.co.jp/en/join-us"`n    enabled: true
-`n  - name: "Wingify"`n    careers_url: "https://wingify.com/careers"`n    enabled: true
-`n  - name: "Wipro"`n    careers_url: "https://careers.wipro.com/careers-home/"`n    enabled: true
-`n  - name: "WireFuture"`n    careers_url: "https://wirefuture.com/careers"`n    enabled: true
-`n  - name: "Wizeline"`n    careers_url: "https://www.wizeline.com/careers/open-roles/"`n    enabled: true
-`n  - name: "Wolfram"`n    careers_url: "https://www.wolfram.com/company/careers/"`n    enabled: true
-`n  - name: "Wolverine Trading"`n    careers_url: "http://wolve.com/open-positions"`n    enabled: true
-`n  - name: "Wombat Security Technologies"`n    careers_url: "https://proofpoint.wd5.myworkdayjobs.com/ProofpointCareers/6/refreshFacet/318c8bb6f553100021d223d9780d30be"`n    enabled: true
-`n  - name: "WP-Media"`n    careers_url: "https://apply.workable.com/wp-media/"`n    enabled: true
-`n  - name: "Wyeworks"`n    careers_url: "https://www.wyeworks.com/careers"`n    enabled: true
-`n  - name: "X-Team"`n    careers_url: "https://x-team.com/join-application/"`n    enabled: true
-`n  - name: "Xapo"`n    careers_url: "https://xapo.com/en/careers"`n    enabled: true
-`n  - name: "XWP"`n    careers_url: "https://www.linkedin.com/company/xwp/jobs/"`n    enabled: true
-`n  - name: "Yahoo!"`n    careers_url: "https://www.yahooinc.com/careers/"`n    enabled: true
-`n  - name: "Yandex"`n    careers_url: "https://yandex.com/jobs/"`n    enabled: true
-`n  - name: "YAZIO"`n    careers_url: "https://www.yazio.com/en/jobs"`n    enabled: true
-`n  - name: "Yodo1"`n    careers_url: "https://www.yodo1.com/careers"`n    enabled: true
-`n  - name: "Yonder"`n    careers_url: "https://www.linkedin.com/company/yonder.io/jobs/"`n    enabled: true
-`n  - name: "You Need A Budget"`n    careers_url: "https://www.youneedabudget.com/careers/"`n    enabled: true
-`n  - name: "YouCanBook.me Ltd"`n    careers_url: "https://youcanbook.me/jobs/"`n    enabled: true
-`n  - name: "Zaneffi"`n    careers_url: "https://zaneffi.com/career"`n    enabled: true
-`n  - name: "Zapier"`n    careers_url: "https://zapier.com/jobs/"`n    enabled: true
-`n  - name: "Zemoso"`n    careers_url: "https://www.zemosolabs.com/open-positions"`n    enabled: true
-`n  - name: "Zip Co"`n    careers_url: "https://zip.co/us/about#careersection"`n    enabled: true
-`n  - name: "ZooTools"`n    careers_url: "https://zootools.notion.site/Careers-at-ZooTools-2e2815794b14415daca297506c54cb69"`n    enabled: true
-`n  - name: "Zup"`n    careers_url: "https://boards.greenhouse.io/zupinnovation"`n    enabled: true
-`n  - name: "AlphaSights"`n    careers_url: "https://www.alphasights.com/careers/"`n    enabled: true
-`n  - name: "Rechat"`n    careers_url: "https://rechat.rippling-ats.com/"`n    enabled: true
-`n  - name: "Roundproxies"`n    careers_url: "https://jobs.roundproxies.com/"`n    enabled: true
-`n  - name: "Remote Garage"`n    careers_url: "https://wellfound.com/company/remotegarage/jobs"`n    enabled: true
-`n  - name: "100 Thieves"`n    careers_url: "https://100thieves.com/pages/careers"`n    enabled: true
-`n  - name: "23andMe"`n    careers_url: "https://www.23andme.com/en-int/careers/"`n    enabled: true
-`n  - name: "3Com"`n    careers_url: "http://www.3com.com/careers/"`n    enabled: true
-`n  - name: "[24]7.ai"`n    careers_url: "https://www.247.ai/careers/"`n    enabled: true
-`n  - name: "Against Gravity"`n    careers_url: "https://recroom.com/careers"`n    enabled: true
-`n  - name: "AgilOne"`n    careers_url: "https://www.acquia.com/careers"`n    enabled: true
-`n  - name: "Airbnb"`n    careers_url: "https://careers.airbnb.com"`n    enabled: true
-`n  - name: "Ameritox"`n    careers_url: "https://www.weednews.co/jobs-that-dont-drug-test/"`n    enabled: true
-`n  - name: "Amplitude"`n    careers_url: "https://amplitude.com/careers"`n    enabled: true
-`n  - name: "App Annie"`n    careers_url: "https://www.data.ai/jobs"`n    enabled: true
-`n  - name: "Apple"`n    careers_url: "https://www.apple.com/careers/us/"`n    enabled: true
-`n  - name: "Armis"`n    careers_url: "https://www.armis.com/armis-careers/"`n    enabled: true
-`n  - name: "Assurex Health"`n    careers_url: "https://myriad.com/careers/"`n    enabled: true
-`n  - name: "Atari"`n    careers_url: "https://twitter.com/atari/jobs"`n    enabled: true
-`n  - name: "Athelas"`n    careers_url: "https://www.athelas.com/careers"`n    enabled: true
-`n  - name: "Aurora"`n    careers_url: "https://aurora.tech/careers"`n    enabled: true
-`n  - name: "Avanex"`n    careers_url: "http://www.avanex.com/careers"`n    enabled: true
-`n  - name: "Barefoot Networks"`n    careers_url: "https://www.intel.com/content/www/us/en/jobs/life-at-intel.html"`n    enabled: true
-`n  - name: "Barracuda Networks"`n    careers_url: "https://www.barracuda.com/company/careers"`n    enabled: true
-`n  - name: "Bird"`n    careers_url: "https://www.bird.co/careers/"`n    enabled: true
-`n  - name: "BridgeBio"`n    careers_url: "https://bridgebio.com/careers"`n    enabled: true
-`n  - name: "Cafepress"`n    careers_url: "https://www.cafepress.com/careers"`n    enabled: true
-`n  - name: "Carbon"`n    careers_url: "https://job-boards.greenhouse.io/carbon"`n    enabled: true
-`n  - name: "Chartboost"`n    careers_url: "https://loopme.com/chartboost/"`n    enabled: true
-`n  - name: "Cisco"`n    careers_url: "https://www.cisco.com/careers/"`n    enabled: true
-`n  - name: "Citizen"`n    careers_url: "https://www.citizen.com:443/careers"`n    enabled: true
-`n  - name: "Clari"`n    careers_url: "https://www.clari.com/careers/"`n    enabled: true
-`n  - name: "Clever"`n    careers_url: "https://www.clever.com/about/careers"`n    enabled: true
-`n  - name: "Clickatell"`n    careers_url: "https://www.clickatell.com/jobs"`n    enabled: true
-`n  - name: "Clover Health"`n    careers_url: "https://www.cloverhealth.com/about-us/careers"`n    enabled: true
-`n  - name: "Cobalt Robotics"`n    careers_url: "https://www.cobaltai.com/careers/"`n    enabled: true
-`n  - name: "Cohesity"`n    careers_url: "https://www.cohesity.com/careers/"`n    enabled: true
-`n  - name: "Cumulus Networks"`n    careers_url: "https://www.nvidia.com/en-us/about-nvidia/"`n    enabled: true
-`n  - name: "Dia&Co"`n    careers_url: "https://www.dia.com/jobs"`n    enabled: true
-`n  - name: "Docker"`n    careers_url: "https://www.docker.com/careers/"`n    enabled: true
-`n  - name: "Domino Data Lab"`n    careers_url: "https://domino.ai/careers"`n    enabled: true
-`n  - name: "DoorDash"`n    careers_url: "https://careersatdoordash.com"`n    enabled: true
-`n  - name: "Drift"`n    careers_url: "https://www.drift.com/careers"`n    enabled: true
-`n  - name: "Dropbox"`n    careers_url: "https://www.dropbox.jobs/en/"`n    enabled: true
-`n  - name: "Druva"`n    careers_url: "https://www.druva.com/why-druva/explore/careers"`n    enabled: true
-`n  - name: "Electronic Arts"`n    careers_url: "https://www.ea.com/careers"`n    enabled: true
-`n  - name: "Elevate"`n    careers_url: "https://jobs.ashbyhq.com/themindcompany"`n    enabled: true
-`n  - name: "Ethos"`n    careers_url: "https://www.ethos.com/careers/?utm_source=network&utm_medium=radio&utm_campaign=NoExcuses30s"`n    enabled: true
-`n  - name: "Eventbrite"`n    careers_url: "https://www.eventbritecareers.com/"`n    enabled: true
-`n  - name: "Evernote"`n    careers_url: "https://jobs.bendingspoons.com/"`n    enabled: true
-`n  - name: "Everwise"`n    careers_url: "https://www.geteverwise.com/careers"`n    enabled: true
-`n  - name: "Faire"`n    careers_url: "https://www.faire.com/careers"`n    enabled: true
-`n  - name: "FireEye"`n    careers_url: "https://careers.trellix.com/"`n    enabled: true
-`n  - name: "First Republic Bank"`n    careers_url: "https://www.jpmorganchase.com/careers"`n    enabled: true
-`n  - name: "Flex"`n    careers_url: "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers"`n    enabled: true
-`n  - name: "Front"`n    careers_url: "https://front.com/jobs"`n    enabled: true
-`n  - name: "GameFly"`n    careers_url: "https://www.gamefly.com/careers"`n    enabled: true
-`n  - name: "GenEdit"`n    careers_url: "https://breezebio.com/careers/"`n    enabled: true
-`n  - name: "GitHub"`n    careers_url: "https://www.github.careers/careers-home"`n    enabled: true
-`n  - name: "Glossier"`n    careers_url: "https://life.glossier.com/"`n    enabled: true
-`n  - name: "Good Eggs"`n    careers_url: "https://www.careers.goodeggs.com/"`n    enabled: true
-`n  - name: "Google"`n    careers_url: "https://www.google.com/about/careers/applications/"`n    enabled: true
-`n  - name: "Graphcore"`n    careers_url: "https://www.graphcore.ai/careers"`n    enabled: true
-`n  - name: "Green Dot"`n    careers_url: "https://secure.greendot.com/greendot/careers"`n    enabled: true
-`n  - name: "Guardant Health"`n    careers_url: "https://www.guardanthealth.com/careers/"`n    enabled: true
-`n  - name: "Health Catalyst"`n    careers_url: "https://www.healthcatalyst.com/job-openings"`n    enabled: true
-`n  - name: "Hearsay Systems"`n    careers_url: "https://www.yext.com/?utm_source=hearsay"`n    enabled: true
-`n  - name: "HireVue"`n    careers_url: "https://www.hirevue.com/careers"`n    enabled: true
-`n  - name: "Houzz"`n    careers_url: "https://www.houzz.com/jobs"`n    enabled: true
-`n  - name: "HubSpot"`n    careers_url: "https://www.hubspot.com/careers"`n    enabled: true
-`n  - name: "Infoblox"`n    careers_url: "https://www.infoblox.com/company/careers/"`n    enabled: true
-`n  - name: "Inkling"`n    careers_url: "https://apply.workable.com/echo360-inc/"`n    enabled: true
-`n  - name: "Instacart"`n    careers_url: "https://www.instacart.careers/"`n    enabled: true
-`n  - name: "Instagram"`n    careers_url: "https://www.instagram.com/careers"`n    enabled: true
-`n  - name: "Ironclad"`n    careers_url: "https://ironcladapp.com/careers"`n    enabled: true
-`n  - name: "Jive"`n    careers_url: "https://ignitetech.ai/software-library/jive/"`n    enabled: true
-`n  - name: "KAYAK"`n    careers_url: "https://www.kayak.com/careers"`n    enabled: true
-`n  - name: "Klarna"`n    careers_url: "https://www.klarna.com/careers/"`n    enabled: true
-`n  - name: "Lifecode"`n    careers_url: "https://lifecodehealth.com/careers/"`n    enabled: true
-`n  - name: "Lilt"`n    careers_url: "https://lilt.com/careers"`n    enabled: true
-`n  - name: "Limbix"`n    careers_url: "https://www.bighealth.com"`n    enabled: true
-`n  - name: "LinkedIn"`n    careers_url: "https://www.linkedin.com/jobs"`n    enabled: true
-`n  - name: "LitePoint"`n    careers_url: "https://jobs.teradyne.com/LitePoint"`n    enabled: true
-`n  - name: "Luminate"`n    careers_url: "https://ayndesk.com/careers"`n    enabled: true
-`n  - name: "Mapillary"`n    careers_url: "https://www.mapillary.com/careers?locale=ar_AR"`n    enabled: true
-`n  - name: "MarkLogic"`n    careers_url: "https://www.progress.com/marklogic"`n    enabled: true
-`n  - name: "Maven"`n    careers_url: "https://www.mavenclinic.com/careers"`n    enabled: true
-`n  - name: "Medallia"`n    careers_url: "https://jobs.medallia.com/"`n    enabled: true
-`n  - name: "Mellanox"`n    careers_url: "https://www.nvidia.com/en-us/about-nvidia/careers/"`n    enabled: true
-`n  - name: "Meraki"`n    careers_url: "https://careers.cisco.com/global/en/home"`n    enabled: true
-`n  - name: "Metanautix"`n    careers_url: "https://www.premiumtimesng.com/casino/hu/legjobb-online-kaszino-bonusz/"`n    enabled: true
-`n  - name: "Metaswitch Networks"`n    careers_url: "https://www.metaswitch.com"`n    enabled: true
-`n  - name: "MongoDB"`n    careers_url: "https://www.mongodb.com/company/careers"`n    enabled: true
-`n  - name: "Moovit"`n    careers_url: "https://moovitapp.com/join-us"`n    enabled: true
-`n  - name: "Mu Sigma"`n    careers_url: "https://www.mu-sigma.com/career/"`n    enabled: true
-`n  - name: "Namely"`n    careers_url: "https://vensure.com/about-us/careers/"`n    enabled: true
-`n  - name: "Natera"`n    careers_url: "https://www.natera.com/company/careers/"`n    enabled: true
-`n  - name: "Netezza"`n    careers_url: "https://www.ibm.com/us-en"`n    enabled: true
-`n  - name: "Nimble"`n    careers_url: "https://www.nimblerx.com/careers"`n    enabled: true
-`n  - name: "Noom"`n    careers_url: "https://www.noom.com/careers/job-listings/"`n    enabled: true
-`n  - name: "Numerify"`n    careers_url: "https://digital.ai/why-digital-ai/careers/"`n    enabled: true
-`n  - name: "NVIDIA"`n    careers_url: "https://www.nvidia.com/en-us/about-nvidia/careers/"`n    enabled: true
-`n  - name: "Orchid Labs"`n    careers_url: "https://www.orchid.com/careers/"`n    enabled: true
-`n  - name: "Palo Alto Networks"`n    careers_url: "https://jobs.paloaltonetworks.com/en"`n    enabled: true
-`n  - name: "PayPal"`n    careers_url: "https://careers.pypl.com/home/"`n    enabled: true
-`n  - name: "PicsArt"`n    careers_url: "https://picsart.com/careers/"`n    enabled: true
-`n  - name: "Pocket Gems"`n    careers_url: "https://www.pocketgems.com/careers/"`n    enabled: true
-`n  - name: "Polychain Capital"`n    careers_url: "https://jobs.polychain.capital/companies"`n    enabled: true
-`n  - name: "POPSUGAR"`n    careers_url: "https://corp.voxmedia.com/jobs/"`n    enabled: true
-`n  - name: "Progress Software"`n    careers_url: "https://www.progress.com/company/careers"`n    enabled: true
-`n  - name: "Prosper"`n    careers_url: "https://www.prosper.com:443/jobs"`n    enabled: true
-`n  - name: "Qualtrics"`n    careers_url: "https://www.qualtrics.com/careers/us/en"`n    enabled: true
-`n  - name: "Quantum Circuits"`n    careers_url: "https://quantumcircuits.com/join-our-team/"`n    enabled: true
-`n  - name: "Rackspace"`n    careers_url: "https://rackspace.wd1.myworkdayjobs.com/External"`n    enabled: true
-`n  - name: "Rappi"`n    careers_url: "https://images.rappi.com/cms-web/images/join_4f83d0801b.png?e=webp&amp;d=400x200&amp;q=80"`n    enabled: true
-`n  - name: "Re:store"`n    careers_url: "https://www.join-restore.com/default.xsl?sitemap=root"`n    enabled: true
-`n  - name: "reddit"`n    careers_url: "https://www.reddit.com/careers"`n    enabled: true
-`n  - name: "Remix"`n    careers_url: "https://ridewithvia.com/careers/"`n    enabled: true
-`n  - name: "RingCentral"`n    careers_url: "https://www.ringcentral.com/company/careers/overview.html"`n    enabled: true
-`n  - name: "Robinhood"`n    careers_url: "https://careers.robinhood.com/"`n    enabled: true
-`n  - name: "Ruckus Wireless"`n    careers_url: "https://www.ruckusnetworks.com/?utm_source=ruckus&utm_medium=redirect"`n    enabled: true
-`n  - name: "Saba Software"`n    careers_url: "https://www.cornerstoneondemand.com/"`n    enabled: true
-`n  - name: "Scanntech"`n    careers_url: "https://www.scanntech.com.br/en/careers/"`n    enabled: true
-`n  - name: "SecurityScorecard"`n    careers_url: "https://securityscorecard.com/company/careers/"`n    enabled: true
-`n  - name: "SimpliSafe"`n    careers_url: "https://careers.simplisafe.com"`n    enabled: true
-`n  - name: "Skyscanner"`n    careers_url: "https://www.skyscanner.com/jobs"`n    enabled: true
-`n  - name: "Snowflake"`n    careers_url: "https://careers.snowflake.com/us/en"`n    enabled: true
-`n  - name: "Sourcefire"`n    careers_url: "https://www.cisco.com/site/us/en/products/security/index.html"`n    enabled: true
-`n  - name: "Square"`n    careers_url: "https://block.xyz/careers/jobs?businessUnits%5B%5D=square"`n    enabled: true
-`n  - name: "StackRox"`n    careers_url: "https://www.redhat.com/en/jobs"`n    enabled: true
-`n  - name: "StarkWare"`n    careers_url: "https://starkware.co/careers/"`n    enabled: true
-`n  - name: "Strava"`n    careers_url: "https://www.strava.com/careers"`n    enabled: true
-`n  - name: "Streamlabs"`n    careers_url: "https://www.logitech.com/en-us/careers"`n    enabled: true
-`n  - name: "Stripe"`n    careers_url: "https://stripe.com/ae/jobs"`n    enabled: true
-`n  - name: "Sumo Logic"`n    careers_url: "https://www.sumologic.com/company/careers"`n    enabled: true
-`n  - name: "Sunrun"`n    careers_url: "https://careers.sunrun.com/"`n    enabled: true
-`n  - name: "Telcare"`n    careers_url: "https://www.careers.philips.com/emea/en"`n    enabled: true
-`n  - name: "Tessian"`n    careers_url: "https://www.proofpoint.com/us/company/careers"`n    enabled: true
-`n  - name: "Thanx"`n    careers_url: "https://www.thanx.com/careers"`n    enabled: true
-`n  - name: "Threads"`n    careers_url: "https://www.threads.com/login/?next=https%3A%2F%2Fwww.threads.com%2Fcareers%2F"`n    enabled: true
-`n  - name: "Thumbtack"`n    careers_url: "https://www.thumbtack.com/careers"`n    enabled: true
-`n  - name: "Tourlane"`n    careers_url: "https://careers.tourlane.com/"`n    enabled: true
-`n  - name: "Tula Technology"`n    careers_url: "https://www.tulatech.com/careers/"`n    enabled: true
-`n  - name: "Tumblr"`n    careers_url: "https://www.tumblr.com/jobs"`n    enabled: true
-`n  - name: "TuneIn"`n    careers_url: "https://cms.tunein.com/careers/"`n    enabled: true
-`n  - name: "UiPath"`n    careers_url: "https://www.uipath.com/careers"`n    enabled: true
-`n  - name: "Unity Technologies"`n    careers_url: "https://unity.com/careers"`n    enabled: true
-`n  - name: "Verkada"`n    careers_url: "https://www.verkada.com/careers/"`n    enabled: true
-`n  - name: "Versa Networks"`n    careers_url: "https://versa-networks.com/careers/"`n    enabled: true
-`n  - name: "Weebly"`n    careers_url: "https://careers.squareup.com/us/en"`n    enabled: true
-`n  - name: "Whisper"`n    careers_url: "http://whisper.sh/careers"`n    enabled: true
-`n  - name: "Wonolo"`n    careers_url: "https://info.wonolo.com/careers/"`n    enabled: true
-`n  - name: "Xoom"`n    careers_url: "https://www.xoom.com/sign-in"`n    enabled: true
-`n  - name: "YouTube"`n    careers_url: "https://www.youtube.com/careers"`n    enabled: true
-`n  - name: "Zappos"`n    careers_url: "https://amazon.jobs/content/en/teams/north-america-stores/zappos"`n    enabled: true
-`n  - name: "Zipline"`n    careers_url: "https://www.zipline.com/newsroom/news/announcements/zipline-to-triple-u-s-manufacturing-facility-creating-more-jobs-in-ai-and-robotics"`n    enabled: true
-`n  - name: "ZirMed"`n    careers_url: "https://careers.waystar.com/?vs=4980&utm_source=waystar.com-DE&utm_medium=Other&utm_campaign=waystar.com"`n    enabled: true
-`n  - name: "Zoom"`n    careers_url: "https://explore.zoom.us/en/careers/"`n    enabled: true
-`n  - name: "Zum"`n    careers_url: "https://www.ridezum.com/company/careers/"`n    enabled: true
+
+  - name: '10up'
+    careers_url: 'https://10up.com/careers/'
+    enabled: true
+
+  - name: '15Five'
+    careers_url: 'https://www.15five.com/careers/'
+    enabled: true
+
+  - name: '1Password'
+    careers_url: 'https://1password.com/jobs/'
+    enabled: true
+
+  - name: '37signals'
+    careers_url: 'https://37signals.com/jobs'
+    enabled: true
+
+  - name: '3Blocks'
+    careers_url: 'https://www.linkedin.com/company/3blocks-io/jobs/'
+    enabled: true
+
+  - name: '90 Seconds'
+    careers_url: 'https://90seconds.com/about/careers/'
+    enabled: true
+
+  - name: 'A-1 Auto Transport'
+    careers_url: 'https://www.a1autotransport.com/a-1-auto-transport-employment-opportunities/'
+    enabled: true
+
+  - name: 'abiturma GmbH'
+    careers_url: 'https://www.abiturma.de/jobs'
+    enabled: true
+
+  - name: 'Ably'
+    careers_url: 'http://jobs.ably.io'
+    enabled: true
+
+  - name: 'Acquia'
+    careers_url: 'https://www.acquia.com/careers/open-positions'
+    enabled: true
+
+  - name: 'activecampaign'
+    careers_url: 'https://www.activecampaign.com/about/careers#openings'
+    enabled: true
+
+  - name: 'Ad Hoc'
+    careers_url: 'https://adhocteam.us/join/'
+    enabled: true
+
+  - name: 'Adaface'
+    careers_url: 'https://angel.co/company/adaface/jobs'
+    enabled: true
+
+  - name: 'addstructure'
+    careers_url: 'https://www.bazaarvoice.com/company/careers/'
+    enabled: true
+
+  - name: 'Adeva'
+    careers_url: 'https://adevait.com/careers/job-openings'
+    enabled: true
+
+  - name: 'Adzuna'
+    careers_url: 'https://apply.workable.com/adzuna-2/'
+    enabled: true
+
+  - name: 'Aerolab'
+    careers_url: 'http://careers.aerolab.co/'
+    enabled: true
+
+  - name: 'Aerostrat'
+    careers_url: 'https://aerostratsoftware.com/careers/'
+    enabled: true
+
+  - name: 'AEStudio'
+    careers_url: 'https://ae.studio/join-us'
+    enabled: true
+
+  - name: 'Aha!'
+    careers_url: 'http://www.aha.io/company/careers/current-openings'
+    enabled: true
+
+  - name: 'Aiir'
+    careers_url: 'https://aiir.com/about/working-at-aiir/'
+    enabled: true
+
+  - name: 'AIM India'
+    careers_url: 'https://www.aimincorp.com/carrers.php/'
+    enabled: true
+
+  - name: 'Airbyte'
+    careers_url: 'https://airbyte.com/careers'
+    enabled: true
+
+  - name: 'AirGarage'
+    careers_url: 'https://www.airgarage.com/careers'
+    enabled: true
+
+  - name: 'airtreks'
+    careers_url: 'https://airtreks.com/about/jobs-at-airtreks/'
+    enabled: true
+
+  - name: 'Akamai Technologies Inc'
+    careers_url: 'https://www.akamai.com/careers]\'
+    enabled: true
+
+  - name: 'Alami'
+    careers_url: 'https://alamisharia.co.id/en/career/'
+    enabled: true
+
+  - name: 'Alan'
+    careers_url: 'https://jobs.lever.co/alan'
+    enabled: true
+
+  - name: 'Algorand'
+    careers_url: 'https://www.algorand.com/about/careers/our-jobs'
+    enabled: true
+
+  - name: 'Algorithmia'
+    careers_url: 'https://algorithmia.bamboohr.com/jobs/'
+    enabled: true
+
+  - name: 'ALICE'
+    careers_url: 'https://www.aliceplatform.com/careers'
+    enabled: true
+
+  - name: 'Alight Solutions'
+    careers_url: 'https://careers.alight.com'
+    enabled: true
+
+  - name: 'Alley'
+    careers_url: 'https://alley.co/careers/,'
+    enabled: true
+
+  - name: 'ALLYDVM'
+    careers_url: 'https://weworkremotely.com/jobs/2867-senior-software-engineer'
+    enabled: true
+
+  - name: 'Amazon'
+    careers_url: 'https://www.amazon.jobs/'
+    enabled: true
+
+  - name: 'Ambaum'
+    careers_url: 'https://ambaum.com/careers'
+    enabled: true
+
+  - name: 'Andela'
+    careers_url: 'https://andela.com/join-andela/'
+    enabled: true
+
+  - name: 'animalz'
+    careers_url: 'https://www.animalz.co/jobs/'
+    enabled: true
+
+  - name: 'Annertech'
+    careers_url: 'https://www.annertech.com/careers'
+    enabled: true
+
+  - name: 'Anomali'
+    careers_url: 'https://jobs.lever.co/anomali'
+    enabled: true
+
+  - name: 'Apartment Therapy'
+    careers_url: 'http://www.apartmenttherapy.com/jobs'
+    enabled: true
+
+  - name: 'Appcues'
+    careers_url: 'https://www.appcues.com/company#jobs-open'
+    enabled: true
+
+  - name: 'Appen'
+    careers_url: 'https://jobs.lever.co/appen-2'
+    enabled: true
+
+  - name: 'Appinio'
+    careers_url: 'https://www.appinio.com/en/careers'
+    enabled: true
+
+  - name: 'Appstractor'
+    careers_url: 'https://www.appstractor.com/careers/'
+    enabled: true
+
+  - name: 'Appwrite'
+    careers_url: 'https://appwrite.io/company/careers'
+    enabled: true
+
+  - name: 'Argyle'
+    careers_url: 'https://argyle.com/careers#open-positions'
+    enabled: true
+
+  - name: 'Arkency'
+    careers_url: 'https://blog.arkency.com/join-our-team/'
+    enabled: true
+
+  - name: 'Art & Logic'
+    careers_url: 'https://artandlogic.com/careers/'
+    enabled: true
+
+  - name: 'Articulate'
+    careers_url: 'https://en-uk.articulate.com/company/careers.php'
+    enabled: true
+
+  - name: 'Asana'
+    careers_url: 'https://asana.com/jobs'
+    enabled: true
+
+  - name: 'Astronomer'
+    careers_url: 'https://astronomer.recruitee.com/'
+    enabled: true
+
+  - name: 'Atento'
+    careers_url: 'https://atento.gupy.io'
+    enabled: true
+
+  - name: 'Audiense'
+    careers_url: 'https://aboutus.audiense.com/careers'
+    enabled: true
+
+  - name: 'Aula Education'
+    careers_url: 'https://aulaatcoventry.notion.site/career](https://aulaatcoventry.notion.site/Aula-Work-with-us-b5f19ee874c5435591ac70b804aff8f9'
+    enabled: true
+
+  - name: 'Auth0'
+    careers_url: 'https://auth0.com/jobs'
+    enabled: true
+
+  - name: 'Axelerant'
+    careers_url: 'https://www.axelerant.com/careers'
+    enabled: true
+
+  - name: 'Axios'
+    careers_url: 'https://www.axios.com/careers/'
+    enabled: true
+
+  - name: 'Bairesdev'
+    careers_url: 'https://www.bairesdev.com/careers/'
+    enabled: true
+
+  - name: 'Balena'
+    careers_url: 'https://balena.workable.com/'
+    enabled: true
+
+  - name: 'Balsamiq'
+    careers_url: 'https://balsamiq.com/company/jobs/'
+    enabled: true
+
+  - name: 'Bandcamp'
+    careers_url: 'https://bandcamp.com/jobs'
+    enabled: true
+
+  - name: 'BandLab'
+    careers_url: 'https://apply.workable.com/bandlabtechnologies/'
+    enabled: true
+
+  - name: 'Bandzoogle'
+    careers_url: 'https://bandzoogle.com/jobs'
+    enabled: true
+
+  - name: 'Baremetrics'
+    careers_url: 'https://baremetrics.com/jobs'
+    enabled: true
+
+  - name: 'Basecamp'
+    careers_url: 'https://basecamp.com/about/jobs'
+    enabled: true
+
+  - name: 'Bear Group'
+    careers_url: 'https://www.beargroup.com/careers'
+    enabled: true
+
+  - name: 'BeBanjo'
+    careers_url: 'https://bebanjo.com/careers/'
+    enabled: true
+
+  - name: 'BeenVerified'
+    careers_url: 'https://www.beenverified.com/careers/'
+    enabled: true
+
+  - name: 'Best Practical Solutions'
+    careers_url: 'https://bestpractical.com/jobs'
+    enabled: true
+
+  - name: 'Betable'
+    careers_url: 'https://corp.betable.com/careers'
+    enabled: true
+
+  - name: 'BetterUp'
+    careers_url: 'https://www.betterup.com/about-us/careers'
+    enabled: true
+
+  - name: 'BeyondPricing'
+    careers_url: 'https://www.beyondpricing.com/about/careers'
+    enabled: true
+
+  - name: 'BharatPe'
+    careers_url: 'https://bharatpe.com/careers/'
+    enabled: true
+
+  - name: 'Big Cartel'
+    careers_url: 'https://www.bigcartel.com/jobs/'
+    enabled: true
+
+  - name: 'BigData Boutique'
+    careers_url: 'https://bigdataboutique.com/careers'
+    enabled: true
+
+  - name: 'Bill'
+    careers_url: 'https://www.bill.com/about-us/careers/'
+    enabled: true
+
+  - name: 'bilstein group'
+    careers_url: 'https://bilsteingroup.com/en/career/'
+    enabled: true
+
+  - name: 'Bit Zesty'
+    careers_url: 'https://bitzesty.com/careers/'
+    enabled: true
+
+  - name: 'Bitnami'
+    careers_url: 'https://bitnami.com/careers'
+    enabled: true
+
+  - name: 'Bitovi'
+    careers_url: 'http://bitovi.com/jobs'
+    enabled: true
+
+  - name: 'Bizink'
+    careers_url: 'https://bizinkonline.com/careers/'
+    enabled: true
+
+  - name: 'Blameless'
+    careers_url: 'https://www.blameless.com/careers'
+    enabled: true
+
+  - name: 'BlueCat Networks'
+    careers_url: 'https://bluecatnetworks.com/careers/'
+    enabled: true
+
+  - name: 'Bluespark'
+    careers_url: 'https://www.bluespark.com/careers'
+    enabled: true
+
+  - name: 'Boldare'
+    careers_url: 'https://boldare.com/career/'
+    enabled: true
+
+  - name: 'Bounteous'
+    careers_url: 'https://www.bounteous.com/careers/'
+    enabled: true
+
+  - name: 'Brainstorm Force'
+    careers_url: 'https://brainstormforce.com/join/'
+    enabled: true
+
+  - name: 'Bright Funds'
+    careers_url: 'https://www.brightfunds.org/jobs'
+    enabled: true
+
+  - name: 'Brikl'
+    careers_url: 'https://www.brikl.com/jobs'
+    enabled: true
+
+  - name: 'BriteCore'
+    careers_url: 'https://www.britecore.com/about-us/careers#positions'
+    enabled: true
+
+  - name: 'Bugfender'
+    careers_url: 'https://mobilejazz.com/jobs'
+    enabled: true
+
+  - name: 'BuySellAds'
+    careers_url: 'https://careers.jobscore.com/careers/buysellads'
+    enabled: true
+
+  - name: 'Cabify'
+    careers_url: 'https://cabify.com/en/jobs'
+    enabled: true
+
+  - name: 'Calendly'
+    careers_url: 'https://calendly.com/careers'
+    enabled: true
+
+  - name: 'Calibre'
+    careers_url: 'https://calibreapp.com/careers'
+    enabled: true
+
+  - name: 'CANCOM'
+    careers_url: 'https://career.cancom.com/'
+    enabled: true
+
+  - name: 'Canonical'
+    careers_url: 'http://www.canonical.com/careers/all-vacancies'
+    enabled: true
+
+  - name: 'Capgemini'
+    careers_url: 'https://www.capgemini.com/careers/'
+    enabled: true
+
+  - name: 'Capital One'
+    careers_url: 'https://www.capitalonecareers.com/tech'
+    enabled: true
+
+  - name: 'Capital Placement'
+    careers_url: 'https://capital-placement.com/careers'
+    enabled: true
+
+  - name: 'Capmo'
+    careers_url: 'https://capmo.jobs.personio.de'
+    enabled: true
+
+  - name: 'Carbon Black'
+    careers_url: 'https://www.carbonblack.com/company/careers/'
+    enabled: true
+
+  - name: 'Cards Against Humanity'
+    careers_url: 'https://www.cardsagainsthumanity.com/careers'
+    enabled: true
+
+  - name: 'CareCru'
+    careers_url: 'https://www.linkedin.com/company/carecru/jobs/'
+    enabled: true
+
+  - name: 'CareMessage'
+    careers_url: 'http://caremessage.org/careers'
+    enabled: true
+
+  - name: 'Carmatec'
+    careers_url: 'https://www.carmatec.com/careers/.'
+    enabled: true
+
+  - name: 'CartoDB'
+    careers_url: 'https://cartodb.com/jobs/'
+    enabled: true
+
+  - name: 'CartStack'
+    careers_url: 'https://www.cartstack.com/careers/'
+    enabled: true
+
+  - name: 'Casumo'
+    careers_url: 'http://www.casumocareers.com/'
+    enabled: true
+
+  - name: 'ChainLink Labs'
+    careers_url: 'https://chainlinklabs.com/jobs'
+    enabled: true
+
+  - name: 'Chargify'
+    careers_url: 'https://www.chargify.com/jobs'
+    enabled: true
+
+  - name: 'charity: water'
+    careers_url: 'https://my.hirehive.io/charity-water/jobs/38223/software-engineer-new-york'
+    enabled: true
+
+  - name: 'ChatGen'
+    careers_url: 'https://www.linkedin.com/company/chatgen/jobs/'
+    enabled: true
+
+  - name: 'Checkly'
+    careers_url: 'https://www.checklyhq.com/jobs'
+    enabled: true
+
+  - name: 'Chef'
+    careers_url: 'https://www.chef.io/careers/'
+    enabled: true
+
+  - name: 'Chess'
+    careers_url: 'https://www.chess.com/jobs'
+    enabled: true
+
+  - name: 'Chroma'
+    careers_url: 'https://www.chromatic.com/company/careers'
+    enabled: true
+
+  - name: 'CircleCI'
+    careers_url: 'https://boards.greenhouse.io/circleci'
+    enabled: true
+
+  - name: 'Circonus'
+    careers_url: 'https://jobs.lever.co/circonus'
+    enabled: true
+
+  - name: 'CivicActions'
+    careers_url: 'https://civicactions.com/careers/'
+    enabled: true
+
+  - name: 'Civo'
+    careers_url: 'https://www.civo.com/careers'
+    enabled: true
+
+  - name: 'Clevertech'
+    careers_url: 'https://clevertech.biz/careers'
+    enabled: true
+
+  - name: 'ClickUp'
+    careers_url: 'https://clickup.com/careers'
+    enabled: true
+
+  - name: 'Clootrack'
+    careers_url: 'https://www.clootrack.com/careers'
+    enabled: true
+
+  - name: 'Close'
+    careers_url: 'http://jobs.close.com'
+    enabled: true
+
+  - name: 'CloudApp'
+    careers_url: 'https://www.getcloudapp.com/careers'
+    enabled: true
+
+  - name: 'CloudEra'
+    careers_url: 'https://cloudera.wd5.myworkdayjobs.com/External_Career?remoteType=648856a73acb1001a30bbdb5cbb70002'
+    enabled: true
+
+  - name: 'CloudLinux'
+    careers_url: 'https://www.cloudlinux.com/about-us-company-jobs/'
+    enabled: true
+
+  - name: 'Coalition Technologies'
+    careers_url: 'https://coalitiontechnologies.com/jobs'
+    enabled: true
+
+  - name: 'Code Like a Girl'
+    careers_url: 'https://www.codelikeagirl.com/about/join-our-team/'
+    enabled: true
+
+  - name: 'CodeSandbox'
+    careers_url: 'https://codesandbox.io/jobs'
+    enabled: true
+
+  - name: 'Codeship'
+    careers_url: 'https://codeship.com/jobs'
+    enabled: true
+
+  - name: 'Cofense'
+    careers_url: 'https://cofense.com/company/careers'
+    enabled: true
+
+  - name: 'Coforma'
+    careers_url: 'https://coforma.io/careers'
+    enabled: true
+
+  - name: 'Cognizant'
+    careers_url: 'https://careers.cognizant.com/in/en'
+    enabled: true
+
+  - name: 'Coinbase'
+    careers_url: 'https://www.coinbase.com/careers/positions'
+    enabled: true
+
+  - name: 'Coingape'
+    careers_url: 'https://coingape.com/careers/'
+    enabled: true
+
+  - name: 'Collabora'
+    careers_url: 'https://www.collabora.com/careers.html'
+    enabled: true
+
+  - name: 'Comet'
+    careers_url: 'https://www.welcometothejungle.co/fr/companies/comet/jobs/spontaneous-applications'
+    enabled: true
+
+  - name: 'Compucorp'
+    careers_url: 'https://careers.compuco.io/open-roles'
+    enabled: true
+
+  - name: 'ConsenSys Inc'
+    careers_url: 'https://consensys.net/open-positions/'
+    enabled: true
+
+  - name: 'Consumer Financial Protection Bureau'
+    careers_url: 'https://www.consumerfinance.gov/about-us/careers/current-openings/'
+    enabled: true
+
+  - name: 'Continu'
+    careers_url: 'https://www.continu.com/careers'
+    enabled: true
+
+  - name: 'Convert'
+    careers_url: 'https://www.convert.com/jobs'
+    enabled: true
+
+  - name: 'Coodesh'
+    careers_url: 'https://www.linkedin.com/company/coodesh/jobs/'
+    enabled: true
+
+  - name: 'Core-Apps'
+    careers_url: 'https://www.core-apps.com/event-technology-company/jobs/'
+    enabled: true
+
+  - name: 'Corgibytes'
+    careers_url: 'http://corgibytes.com/careers/'
+    enabled: true
+
+  - name: 'Cosmic Chimps'
+    careers_url: 'https://www.linkedin.com/company/cosmic-chimps/jobs/'
+    enabled: true
+
+  - name: 'Coursera'
+    careers_url: 'https://about.coursera.org/careers/'
+    enabled: true
+
+  - name: 'CrateDB'
+    careers_url: 'https://cratedb.com/company/career'
+    enabled: true
+
+  - name: 'CrazyGames'
+    careers_url: 'https://jobs.crazygames.com/'
+    enabled: true
+
+  - name: 'Crossover'
+    careers_url: 'https://www.crossover.com/jobs'
+    enabled: true
+
+  - name: 'Crowdstrike'
+    careers_url: 'https://jobs.jobvite.com/crowdstrike/jobs'
+    enabled: true
+
+  - name: 'Customer.io'
+    careers_url: 'http://customer.io/careers'
+    enabled: true
+
+  - name: 'CVS Health'
+    careers_url: 'https://jobs.cvshealth.com/'
+    enabled: true
+
+  - name: 'CWT'
+    careers_url: 'https://careers.mycwt.com/'
+    enabled: true
+
+  - name: 'Cyber Whale'
+    careers_url: 'https://weloveremotejobs.com/employer/cyber-whale/'
+    enabled: true
+
+  - name: 'Daktronics'
+    careers_url: 'https://www.daktronics.com/en-us/employment/careers'
+    enabled: true
+
+  - name: 'DappRadar'
+    careers_url: 'https://dappradar.com/careers'
+    enabled: true
+
+  - name: 'darecode'
+    careers_url: 'https://darecode.com/job'
+    enabled: true
+
+  - name: 'Dashlane'
+    careers_url: 'https://www.dashlane.com/about/careers'
+    enabled: true
+
+  - name: 'Data Science Dojo'
+    careers_url: 'https://datasciencedojo.com/about/careers'
+    enabled: true
+
+  - name: 'DataCamp'
+    careers_url: 'https://datacamp.com/careers'
+    enabled: true
+
+  - name: 'Datadog'
+    careers_url: 'https://www.datadoghq.com/careers/detail/'
+    enabled: true
+
+  - name: 'DataStax'
+    careers_url: 'https://www.datastax.com/company/careers'
+    enabled: true
+
+  - name: 'Dave'
+    careers_url: 'https://dave.com/careers'
+    enabled: true
+
+  - name: 'DealDash'
+    careers_url: 'https://www.dealdash.com/careers'
+    enabled: true
+
+  - name: 'Deel'
+    careers_url: 'https://jobs.ashbyhq.com/Deel'
+    enabled: true
+
+  - name: 'Delighted'
+    careers_url: 'https://delighted.com/jobs'
+    enabled: true
+
+  - name: 'Deskpass'
+    careers_url: 'https://jobs.deskpass.com'
+    enabled: true
+
+  - name: 'Devsquad'
+    careers_url: 'https://apply.workable.com/devsquad'
+    enabled: true
+
+  - name: 'DGraph'
+    careers_url: 'http://dgraph.io/#jobs'
+    enabled: true
+
+  - name: 'DigitalOcean'
+    careers_url: 'https://www.digitalocean.com/company/careers/'
+    enabled: true
+
+  - name: 'Discord'
+    careers_url: 'https://discord.com/jobs'
+    enabled: true
+
+  - name: 'Docker'
+    careers_url: 'https://www.docker.com/careers'
+    enabled: true
+
+  - name: 'Doist'
+    careers_url: 'https://doist.com/jobs/'
+    enabled: true
+
+  - name: 'Doit'
+    careers_url: 'https://careers.doit.com/jobs'
+    enabled: true
+
+  - name: 'Dow jones'
+    careers_url: 'https://dowjones.jobs/'
+    enabled: true
+
+  - name: 'Dropbox'
+    careers_url: 'https://www.dropbox.com/jobs'
+    enabled: true
+
+  - name: 'Drupal Jedi'
+    careers_url: 'https://drupaljedi.com/careers'
+    enabled: true
+
+  - name: 'DuckDuckGo'
+    careers_url: 'https://duckduckgo.com/hiring/'
+    enabled: true
+
+  - name: 'EatStreet'
+    careers_url: 'https://eatstreet.com/careers'
+    enabled: true
+
+  - name: 'EBSCO Information Services'
+    careers_url: 'https://careers.ebscoind.com/ebscoinformationservices'
+    enabled: true
+
+  - name: 'Ebury'
+    careers_url: 'https://careers.ebury.com'
+    enabled: true
+
+  - name: 'Edgar'
+    careers_url: 'http://meetedgar.com/careers/'
+    enabled: true
+
+  - name: 'Elastic'
+    careers_url: 'https://www.elastic.co/about/careers'
+    enabled: true
+
+  - name: 'Elsewhen'
+    careers_url: 'https://careers.elsewhen.com/jobs'
+    enabled: true
+
+  - name: 'Embraer'
+    careers_url: 'https://embraer.gupy.io/'
+    enabled: true
+
+  - name: 'Employment Hero'
+    careers_url: 'https://employmenthero.com/careers'
+    enabled: true
+
+  - name: 'Emsisoft'
+    careers_url: 'https://www.emsisoft.com/en/company/jobs/'
+    enabled: true
+
+  - name: 'Encora'
+    careers_url: 'https://careers.encora.com/find-more-than-job'
+    enabled: true
+
+  - name: 'Enjoei'
+    careers_url: 'https://enjoei.gupy.io/'
+    enabled: true
+
+  - name: 'Envato'
+    careers_url: 'https://careers.envato.com/'
+    enabled: true
+
+  - name: 'Epic Games'
+    careers_url: 'https://www.epicgames.com/site/en-US/careers'
+    enabled: true
+
+  - name: 'Episource'
+    careers_url: 'https://www.episource.com/careers/'
+    enabled: true
+
+  - name: 'Epsy Health'
+    careers_url: 'https://epsyhealth.com/careers'
+    enabled: true
+
+  - name: 'Ergeon'
+    careers_url: 'https://www.ergeon.com/careers'
+    enabled: true
+
+  - name: 'Etch'
+    careers_url: 'https://etch.co/jobs'
+    enabled: true
+
+  - name: 'Etsy'
+    careers_url: 'https://careers.etsy.com/'
+    enabled: true
+
+  - name: 'Exoscale'
+    careers_url: 'https://www.exoscale.com/jobs/'
+    enabled: true
+
+  - name: 'Extreme Networks'
+    careers_url: 'https://www.extremenetworks.com/about-extreme-networks/career/'
+    enabled: true
+
+  - name: 'Eyeo'
+    careers_url: 'https://eyeo.com/en/jobs/'
+    enabled: true
+
+  - name: 'FactorialHR'
+    careers_url: 'https://careers.factorialhr.com'
+    enabled: true
+
+  - name: 'Fairwinds Ops'
+    careers_url: 'https://www.fairwinds.com/careers'
+    enabled: true
+
+  - name: 'Faithlife'
+    careers_url: 'https://faithlife.com/careers'
+    enabled: true
+
+  - name: 'Fastly'
+    careers_url: 'https://www.fastly.com/about/careers'
+    enabled: true
+
+  - name: 'FFW Agency'
+    careers_url: 'https://ffwagency.com/careers'
+    enabled: true
+
+  - name: 'Figma'
+    careers_url: 'https://www.figma.com/careers/'
+    enabled: true
+
+  - name: 'Findem'
+    careers_url: 'https://jobs.lever.co/findem'
+    enabled: true
+
+  - name: 'Findify'
+    careers_url: 'https://careers.findify.io'
+    enabled: true
+
+  - name: 'Fingerprint'
+    careers_url: 'https://fingerprint.com/careers/'
+    enabled: true
+
+  - name: 'FIS GLOBAL'
+    careers_url: 'https://careers.fisglobal.com/'
+    enabled: true
+
+  - name: 'Fiverr'
+    careers_url: 'https://www.fiverr.com/jobs/teams'
+    enabled: true
+
+  - name: 'fleetio'
+    careers_url: 'https://www.fleetio.com/careers'
+    enabled: true
+
+  - name: 'Flexera'
+    careers_url: 'https://www.flexera.com/about-us/careers.html'
+    enabled: true
+
+  - name: 'FlightAware'
+    careers_url: 'https://flightaware.com/about/careers/'
+    enabled: true
+
+  - name: 'Flip'
+    careers_url: 'https://career.flip.id/jobs'
+    enabled: true
+
+  - name: 'Flowing'
+    careers_url: 'https://www.flowing.it/job-opportunity'
+    enabled: true
+
+  - name: 'Fly.io'
+    careers_url: 'https://fly.io/jobs/'
+    enabled: true
+
+  - name: 'FMX'
+    careers_url: 'https://www.gofmx.com/careers/'
+    enabled: true
+
+  - name: 'folotop'
+    careers_url: 'https://www.folotop.com/job/'
+    enabled: true
+
+  - name: 'Formidable'
+    careers_url: 'https://formidable.com/careers/'
+    enabled: true
+
+  - name: 'Formstack'
+    careers_url: 'https://www.formstack.com/careers'
+    enabled: true
+
+  - name: 'Four Kitchens'
+    careers_url: 'https://www.fourkitchens.com/careers/'
+    enabled: true
+
+  - name: 'Fraudio'
+    careers_url: 'https://www.linkedin.com/company/fraudio/jobs/'
+    enabled: true
+
+  - name: 'Freeagent'
+    careers_url: 'http://www.freeagent.com/company/jobs/'
+    enabled: true
+
+  - name: 'Freeletics'
+    careers_url: 'https://www.freeletics.com/en/corporate/jobs/'
+    enabled: true
+
+  - name: 'Fuel Made'
+    careers_url: 'https://fuelmade.com/pages/jobs'
+    enabled: true
+
+  - name: 'Full Fabric'
+    careers_url: 'http://fullfabric.com/careers'
+    enabled: true
+
+  - name: 'Functionize'
+    careers_url: 'https://www.functionize.com/careers/'
+    enabled: true
+
+  - name: 'Fyle'
+    careers_url: 'https://www.fylehq.com/company/team/join'
+    enabled: true
+
+  - name: 'Gaggle'
+    careers_url: 'https://www.gaggle.net/careers-culture/'
+    enabled: true
+
+  - name: 'Geckoboard'
+    careers_url: 'https://www.geckoboard.com/careers/'
+    enabled: true
+
+  - name: 'General Assembly'
+    careers_url: 'https://generalassemb.ly/careers'
+    enabled: true
+
+  - name: 'GEO Jobe'
+    careers_url: 'https://www.geo-jobe.com/careers/'
+    enabled: true
+
+  - name: 'GFT'
+    careers_url: 'https://jobs.gft.com/'
+    enabled: true
+
+  - name: 'Ghost Inspector'
+    careers_url: 'https://ghostinspector.com/jobs/'
+    enabled: true
+
+  - name: 'Giant Swarm'
+    careers_url: 'https://www.giantswarm.io/careers#open-positions'
+    enabled: true
+
+  - name: 'Gitbook'
+    careers_url: 'https://jobs.gitbook.com/'
+    enabled: true
+
+  - name: 'GitHub'
+    careers_url: 'https://github.com/about/jobs'
+    enabled: true
+
+  - name: 'GitLab'
+    careers_url: 'https://about.gitlab.com/jobs/'
+    enabled: true
+
+  - name: 'GitPrime'
+    careers_url: 'https://gitprime.com/jobs/'
+    enabled: true
+
+  - name: 'Glitch'
+    careers_url: 'https://glitch.bamboohr.com/jobs/'
+    enabled: true
+
+  - name: 'GMBapi'
+    careers_url: 'https://gmbapi.com/vacancies/'
+    enabled: true
+
+  - name: 'GoDaddy'
+    careers_url: 'https://careers.godaddy.com/'
+    enabled: true
+
+  - name: 'GoHiring'
+    careers_url: 'https://www.gohiring.com/jobs/#jobs'
+    enabled: true
+
+  - name: 'Gorman Health Group'
+    careers_url: 'https://conveyhealthsolutions.com/careers/'
+    enabled: true
+
+  - name: 'Grafana Labs'
+    careers_url: 'https://grafana.com/about/careers/?plcmt=footer#jobs'
+    enabled: true
+
+  - name: 'Granicus'
+    careers_url: 'https://granicus.com/careers/'
+    enabled: true
+
+  - name: 'Graylog'
+    careers_url: 'https://www.graylog.org/careers'
+    enabled: true
+
+  - name: 'Grou.ps'
+    careers_url: 'https://build.gr.ps/careers/'
+    enabled: true
+
+  - name: 'Grubhub'
+    careers_url: 'https://careers.grubhub.com/'
+    enabled: true
+
+  - name: 'GuideSmiths'
+    careers_url: 'https://guidesmiths.bamboohr.com/jobs/'
+    enabled: true
+
+  - name: 'Hack Reactor Remote'
+    careers_url: 'http://www.hackreactor.com/careers'
+    enabled: true
+
+  - name: 'Hanzo Archives'
+    careers_url: 'https://www.hanzo.co/about-us/careers-uk'
+    enabled: true
+
+  - name: 'Happy Cog'
+    careers_url: 'https://www.happycog.com/careers/'
+    enabled: true
+
+  - name: 'Harris Consult'
+    careers_url: 'http://harrisconsultium.com/career'
+    enabled: true
+
+  - name: 'Harvest'
+    careers_url: 'https://www.getharvest.com/careers'
+    enabled: true
+
+  - name: 'Hashex'
+    careers_url: 'https://hashex.org/company/careers'
+    enabled: true
+
+  - name: 'HashiCorp'
+    careers_url: 'https://www.hashicorp.com/jobs'
+    enabled: true
+
+  - name: 'Headforwards'
+    careers_url: 'https://www.headforwards.com/careers/'
+    enabled: true
+
+  - name: 'Headway'
+    careers_url: 'https://headway.io/careers'
+    enabled: true
+
+  - name: 'Healthfinch'
+    careers_url: 'https://www.healthfinch.com/careers'
+    enabled: true
+
+  - name: 'Heap'
+    careers_url: 'https://heapanalytics.com/jobs#engineer'
+    enabled: true
+
+  - name: 'Heetch'
+    careers_url: 'https://jobs.heetch.com'
+    enabled: true
+
+  - name: 'Help Scout'
+    careers_url: 'https://www.helpscout.com/company/careers/'
+    enabled: true
+
+  - name: 'Heroku'
+    careers_url: 'https://www.heroku.com/careers'
+    enabled: true
+
+  - name: 'Hireology'
+    careers_url: 'http://www.hireology.com/careers'
+    enabled: true
+
+  - name: 'Homeflic wegrow'
+    careers_url: 'https://www.homeflicwegrow.com/hiring/'
+    enabled: true
+
+  - name: 'Honeybadger'
+    careers_url: 'https://www.honeybadger.io/careers/'
+    enabled: true
+
+  - name: 'Hopper'
+    careers_url: 'https://www.hopper.com/careers'
+    enabled: true
+
+  - name: 'Hotjar'
+    careers_url: 'https://careers.hotjar.com/'
+    enabled: true
+
+  - name: 'Hubspot'
+    careers_url: 'https://www.hubspot.com/careers/jobs?hubs_signup-url=www.hubspot.com%2Fcareers%2Fremote&hubs_signup-cta=careers-location-hero&page=1'
+    enabled: true
+
+  - name: 'Hubstaff'
+    careers_url: 'https://hubstaff.com/jobs'
+    enabled: true
+
+  - name: 'Hudl'
+    careers_url: 'http://public.hudl.com/jobs'
+    enabled: true
+
+  - name: 'Hugo'
+    careers_url: 'http://hugo.events/careers'
+    enabled: true
+
+  - name: 'Human Made'
+    careers_url: 'https://hmn.md/hiring/'
+    enabled: true
+
+  - name: 'Hypergiant'
+    careers_url: 'https://www.hypergiant.com/careers/'
+    enabled: true
+
+  - name: 'Hyperion Development South Africa'
+    careers_url: 'https://hyperiondev.com/jobs'
+    enabled: true
+
+  - name: 'Hypothesis'
+    careers_url: 'https://hypothes.is/jobs/'
+    enabled: true
+
+  - name: 'I-Stem'
+    careers_url: 'https://wellfound.com/company/i-stem/jobs'
+    enabled: true
+
+  - name: 'IBM'
+    careers_url: 'https://www.ibm.com/employment/?lnk=fab#jobs'
+    enabled: true
+
+  - name: 'iFit'
+    careers_url: 'https://www.iconfitness.com/careers.html?brand=ifit'
+    enabled: true
+
+  - name: 'Igalia'
+    careers_url: 'https://www.igalia.com/jobs/'
+    enabled: true
+
+  - name: 'Imagine Learning'
+    careers_url: 'https://www.imaginelearning.com/en/us/about/careers'
+    enabled: true
+
+  - name: 'Impala'
+    careers_url: 'https://boards.greenhouse.io/impala'
+    enabled: true
+
+  - name: 'Impira'
+    careers_url: 'https://www.impira.com/careers'
+    enabled: true
+
+  - name: 'Incsub'
+    careers_url: 'http://incsub.com/careers/'
+    enabled: true
+
+  - name: 'inDrive'
+    careers_url: 'https://careers.indrive.com/'
+    enabled: true
+
+  - name: 'InfluxData'
+    careers_url: 'https://boards.greenhouse.io/influxdb?gh_src=ygda3s'
+    enabled: true
+
+  - name: 'Inshorts'
+    careers_url: 'https://inshorts.zohorecruit.com/careers'
+    enabled: true
+
+  - name: 'Instamobile'
+    careers_url: 'https://www.instamobile.io/react-native-jobs/'
+    enabled: true
+
+  - name: 'Instructure'
+    careers_url: 'https://www.instructure.com/about/careers'
+    enabled: true
+
+  - name: 'Intellum'
+    careers_url: 'https://apply.workable.com/intellum-inc/'
+    enabled: true
+
+  - name: 'Intent'
+    careers_url: 'https://withintent.com/careers'
+    enabled: true
+
+  - name: 'Inter.link'
+    careers_url: 'https://inter.link/careers'
+    enabled: true
+
+  - name: 'Interactive Intelligence'
+    careers_url: 'https://www.inin.com/careers'
+    enabled: true
+
+  - name: 'Intercom'
+    careers_url: 'https://www.intercom.io/careers'
+    enabled: true
+
+  - name: 'Intevity'
+    careers_url: 'https://www.intevity.com/careers'
+    enabled: true
+
+  - name: 'Intuit Inc.'
+    careers_url: 'https://www.intuit.com/careers/'
+    enabled: true
+
+  - name: 'Intuition Machines, Inc.'
+    careers_url: 'https://jobs.imachines.com/'
+    enabled: true
+
+  - name: 'Invesco'
+    careers_url: 'https://careers.invesco.com/'
+    enabled: true
+
+  - name: 'IOHK'
+    careers_url: 'https://iohk.io/careers/'
+    enabled: true
+
+  - name: 'iOS App Templates'
+    careers_url: 'https://www.iosapptemplates.com/ios-developers-jobs-remote'
+    enabled: true
+
+  - name: 'IPInfo'
+    careers_url: 'https://ipinfo.io/jobs'
+    enabled: true
+
+  - name: 'IPS Group, Inc.'
+    careers_url: 'https://www.ipsgroupinc.com/careers/'
+    enabled: true
+
+  - name: 'IQVIA'
+    careers_url: 'https://jobs.iqvia.com/'
+    enabled: true
+
+  - name: 'iRonin'
+    careers_url: 'https://careers.ironin.it/'
+    enabled: true
+
+  - name: 'Iterative'
+    careers_url: 'https://jobs.lever.co/iterative?lever-origin=applied&lever-source%5B%5D=remoteintech'
+    enabled: true
+
+  - name: 'iwantmyname'
+    careers_url: 'https://iwantmyname.com/jobs'
+    enabled: true
+
+  - name: 'Jackson River'
+    careers_url: 'http://jacksonriver.com/about/jobs'
+    enabled: true
+
+  - name: 'JBS Custom Software Solutions'
+    careers_url: 'https://www.jbssolutions.com/careers/'
+    enabled: true
+
+  - name: 'Jitera'
+    careers_url: 'https://angel.co/company/iruuza/jobs'
+    enabled: true
+
+  - name: 'Jobsity'
+    careers_url: 'https://recruitment.jobsity.com/applylp'
+    enabled: true
+
+  - name: 'JOOR'
+    careers_url: 'https://joor.com/careers/'
+    enabled: true
+
+  - name: 'journy.io'
+    careers_url: 'https://angel.co/company/journy-io/jobs'
+    enabled: true
+
+  - name: 'Joyent'
+    careers_url: 'https://www.joyent.com/careers'
+    enabled: true
+
+  - name: 'JupiterOne'
+    careers_url: 'https://www.jupiterone.com/careers'
+    enabled: true
+
+  - name: 'Kake'
+    careers_url: 'https://kake.co/jobs'
+    enabled: true
+
+  - name: 'Kaufland e-commerce'
+    careers_url: 'https://kaufland-ecommerce.com/en/career/jobs/'
+    enabled: true
+
+  - name: 'kea'
+    careers_url: 'https://careers.kea.ai'
+    enabled: true
+
+  - name: 'Keen IO'
+    careers_url: 'https://scaleworks.com/careers/'
+    enabled: true
+
+  - name: 'Kentik Technologies Inc.'
+    careers_url: 'https://www.kentik.com/careers'
+    enabled: true
+
+  - name: 'Kestra'
+    careers_url: 'https://www.kestra.io/careers'
+    enabled: true
+
+  - name: 'Khan Academy'
+    careers_url: 'https://www.khanacademy.org/careers'
+    enabled: true
+
+  - name: 'KickBack Rewards Systems'
+    careers_url: 'https://kickbacksystems.com/careers.html'
+    enabled: true
+
+  - name: 'Kindred'
+    careers_url: 'https://jobs.ashbyhq.com/kindred'
+    enabled: true
+
+  - name: 'Kinsta'
+    careers_url: 'https://kinsta.com/careers/'
+    enabled: true
+
+  - name: 'Kiprosh'
+    careers_url: 'https://kiprosh.com/careers'
+    enabled: true
+
+  - name: 'KissMetrics'
+    careers_url: 'https://www.kissmetrics.com/careers/'
+    enabled: true
+
+  - name: 'Klanik'
+    careers_url: 'https://www.klanik.com/en/jobs?'
+    enabled: true
+
+  - name: 'Klaviyo'
+    careers_url: 'https://www.klaviyo.com/careers#open-roles'
+    enabled: true
+
+  - name: 'Kodify'
+    careers_url: 'https://www.linkedin.com/jobs/search?f_C=2771097&locationType=Y&trk=careers_promo_module_see_jobs'
+    enabled: true
+
+  - name: 'Kona'
+    careers_url: 'https://www.heykona.com/careers'
+    enabled: true
+
+  - name: 'Konkurenta'
+    careers_url: 'https://konkurenta.com/jobs'
+    enabled: true
+
+  - name: 'Kraken'
+    careers_url: 'https://jobs.lever.co/kraken'
+    enabled: true
+
+  - name: 'Kuali'
+    careers_url: 'https://jobs.kuali.co'
+    enabled: true
+
+  - name: 'Labelbox'
+    careers_url: 'https://labelbox.com/company/careers'
+    enabled: true
+
+  - name: 'Lambda School'
+    careers_url: 'https://lambdaschool.com/careers/'
+    enabled: true
+
+  - name: 'Lambert Labs'
+    careers_url: 'https://lambertlabs.com/careers/'
+    enabled: true
+
+  - name: 'LaterPay'
+    careers_url: 'https://www.laterpay.net/careers'
+    enabled: true
+
+  - name: 'Launch Potato'
+    careers_url: 'https://launchpotato.com/careers'
+    enabled: true
+
+  - name: 'Leadfeeder'
+    careers_url: 'https://www.leadfeeder.com/jobs/'
+    enabled: true
+
+  - name: 'LeadIQ'
+    careers_url: 'https://leadiq.com/careers'
+    enabled: true
+
+  - name: 'Let''s Encrypt'
+    careers_url: 'https://letsencrypt.org/jobs/'
+    enabled: true
+
+  - name: 'Lifen'
+    careers_url: 'https://jobs.lever.co/lifen'
+    enabled: true
+
+  - name: 'Lifetime Value Company'
+    careers_url: 'https://www.ltvco.com/careers.html'
+    enabled: true
+
+  - name: 'Lightspeed'
+    careers_url: 'https://www.lightspeedhq.com/careers/'
+    enabled: true
+
+  - name: 'Linaro'
+    careers_url: 'https://www.linaro.org/careers/'
+    enabled: true
+
+  - name: 'LINE Plus Corporation'
+    careers_url: 'https://career.linecorp.com/linecorp/career/list'
+    enabled: true
+
+  - name: 'Link11'
+    careers_url: 'https://www.link11.com/en/career/'
+    enabled: true
+
+  - name: 'Linux Foundation'
+    careers_url: 'https://www.linuxfoundation.org/about/careers/'
+    enabled: true
+
+  - name: 'LionSher'
+    careers_url: 'https://lionsher.com/careers'
+    enabled: true
+
+  - name: 'Litmus Software'
+    careers_url: 'https://litmus.com/careers'
+    enabled: true
+
+  - name: 'LivePerson'
+    careers_url: 'https://www.liveperson.com/company/careers'
+    enabled: true
+
+  - name: 'Locus Robotics'
+    careers_url: 'https://locusrobotics.com/company/careers'
+    enabled: true
+
+  - name: 'LogRocket'
+    careers_url: 'https://logrocket.com/careers'
+    enabled: true
+
+  - name: 'Lullabot'
+    careers_url: 'https://www.lullabot.com/jobs'
+    enabled: true
+
+  - name: 'Luxor Technology'
+    careers_url: 'https://jobs.ashbyhq.com/luxor'
+    enabled: true
+
+  - name: 'Lytx'
+    careers_url: 'https://www.lytx.com/en-us/about-us/careers'
+    enabled: true
+
+  - name: 'madewithlove'
+    careers_url: 'https://madewithlove.com/careers/'
+    enabled: true
+
+  - name: 'MailerLite'
+    careers_url: 'https://www.mailerlite.com/jobs/'
+    enabled: true
+
+  - name: 'Mapbox'
+    careers_url: 'https://www.mapbox.com/jobs/'
+    enabled: true
+
+  - name: 'Marco Polo'
+    careers_url: 'https://marcopolo.me/jobs'
+    enabled: true
+
+  - name: 'MariaDB'
+    careers_url: 'https://mariadb.com/about-us/careers/'
+    enabled: true
+
+  - name: 'Marketade'
+    careers_url: 'https://www.marketade.com/jobs/'
+    enabled: true
+
+  - name: 'MarsBased'
+    careers_url: 'https://marsbased.com/jobs'
+    enabled: true
+
+  - name: 'Massive Pixel Creation'
+    careers_url: 'https://massivepixel.io/career/'
+    enabled: true
+
+  - name: 'Mattermost'
+    careers_url: 'https://mattermost.com/careers/'
+    enabled: true
+
+  - name: 'Maxicus'
+    careers_url: 'https://remoters.net/jobs/maxicus/'
+    enabled: true
+
+  - name: 'Mayvue Solutions'
+    careers_url: 'https://mayvue.com/careers/'
+    enabled: true
+
+  - name: 'Meant4'
+    careers_url: 'https://meant4.com/jobs'
+    enabled: true
+
+  - name: 'Mediacurrent Interactive Solutions, LLC'
+    careers_url: 'https://www.mediacurrent.com/about/careers'
+    enabled: true
+
+  - name: 'Mediavine'
+    careers_url: 'https://mediavine.workable.com/'
+    enabled: true
+
+  - name: 'Medium'
+    careers_url: 'https://jobs.lever.co/medium?team=Engineering'
+    enabled: true
+
+  - name: 'Memberful'
+    careers_url: 'https://memberful.com/jobs/'
+    enabled: true
+
+  - name: 'Memory'
+    careers_url: 'https://memory.ai/jobs'
+    enabled: true
+
+  - name: 'Mercari'
+    careers_url: 'https://careers.mercari.com/job-categories/engineering/?utm_source=remoteintech.company&utm_medium=Referral&utm_campaign=remote-in-tech'
+    enabled: true
+
+  - name: 'MeridianLink'
+    careers_url: 'https://www.meridianlink.com/careers'
+    enabled: true
+
+  - name: 'messagebird'
+    careers_url: 'https://messagebird.com/careers#jobs'
+    enabled: true
+
+  - name: 'MetaLab'
+    careers_url: 'https://www.metalab.co/careers'
+    enabled: true
+
+  - name: 'MetaMask'
+    careers_url: 'https://boards.greenhouse.io/consensys/jobs/1990589'
+    enabled: true
+
+  - name: 'MeteorOps'
+    careers_url: 'https://meteorops.com/careers'
+    enabled: true
+
+  - name: 'Microsoft'
+    careers_url: 'https://careers.microsoft.com/us/en'
+    enabled: true
+
+  - name: 'Mindful'
+    careers_url: 'https://getmindful.com/careers/'
+    enabled: true
+
+  - name: 'Mixcloud'
+    careers_url: 'https://apply.workable.com/mixcloud-limited/'
+    enabled: true
+
+  - name: 'Mixmax'
+    careers_url: 'https://careers.mixmax.com/'
+    enabled: true
+
+  - name: 'Mobile Jazz'
+    careers_url: 'https://mobilejazz.com/jobs'
+    enabled: true
+
+  - name: 'Modern Health'
+    careers_url: 'https://boards.greenhouse.io/modernhealth'
+    enabled: true
+
+  - name: 'Modern Tribe'
+    careers_url: 'https://tri.be/careers/'
+    enabled: true
+
+  - name: 'MODSQUAD'
+    careers_url: 'https://modsquad.com/careers/'
+    enabled: true
+
+  - name: 'MongoDB'
+    careers_url: 'https://www.mongodb.com/careers'
+    enabled: true
+
+  - name: 'Monthly'
+    careers_url: 'https://monthly.com/careers'
+    enabled: true
+
+  - name: 'Mozilla'
+    careers_url: 'https://careers.mozilla.org/'
+    enabled: true
+
+  - name: 'mtc.'
+    careers_url: 'http://www.mtcmedia.co.uk/careers.'
+    enabled: true
+
+  - name: 'Muck Rack'
+    careers_url: 'https://muckrack.com/careers'
+    enabled: true
+
+  - name: 'Mux'
+    careers_url: 'https://mux.com/jobs'
+    enabled: true
+
+  - name: 'Mycelium'
+    careers_url: 'https://jobs.lever.co/Mycelium/'
+    enabled: true
+
+  - name: 'MySQL'
+    careers_url: 'https://www.mysql.com/about/jobs/'
+    enabled: true
+
+  - name: 'Nagarro'
+    careers_url: 'https://www.nagarro.com/en/careers'
+    enabled: true
+
+  - name: 'Namecheap'
+    careers_url: 'https://www.namecheap.com/careers/openings/'
+    enabled: true
+
+  - name: 'Nationwide'
+    careers_url: 'https://nationwide.eightfold.ai/careers'
+    enabled: true
+
+  - name: 'Nearform'
+    careers_url: 'https://www.nearform.com/careers/'
+    enabled: true
+
+  - name: 'nerdwallet'
+    careers_url: 'https://www.nerdwallet.com/careers/teams'
+    enabled: true
+
+  - name: 'NetApp'
+    careers_url: 'https://www.netapp.com/company/careers/'
+    enabled: true
+
+  - name: 'Netguru'
+    careers_url: 'https://www.netguru.com/career'
+    enabled: true
+
+  - name: 'Netlify'
+    careers_url: 'https://www.netlify.com/careers'
+    enabled: true
+
+  - name: 'Netris'
+    careers_url: 'https://www.netris.io/jobs/'
+    enabled: true
+
+  - name: 'Netsparker'
+    careers_url: 'https://www.netsparker.com/jobs/'
+    enabled: true
+
+  - name: 'New Context'
+    careers_url: 'https://www.newcontext.com/careers/'
+    enabled: true
+
+  - name: 'NEXT'
+    careers_url: 'https://www.nexttrucking.com/careers/'
+    enabled: true
+
+  - name: 'NodeSource'
+    careers_url: 'https://nodesource.com/careers'
+    enabled: true
+
+  - name: 'NoRedInk'
+    careers_url: 'https://www.noredink.com/jobs'
+    enabled: true
+
+  - name: 'Novoda'
+    careers_url: 'https://www.novoda.com/hiring'
+    enabled: true
+
+  - name: 'npm'
+    careers_url: 'https://www.npmjs.com/jobs?utm_source=nodeweekly&utm_medium=email'
+    enabled: true
+
+  - name: 'Nuage'
+    careers_url: 'https://nuagebiz.tech/careers/'
+    enabled: true
+
+  - name: 'Nuharbor Security'
+    careers_url: 'https://www.nuharborsecurity.com/careers#job-openings'
+    enabled: true
+
+  - name: 'Nuna Inc'
+    careers_url: 'https://www.nuna.com/careers'
+    enabled: true
+
+  - name: 'Nvidia'
+    careers_url: 'https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite'
+    enabled: true
+
+  - name: 'O''Reilly Media'
+    careers_url: 'https://www.oreilly.com/careers/'
+    enabled: true
+
+  - name: 'O''Reilly Online Learning'
+    careers_url: 'https://www.oreilly.com/careers/#positions'
+    enabled: true
+
+  - name: 'Ocient'
+    careers_url: 'https://ocient.com/job-postings/'
+    enabled: true
+
+  - name: 'Octopus Deploy'
+    careers_url: 'https://octopus.com/company/careers'
+    enabled: true
+
+  - name: 'Oddball'
+    careers_url: 'https://oddball.io/jobs'
+    enabled: true
+
+  - name: 'Okta'
+    careers_url: 'https://www.okta.com/company/careers/'
+    enabled: true
+
+  - name: 'Olark'
+    careers_url: 'https://www.olark.com/jobs'
+    enabled: true
+
+  - name: 'Ollie'
+    careers_url: 'https://jobs.lever.co/myollie'
+    enabled: true
+
+  - name: 'Olo'
+    careers_url: 'https://www.olo.com/company/#careers.'
+    enabled: true
+
+  - name: 'Ombu Labs'
+    careers_url: 'https://www.ombulabs.com/jobs'
+    enabled: true
+
+  - name: 'OmniTI'
+    careers_url: 'https://omniti.com/is/hiring'
+    enabled: true
+
+  - name: 'On The Go Systems'
+    careers_url: 'https://onthegosystems.com/jobs/'
+    enabled: true
+
+  - name: 'Onna'
+    careers_url: 'https://onna.com/careers/'
+    enabled: true
+
+  - name: 'Opencity Labs Srl'
+    careers_url: 'https://link.opencontent.it/jobs?utm_source=remoteintech&utm_campaign=recruiting'
+    enabled: true
+
+  - name: 'OpenCraft'
+    careers_url: 'https://opencraft.com/jobs/open-source-developer/'
+    enabled: true
+
+  - name: 'OpenZeppelin'
+    careers_url: 'https://openzeppelin.com/jobs/#openings'
+    enabled: true
+
+  - name: 'Optoro'
+    careers_url: 'https://www.optoro.com/careers/'
+    enabled: true
+
+  - name: 'Oracle'
+    careers_url: 'https://www.oracle.com/in/corporate/careers/'
+    enabled: true
+
+  - name: 'Ordermentum'
+    careers_url: 'https://www.linkedin.com/careersite/ordermentum'
+    enabled: true
+
+  - name: 'Our-Hometown Inc.'
+    careers_url: 'https://our-hometown.com/job-opportunities/'
+    enabled: true
+
+  - name: 'OutsourcingDev'
+    careers_url: 'https://www.outsourcingdev.com/careers/'
+    enabled: true
+
+  - name: 'Over'
+    careers_url: 'https://www.madewithover.com/jobs'
+    enabled: true
+
+  - name: 'Packlink'
+    careers_url: 'https://careers.packlink.com/jobs'
+    enabled: true
+
+  - name: 'PagerDuty'
+    careers_url: 'https://www.pagerduty.com/careers/'
+    enabled: true
+
+  - name: 'Paktor'
+    careers_url: 'http://gopaktor.com/#/career'
+    enabled: true
+
+  - name: 'Palantir.net'
+    careers_url: 'https://palantir.bamboohr.com/jobs/view.php?id=11'
+    enabled: true
+
+  - name: 'Panther Labs'
+    careers_url: 'https://runpanther.io/careers'
+    enabled: true
+
+  - name: 'Parabol'
+    careers_url: 'https://www.parabol.co/join'
+    enabled: true
+
+  - name: 'Parexel'
+    careers_url: 'https://jobs.parexel.com/'
+    enabled: true
+
+  - name: 'Park Assist'
+    careers_url: 'http://tech.parkassist.com/jobs/'
+    enabled: true
+
+  - name: 'Parsely'
+    careers_url: 'https://www.parse.ly/careers'
+    enabled: true
+
+  - name: 'Particular Software'
+    careers_url: 'https://particular.net/careers'
+    enabled: true
+
+  - name: 'Pathable'
+    careers_url: 'https://pathable.com/careers/'
+    enabled: true
+
+  - name: 'Payfully'
+    careers_url: 'https://angel.co/payfully/jobs/'
+    enabled: true
+
+  - name: 'Paylocity'
+    careers_url: 'https://www.paylocity.com/careers/career-opportunities/'
+    enabled: true
+
+  - name: 'PayPay Corporation'
+    careers_url: 'https://about.paypay.ne.jp/career/en/'
+    enabled: true
+
+  - name: 'PayScale'
+    careers_url: 'https://jobs.smartrecruiters.com/PayScale/743999782844766-associate-software-engineer-remote-'
+    enabled: true
+
+  - name: 'Paytm Labs'
+    careers_url: 'https://paytmlabs.com/#careers'
+    enabled: true
+
+  - name: 'PayU'
+    careers_url: 'https://corporate.payu.com/job-board/'
+    enabled: true
+
+  - name: 'PeachWorks'
+    careers_url: 'https://careers.getbeyond.com/apply-now'
+    enabled: true
+
+  - name: 'Percona'
+    careers_url: 'http://percona.com/careers'
+    enabled: true
+
+  - name: 'Pex'
+    careers_url: 'https://pex.com/careers/'
+    enabled: true
+
+  - name: 'Pindrop'
+    careers_url: 'https://www.pindrop.com/company/careers'
+    enabled: true
+
+  - name: 'Platform Builders'
+    careers_url: 'https://jobs.kenoby.com/sejabuilder'
+    enabled: true
+
+  - name: 'platform.sh'
+    careers_url: 'https://platform.sh/company/careers/'
+    enabled: true
+
+  - name: 'Pleo'
+    careers_url: 'https://www.pleo.io/da/careers/'
+    enabled: true
+
+  - name: 'Plex'
+    careers_url: 'https://www.plex.tv/about/careers/'
+    enabled: true
+
+  - name: 'PNC Financial Services'
+    careers_url: 'https://careers.pnc.com/'
+    enabled: true
+
+  - name: 'Polygon'
+    careers_url: 'https://polygon.technology/careers/#all-roles'
+    enabled: true
+
+  - name: 'Positiwise'
+    careers_url: 'https://positiwise.com/careers'
+    enabled: true
+
+  - name: 'PowerSchool'
+    careers_url: 'https://www.powerschool.com/company/careers/'
+    enabled: true
+
+  - name: 'Precision Nutrition'
+    careers_url: 'https://www.precisionnutrition.com/jobs'
+    enabled: true
+
+  - name: 'Prelude'
+    careers_url: 'https://www.prelude.co/careers'
+    enabled: true
+
+  - name: 'Prezi'
+    careers_url: 'https://prezi.com/jobs'
+    enabled: true
+
+  - name: 'Prezly'
+    careers_url: 'https://www.prezly.com/careers'
+    enabled: true
+
+  - name: 'Primer'
+    careers_url: 'https://primer.io/careers'
+    enabled: true
+
+  - name: 'Primotly'
+    careers_url: 'https://primotly.com/career/'
+    enabled: true
+
+  - name: 'Prisma'
+    careers_url: 'https://www.prisma.io/careers'
+    enabled: true
+
+  - name: 'PrivacyCloud'
+    careers_url: 'https://github.com/privacycloud/jobs'
+    enabled: true
+
+  - name: 'Procenge'
+    careers_url: 'https://jobs.solides.com/procenge#'
+    enabled: true
+
+  - name: 'Procurify'
+    careers_url: 'https://www.procurify.com/careers'
+    enabled: true
+
+  - name: 'Prominent Edge'
+    careers_url: 'https://prominentedge.com/careers'
+    enabled: true
+
+  - name: 'Puppet'
+    careers_url: 'https://puppet.com/company/careers'
+    enabled: true
+
+  - name: 'PwC'
+    careers_url: 'https://www.pwc.com/gx/en/careers.html'
+    enabled: true
+
+  - name: 'Qatium'
+    careers_url: 'https://qatium.recruitee.com/'
+    enabled: true
+
+  - name: 'Quaderno'
+    careers_url: 'https://quaderno.io/jobs/'
+    enabled: true
+
+  - name: 'QuestDB'
+    careers_url: 'https://questdb.io/careers'
+    enabled: true
+
+  - name: 'QuickTrials'
+    careers_url: 'https://www.quicktrials.com/open-jobs/'
+    enabled: true
+
+  - name: 'Quora'
+    careers_url: 'https://www.quora.com/careers/'
+    enabled: true
+
+  - name: 'Rackspace'
+    careers_url: 'https://github.com/rackspace/rackspace_jobs'
+    enabled: true
+
+  - name: 'Raft'
+    careers_url: 'https://goraft.tech/join/'
+    enabled: true
+
+  - name: 'Railscarma'
+    careers_url: 'https://www.railscarma.com/careers/.'
+    enabled: true
+
+  - name: 'Rainforest QA'
+    careers_url: 'https://www.rainforestqa.com/jobs'
+    enabled: true
+
+  - name: 'Rakuten Travel Xchange'
+    careers_url: 'https://solutions.travel.rakuten.com/jobs'
+    enabled: true
+
+  - name: 'Ramp'
+    careers_url: 'https://ramp.com/careers'
+    enabled: true
+
+  - name: 'Reaction Commerce'
+    careers_url: 'http://reactioncommerce.com/careers'
+    enabled: true
+
+  - name: 'ReactiveOps, Inc.'
+    careers_url: 'https://www.reactiveops.com/careers/site-reliability-engineer/'
+    enabled: true
+
+  - name: 'RebelMouse'
+    careers_url: 'https://www.linkedin.com/company/rebelmouse/jobs/'
+    enabled: true
+
+  - name: 'ReCharge Payments'
+    careers_url: 'https://boards.greenhouse.io/recharge'
+    enabled: true
+
+  - name: 'Recurly'
+    careers_url: 'https://recurly.com/jobs/'
+    enabled: true
+
+  - name: 'Red Hat'
+    careers_url: 'https://www.redhat.com/en/jobs'
+    enabled: true
+
+  - name: 'Reddit'
+    careers_url: 'https://www.redditinc.com/careers'
+    enabled: true
+
+  - name: 'Redlio Designs'
+    careers_url: 'https://redliodesigns.com/career'
+    enabled: true
+
+  - name: 'Redox'
+    careers_url: 'https://www.redoxengine.com/company/careers/'
+    enabled: true
+
+  - name: 'Refundid'
+    careers_url: 'https://www.linkedin.com/company/refundid/jobs/'
+    enabled: true
+
+  - name: 'reinteractive'
+    careers_url: 'https://reinteractive.com/careers'
+    enabled: true
+
+  - name: 'RemoteBase'
+    careers_url: 'https://apply.workable.com/remotebase/'
+    enabled: true
+
+  - name: 'RemoteMore'
+    careers_url: 'https://remotemore.com/careers/'
+    enabled: true
+
+  - name: 'Renaissance'
+    careers_url: 'https://careers.smartrecruiters.com/Renaissance'
+    enabled: true
+
+  - name: 'RenoFi'
+    careers_url: 'https://renofi.com/careers/'
+    enabled: true
+
+  - name: 'Replit'
+    careers_url: 'https://replit.com/site/careers'
+    enabled: true
+
+  - name: 'Research Square'
+    careers_url: 'https://www.researchsquare.com/company/careers'
+    enabled: true
+
+  - name: 'Revolgy'
+    careers_url: 'https://www.revolgy.com/career#open-positions'
+    enabled: true
+
+  - name: 'Revolut'
+    careers_url: 'https://www.revolut.com/careers/'
+    enabled: true
+
+  - name: 'Roadpass Digital'
+    careers_url: 'https://roadtrippers.applytojob.com/apply'
+    enabled: true
+
+  - name: 'Roadtrippers'
+    careers_url: 'https://www.roadtrippers.com/careers'
+    enabled: true
+
+  - name: 'Rocket.Chat'
+    careers_url: 'https://rocket.chat/jobs'
+    enabled: true
+
+  - name: 'rtCamp Solutions'
+    careers_url: 'https://rtcamp.com/careers/'
+    enabled: true
+
+  - name: 'SadaPay'
+    careers_url: 'https://sadapay.pk/careers/'
+    enabled: true
+
+  - name: 'Safeguard Global'
+    careers_url: 'https://www.safeguardglobal.com/careers/'
+    enabled: true
+
+  - name: 'Salesforce'
+    careers_url: 'https://salesforce.wd1.myworkdayjobs.com/External_Career_Site'
+    enabled: true
+
+  - name: 'Sandhills Development'
+    careers_url: 'http://sandhillsdev.com/careers/'
+    enabled: true
+
+  - name: 'Sardine.ai'
+    careers_url: 'https://www.sardine.ai/careers'
+    enabled: true
+
+  - name: 'Scalac'
+    careers_url: 'https://scalac.io/careers/'
+    enabled: true
+
+  - name: 'Scandit'
+    careers_url: 'https://www.scandit.com/careers/'
+    enabled: true
+
+  - name: 'Scopic Software'
+    careers_url: 'https://scopicsoftware.com/careers/'
+    enabled: true
+
+  - name: 'Scrapinghub'
+    careers_url: 'https://apply.workable.com/scrapinghub/'
+    enabled: true
+
+  - name: 'ScyllaDB'
+    careers_url: 'https://www.scylladb.com/company/careers/'
+    enabled: true
+
+  - name: 'Seaplane'
+    careers_url: 'https://careers.smartrecruiters.com/SeaplaneIOInc'
+    enabled: true
+
+  - name: 'SeatGeek'
+    careers_url: 'https://seatgeek.com/jobs?departments=softwareengineering&locations=all'
+    enabled: true
+
+  - name: 'SecurityScorecard'
+    careers_url: 'https://securityscorecard.com/company/careers'
+    enabled: true
+
+  - name: 'Seeq'
+    careers_url: 'https://www.seeq.com/about/careers'
+    enabled: true
+
+  - name: 'Semaphore'
+    careers_url: 'https://semaphoreci.com/about/careers'
+    enabled: true
+
+  - name: 'Sendwave (International Remittance)'
+    careers_url: 'https://www.sendwave.com/careers'
+    enabled: true
+
+  - name: 'SerpApi'
+    careers_url: 'https://serpapi.com/careers'
+    enabled: true
+
+  - name: 'Server Density'
+    careers_url: 'https://www.serverdensity.com/jobs/'
+    enabled: true
+
+  - name: 'Shareup'
+    careers_url: 'https://shareup.app/jobs/'
+    enabled: true
+
+  - name: 'Shippabo'
+    careers_url: 'https://apply.workable.com/shippabo/?lng=en#jobs'
+    enabled: true
+
+  - name: 'Shogun'
+    careers_url: 'https://angel.co/shogun/jobs'
+    enabled: true
+
+  - name: 'Shopify'
+    careers_url: 'https://www.shopify.com/careers'
+    enabled: true
+
+  - name: 'Sigma Defense'
+    careers_url: 'https://sigmadefense.com/careers/'
+    enabled: true
+
+  - name: 'SignEasy'
+    careers_url: 'https://signeasy.com/jobs/'
+    enabled: true
+
+  - name: 'Silverfin'
+    careers_url: 'https://www.silverfin.com/careers'
+    enabled: true
+
+  - name: 'Sketch'
+    careers_url: 'https://jobs.ashbyhq.com/sketch/3cd3f073-2fae-40be-a072-65d56e89a1dd'
+    enabled: true
+
+  - name: 'Skillshare'
+    careers_url: 'https://jobs.lever.co/skillshare?location=Anywhere'
+    enabled: true
+
+  - name: 'Skyrocket Ventures'
+    careers_url: 'https://www.linkedin.com/jobs/view/jr-to-lead-backend-software-engineer-productivity-startup-at-skyrocket-ventures-1959922824/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic'
+    enabled: true
+
+  - name: 'Slack'
+    careers_url: 'https://slack.com/careers'
+    enabled: true
+
+  - name: 'Smile.io'
+    careers_url: 'https://smile.io/careers'
+    enabled: true
+
+  - name: 'Smmile Digital'
+    careers_url: 'https://smmile.com/career-digital-marketing-agency-singapore/'
+    enabled: true
+
+  - name: 'SmugMug'
+    careers_url: 'https://jobs.smugmug.com/'
+    enabled: true
+
+  - name: 'Socket Supply Co'
+    careers_url: 'https://socketsupply.co/jobs/'
+    enabled: true
+
+  - name: 'SoftwareMill'
+    careers_url: 'https://softwaremill.com/join-us'
+    enabled: true
+
+  - name: 'Sonatype'
+    careers_url: 'https://www.sonatype.com/company/careers'
+    enabled: true
+
+  - name: 'Soshace, LLC.'
+    careers_url: 'https://soshace.com/careers'
+    enabled: true
+
+  - name: 'Sourcegraph'
+    careers_url: 'https://sourcegraph.com/careers'
+    enabled: true
+
+  - name: 'Spoqa, Inc.'
+    careers_url: 'https://spoqa.co.kr/careers/#recruit'
+    enabled: true
+
+  - name: 'Spotify'
+    careers_url: 'https://www.lifeatspotify.com/jobs'
+    enabled: true
+
+  - name: 'Spreaker'
+    careers_url: 'https://careers.spreaker.com/opportunities/'
+    enabled: true
+
+  - name: 'Spreedly'
+    careers_url: 'https://spreedly.com/jobs'
+    enabled: true
+
+  - name: 'Spruce'
+    careers_url: 'https://getspruce.com/careers/'
+    enabled: true
+
+  - name: 'Stairlin'
+    careers_url: 'https://stairlin.com/jobs.html'
+    enabled: true
+
+  - name: 'Status'
+    careers_url: 'https://status.im/open-positions.html'
+    enabled: true
+
+  - name: 'Sticker Mule'
+    careers_url: 'https://www.stickermule.com/careers'
+    enabled: true
+
+  - name: 'Stitch Fix'
+    careers_url: 'https://www.stitchfix.com/careers/jobs'
+    enabled: true
+
+  - name: 'StoneCo'
+    careers_url: 'https://www.stone.co/careers.html'
+    enabled: true
+
+  - name: 'StormX'
+    careers_url: 'https://stormx.io/careers'
+    enabled: true
+
+  - name: 'Strapi'
+    careers_url: 'https://strapi.io/careers'
+    enabled: true
+
+  - name: 'StreamNative'
+    careers_url: 'https://streamnative.io/careers'
+    enabled: true
+
+  - name: 'Stripe'
+    careers_url: 'https://stripe.com/jobs'
+    enabled: true
+
+  - name: 'Surevine'
+    careers_url: 'https://www.surevine.com/jobs/'
+    enabled: true
+
+  - name: 'SUSE'
+    careers_url: 'https://jobs.suse.com'
+    enabled: true
+
+  - name: 'Sutherland CloudSource'
+    careers_url: 'https://www.sutherlandglobal.com/careers'
+    enabled: true
+
+  - name: 'Svix'
+    careers_url: 'https://www.svix.com/careers/'
+    enabled: true
+
+  - name: 'SweetRush'
+    careers_url: 'https://www.sweetrush.com/join-us/'
+    enabled: true
+
+  - name: 'Swif.ai'
+    careers_url: 'https://www.ycombinator.com/companies/swif-ai/jobs'
+    enabled: true
+
+  - name: 'Swiggy'
+    careers_url: 'https://careers.swiggy.com/#/'
+    enabled: true
+
+  - name: 'Swimlane'
+    careers_url: 'https://swimlane.com/about/careers/'
+    enabled: true
+
+  - name: 'Syde'
+    careers_url: 'https://syde.com/career/'
+    enabled: true
+
+  - name: 'Sysdig'
+    careers_url: 'https://sysdig.com/jobs'
+    enabled: true
+
+  - name: 'Tag1 Consulting'
+    careers_url: 'https://www.linkedin.com/company/tag1consulting/jobs/'
+    enabled: true
+
+  - name: 'Taledo'
+    careers_url: 'https://www.taledo.com/careers'
+    enabled: true
+
+  - name: 'Taplytics'
+    careers_url: 'https://jobs.lever.co/taplytics'
+    enabled: true
+
+  - name: 'TatvaSoft'
+    careers_url: 'https://www.tatvasoft.com/career'
+    enabled: true
+
+  - name: 'TaxJar'
+    careers_url: 'https://www.taxjar.com/jobs/'
+    enabled: true
+
+  - name: 'TeamSnap'
+    careers_url: 'https://www.teamsnap.com/company/careers'
+    enabled: true
+
+  - name: 'TeamUltra - an Elite ServiceNow Partner'
+    careers_url: 'https://www.computacenter.com/en-gb/careers'
+    enabled: true
+
+  - name: 'TED'
+    careers_url: 'https://tedconferencesllc.applytojob.com/apply'
+    enabled: true
+
+  - name: 'Telerik'
+    careers_url: 'https://www.progress.com/company/careers'
+    enabled: true
+
+  - name: 'Telestax Inc.'
+    careers_url: 'https://telestax.com/careers/'
+    enabled: true
+
+  - name: 'Tenable'
+    careers_url: 'https://careers.tenable.com/search/jobs/in/remote'
+    enabled: true
+
+  - name: 'Teravision Technologies'
+    careers_url: 'https://www.teravisiontech.com/careers/results'
+    enabled: true
+
+  - name: 'TestGorilla'
+    careers_url: 'https://www.testgorilla.com/careers/'
+    enabled: true
+
+  - name: 'The Ghost Foundation'
+    careers_url: 'https://ghost.workable.com'
+    enabled: true
+
+  - name: 'The Home Depot'
+    careers_url: 'https://careers.homedepot.com/career-areas/technology/'
+    enabled: true
+
+  - name: 'The Publisher Desk'
+    careers_url: 'https://www.linkedin.com/company/publisher-desk/jobs/'
+    enabled: true
+
+  - name: 'The Scale Factory'
+    careers_url: 'http://www.scalefactory.com/team/careers'
+    enabled: true
+
+  - name: 'The Wirecutter'
+    careers_url: 'https://thewirecutter.com/jobs/'
+    enabled: true
+
+  - name: 'TheoremOne'
+    careers_url: 'https://jobs.lever.co/theoremonellc'
+    enabled: true
+
+  - name: 'Thinkful'
+    careers_url: 'https://www.thinkful.com/about/careers/'
+    enabled: true
+
+  - name: 'Third Iron'
+    careers_url: 'https://thirdiron.com/careers/'
+    enabled: true
+
+  - name: 'Thorn'
+    careers_url: 'https://www.thorn.org/careers/'
+    enabled: true
+
+  - name: 'Thrive Market'
+    careers_url: 'https://thrivemarketjobs.com/'
+    enabled: true
+
+  - name: 'Tide'
+    careers_url: 'https://www.tide.co/careers/#jobs'
+    enabled: true
+
+  - name: 'TimeSpot'
+    careers_url: 'https://timespothq.com/careers/'
+    enabled: true
+
+  - name: 'Tipe'
+    careers_url: 'https://angel.co/tipe/jobs'
+    enabled: true
+
+  - name: 'Toast'
+    careers_url: 'https://careers.toasttab.com/'
+    enabled: true
+
+  - name: 'toggl'
+    careers_url: 'http://jobs.toggl.com'
+    enabled: true
+
+  - name: 'Toptal'
+    careers_url: 'https://www.toptal.com/careers'
+    enabled: true
+
+  - name: 'Tower'
+    careers_url: 'https://www.git-tower.com/company/jobs/'
+    enabled: true
+
+  - name: 'Travis'
+    careers_url: 'https://www.travistravis.co/career'
+    enabled: true
+
+  - name: 'Travis CI'
+    careers_url: 'https://www.linkedin.com/company/travis-ci/jobs/'
+    enabled: true
+
+  - name: 'Treehouse'
+    careers_url: 'https://teamtreehouse.com/jobs'
+    enabled: true
+
+  - name: 'Treez'
+    careers_url: 'https://www.treez.io/careers'
+    enabled: true
+
+  - name: 'Trello'
+    careers_url: 'https://www.atlassian.com/company/careers/trello#job-list'
+    enabled: true
+
+  - name: 'Tribe'
+    careers_url: 'https://www.tribexyz.com/careers'
+    enabled: true
+
+  - name: 'Truelogic'
+    careers_url: 'https://boards.greenhouse.io/truelogic'
+    enabled: true
+
+  - name: 'TrussWorks'
+    careers_url: 'https://truss.works/jobs'
+    enabled: true
+
+  - name: 'Tuft & Needle'
+    careers_url: 'https://careers.tn.com/'
+    enabled: true
+
+  - name: 'Turing'
+    careers_url: 'https://careers.turing.com/'
+    enabled: true
+
+  - name: 'Turtlemint'
+    careers_url: 'https://careers.turtlemint.com/jobs'
+    enabled: true
+
+  - name: 'Twilio'
+    careers_url: 'https://www.twilio.com/company/jobs'
+    enabled: true
+
+  - name: 'Two'
+    careers_url: 'https://www.two.ai/careers'
+    enabled: true
+
+  - name: 'Udacity'
+    careers_url: 'https://www.udacity.com/jobs'
+    enabled: true
+
+  - name: 'Uhuru'
+    careers_url: 'https://uhurunetwork.com/careers/'
+    enabled: true
+
+  - name: 'Uncapped'
+    careers_url: 'https://www.weareuncapped.com/careers'
+    enabled: true
+
+  - name: 'Upwork Pro'
+    careers_url: 'https://careers.upwork.com/jobs/search'
+    enabled: true
+
+  - name: 'USAA'
+    careers_url: 'https://www.usaajobs.com/'
+    enabled: true
+
+  - name: 'Ushahidi'
+    careers_url: 'https://ushahidi.workable.com/'
+    enabled: true
+
+  - name: 'uShip'
+    careers_url: 'https://about.uship.com/careers/'
+    enabled: true
+
+  - name: 'Valimail'
+    careers_url: 'https://www.valimail.com/careers/'
+    enabled: true
+
+  - name: 'Varnish Software'
+    careers_url: 'https://www.varnish-software.com/careers/'
+    enabled: true
+
+  - name: 'vast limits'
+    careers_url: 'https://vastlimits.com/#jobs'
+    enabled: true
+
+  - name: 'Veeva Systems'
+    careers_url: 'https://careers.veeva.com'
+    enabled: true
+
+  - name: 'Vercel'
+    careers_url: 'https://vercel.com/careers'
+    enabled: true
+
+  - name: 'Veryfi'
+    careers_url: 'https://angel.co/company/veryfi/jobs'
+    enabled: true
+
+  - name: 'VGS'
+    careers_url: 'http://verygoodsecurity.com/careers'
+    enabled: true
+
+  - name: 'Viperdev'
+    careers_url: 'https://viperdev.io/en/jobs/'
+    enabled: true
+
+  - name: 'Virta Health'
+    careers_url: 'https://www.virtahealth.com/careers'
+    enabled: true
+
+  - name: 'Vivo'
+    careers_url: 'https://vivo.gupy.io'
+    enabled: true
+
+  - name: 'VMware'
+    careers_url: 'https://careers.vmware.com/main/'
+    enabled: true
+
+  - name: 'Vox Media (Product Team)'
+    careers_url: 'https://www.voxmedia.com/pages/careers-jobs'
+    enabled: true
+
+  - name: 'Voxy'
+    careers_url: 'https://jobs.lever.co/voxy'
+    enabled: true
+
+  - name: 'VSHN AG'
+    careers_url: 'https://vshn.ch/jobs'
+    enabled: true
+
+  - name: 'WalletHub'
+    careers_url: 'https://wallethub.com/jobs'
+    enabled: true
+
+  - name: 'WebDevStudios'
+    careers_url: 'https://webdevstudios.com/careers/'
+    enabled: true
+
+  - name: 'WebFX'
+    careers_url: 'https://www.webfx.com/careers/'
+    enabled: true
+
+  - name: 'Webrunners GmbH'
+    careers_url: 'https://www.webrunners.de/jobs/'
+    enabled: true
+
+  - name: 'Wells Fargo'
+    careers_url: 'https://www.wellsfargo.com/about/careers/'
+    enabled: true
+
+  - name: 'wemake.services'
+    careers_url: 'https://wemake.services/meta/job-application'
+    enabled: true
+
+  - name: 'Whitecap SEO'
+    careers_url: 'https://www.whitecapseo.com/careers'
+    enabled: true
+
+  - name: 'WikiHow'
+    careers_url: 'https://www.wikihow.com/wikiHow:Jobs'
+    enabled: true
+
+  - name: 'Wikimedia Foundation'
+    careers_url: 'https://wikimediafoundation.org/wiki/Work_with_us#Wikimedia_Careers'
+    enabled: true
+
+  - name: 'Wildbit'
+    careers_url: 'http://wildbit.com/jobs'
+    enabled: true
+
+  - name: 'Willings Inc'
+    careers_url: 'https://willings.co.jp/en/join-us'
+    enabled: true
+
+  - name: 'Wingify'
+    careers_url: 'https://wingify.com/careers'
+    enabled: true
+
+  - name: 'Wipro'
+    careers_url: 'https://careers.wipro.com/careers-home/'
+    enabled: true
+
+  - name: 'WireFuture'
+    careers_url: 'https://wirefuture.com/careers'
+    enabled: true
+
+  - name: 'Wizeline'
+    careers_url: 'https://www.wizeline.com/careers/open-roles/'
+    enabled: true
+
+  - name: 'Wolfram'
+    careers_url: 'https://www.wolfram.com/company/careers/'
+    enabled: true
+
+  - name: 'Wolverine Trading'
+    careers_url: 'http://wolve.com/open-positions'
+    enabled: true
+
+  - name: 'Wombat Security Technologies'
+    careers_url: 'https://proofpoint.wd5.myworkdayjobs.com/ProofpointCareers/6/refreshFacet/318c8bb6f553100021d223d9780d30be'
+    enabled: true
+
+  - name: 'WP-Media'
+    careers_url: 'https://apply.workable.com/wp-media/'
+    enabled: true
+
+  - name: 'Wyeworks'
+    careers_url: 'https://www.wyeworks.com/careers'
+    enabled: true
+
+  - name: 'X-Team'
+    careers_url: 'https://x-team.com/join-application/'
+    enabled: true
+
+  - name: 'Xapo'
+    careers_url: 'https://xapo.com/en/careers'
+    enabled: true
+
+  - name: 'XWP'
+    careers_url: 'https://www.linkedin.com/company/xwp/jobs/'
+    enabled: true
+
+  - name: 'Yahoo!'
+    careers_url: 'https://www.yahooinc.com/careers/'
+    enabled: true
+
+  - name: 'Yandex'
+    careers_url: 'https://yandex.com/jobs/'
+    enabled: true
+
+  - name: 'YAZIO'
+    careers_url: 'https://www.yazio.com/en/jobs'
+    enabled: true
+
+  - name: 'Yodo1'
+    careers_url: 'https://www.yodo1.com/careers'
+    enabled: true
+
+  - name: 'Yonder'
+    careers_url: 'https://www.linkedin.com/company/yonder.io/jobs/'
+    enabled: true
+
+  - name: 'You Need A Budget'
+    careers_url: 'https://www.youneedabudget.com/careers/'
+    enabled: true
+
+  - name: 'YouCanBook.me Ltd'
+    careers_url: 'https://youcanbook.me/jobs/'
+    enabled: true
+
+  - name: 'Zaneffi'
+    careers_url: 'https://zaneffi.com/career'
+    enabled: true
+
+  - name: 'Zapier'
+    careers_url: 'https://zapier.com/jobs/'
+    enabled: true
+
+  - name: 'Zemoso'
+    careers_url: 'https://www.zemosolabs.com/open-positions'
+    enabled: true
+
+  - name: 'Zip Co'
+    careers_url: 'https://zip.co/us/about#careersection'
+    enabled: true
+
+  - name: 'ZooTools'
+    careers_url: 'https://zootools.notion.site/Careers-at-ZooTools-2e2815794b14415daca297506c54cb69'
+    enabled: true
+
+  - name: 'Zup'
+    careers_url: 'https://boards.greenhouse.io/zupinnovation'
+    enabled: true
+
+  - name: 'AlphaSights'
+    careers_url: 'https://www.alphasights.com/careers/'
+    enabled: true
+
+  - name: 'Rechat'
+    careers_url: 'https://rechat.rippling-ats.com/'
+    enabled: true
+
+  - name: 'Roundproxies'
+    careers_url: 'https://jobs.roundproxies.com/'
+    enabled: true
+
+  - name: 'Remote Garage'
+    careers_url: 'https://wellfound.com/company/remotegarage/jobs'
+    enabled: true
+
+  - name: '100 Thieves'
+    careers_url: 'https://100thieves.com/pages/careers'
+    enabled: true
+
+  - name: '23andMe'
+    careers_url: 'https://www.23andme.com/en-int/careers/'
+    enabled: true
+
+  - name: '3Com'
+    careers_url: 'http://www.3com.com/careers/'
+    enabled: true
+
+  - name: '[24]7.ai'
+    careers_url: 'https://www.247.ai/careers/'
+    enabled: true
+
+  - name: 'Against Gravity'
+    careers_url: 'https://recroom.com/careers'
+    enabled: true
+
+  - name: 'AgilOne'
+    careers_url: 'https://www.acquia.com/careers'
+    enabled: true
+
+  - name: 'Airbnb'
+    careers_url: 'https://careers.airbnb.com'
+    enabled: true
+
+  - name: 'Ameritox'
+    careers_url: 'https://www.weednews.co/jobs-that-dont-drug-test/'
+    enabled: true
+
+  - name: 'Amplitude'
+    careers_url: 'https://amplitude.com/careers'
+    enabled: true
+
+  - name: 'App Annie'
+    careers_url: 'https://www.data.ai/jobs'
+    enabled: true
+
+  - name: 'Apple'
+    careers_url: 'https://www.apple.com/careers/us/'
+    enabled: true
+
+  - name: 'Armis'
+    careers_url: 'https://www.armis.com/armis-careers/'
+    enabled: true
+
+  - name: 'Assurex Health'
+    careers_url: 'https://myriad.com/careers/'
+    enabled: true
+
+  - name: 'Atari'
+    careers_url: 'https://twitter.com/atari/jobs'
+    enabled: true
+
+  - name: 'Athelas'
+    careers_url: 'https://www.athelas.com/careers'
+    enabled: true
+
+  - name: 'Aurora'
+    careers_url: 'https://aurora.tech/careers'
+    enabled: true
+
+  - name: 'Avanex'
+    careers_url: 'http://www.avanex.com/careers'
+    enabled: true
+
+  - name: 'Barefoot Networks'
+    careers_url: 'https://www.intel.com/content/www/us/en/jobs/life-at-intel.html'
+    enabled: true
+
+  - name: 'Barracuda Networks'
+    careers_url: 'https://www.barracuda.com/company/careers'
+    enabled: true
+
+  - name: 'Bird'
+    careers_url: 'https://www.bird.co/careers/'
+    enabled: true
+
+  - name: 'BridgeBio'
+    careers_url: 'https://bridgebio.com/careers'
+    enabled: true
+
+  - name: 'Cafepress'
+    careers_url: 'https://www.cafepress.com/careers'
+    enabled: true
+
+  - name: 'Carbon'
+    careers_url: 'https://job-boards.greenhouse.io/carbon'
+    enabled: true
+
+  - name: 'Chartboost'
+    careers_url: 'https://loopme.com/chartboost/'
+    enabled: true
+
+  - name: 'Cisco'
+    careers_url: 'https://www.cisco.com/careers/'
+    enabled: true
+
+  - name: 'Citizen'
+    careers_url: 'https://www.citizen.com:443/careers'
+    enabled: true
+
+  - name: 'Clari'
+    careers_url: 'https://www.clari.com/careers/'
+    enabled: true
+
+  - name: 'Clever'
+    careers_url: 'https://www.clever.com/about/careers'
+    enabled: true
+
+  - name: 'Clickatell'
+    careers_url: 'https://www.clickatell.com/jobs'
+    enabled: true
+
+  - name: 'Clover Health'
+    careers_url: 'https://www.cloverhealth.com/about-us/careers'
+    enabled: true
+
+  - name: 'Cobalt Robotics'
+    careers_url: 'https://www.cobaltai.com/careers/'
+    enabled: true
+
+  - name: 'Cohesity'
+    careers_url: 'https://www.cohesity.com/careers/'
+    enabled: true
+
+  - name: 'Cumulus Networks'
+    careers_url: 'https://www.nvidia.com/en-us/about-nvidia/'
+    enabled: true
+
+  - name: 'Dia&Co'
+    careers_url: 'https://www.dia.com/jobs'
+    enabled: true
+
+  - name: 'Docker'
+    careers_url: 'https://www.docker.com/careers/'
+    enabled: true
+
+  - name: 'Domino Data Lab'
+    careers_url: 'https://domino.ai/careers'
+    enabled: true
+
+  - name: 'DoorDash'
+    careers_url: 'https://careersatdoordash.com'
+    enabled: true
+
+  - name: 'Drift'
+    careers_url: 'https://www.drift.com/careers'
+    enabled: true
+
+  - name: 'Dropbox'
+    careers_url: 'https://www.dropbox.jobs/en/'
+    enabled: true
+
+  - name: 'Druva'
+    careers_url: 'https://www.druva.com/why-druva/explore/careers'
+    enabled: true
+
+  - name: 'Electronic Arts'
+    careers_url: 'https://www.ea.com/careers'
+    enabled: true
+
+  - name: 'Elevate'
+    careers_url: 'https://jobs.ashbyhq.com/themindcompany'
+    enabled: true
+
+  - name: 'Ethos'
+    careers_url: 'https://www.ethos.com/careers/?utm_source=network&utm_medium=radio&utm_campaign=NoExcuses30s'
+    enabled: true
+
+  - name: 'Eventbrite'
+    careers_url: 'https://www.eventbritecareers.com/'
+    enabled: true
+
+  - name: 'Evernote'
+    careers_url: 'https://jobs.bendingspoons.com/'
+    enabled: true
+
+  - name: 'Everwise'
+    careers_url: 'https://www.geteverwise.com/careers'
+    enabled: true
+
+  - name: 'Faire'
+    careers_url: 'https://www.faire.com/careers'
+    enabled: true
+
+  - name: 'FireEye'
+    careers_url: 'https://careers.trellix.com/'
+    enabled: true
+
+  - name: 'First Republic Bank'
+    careers_url: 'https://www.jpmorganchase.com/careers'
+    enabled: true
+
+  - name: 'Flex'
+    careers_url: 'https://flextronics.wd1.myworkdayjobs.com/en-US/Careers'
+    enabled: true
+
+  - name: 'Front'
+    careers_url: 'https://front.com/jobs'
+    enabled: true
+
+  - name: 'GameFly'
+    careers_url: 'https://www.gamefly.com/careers'
+    enabled: true
+
+  - name: 'GenEdit'
+    careers_url: 'https://breezebio.com/careers/'
+    enabled: true
+
+  - name: 'GitHub'
+    careers_url: 'https://www.github.careers/careers-home'
+    enabled: true
+
+  - name: 'Glossier'
+    careers_url: 'https://life.glossier.com/'
+    enabled: true
+
+  - name: 'Good Eggs'
+    careers_url: 'https://www.careers.goodeggs.com/'
+    enabled: true
+
+  - name: 'Google'
+    careers_url: 'https://www.google.com/about/careers/applications/'
+    enabled: true
+
+  - name: 'Graphcore'
+    careers_url: 'https://www.graphcore.ai/careers'
+    enabled: true
+
+  - name: 'Green Dot'
+    careers_url: 'https://secure.greendot.com/greendot/careers'
+    enabled: true
+
+  - name: 'Guardant Health'
+    careers_url: 'https://www.guardanthealth.com/careers/'
+    enabled: true
+
+  - name: 'Health Catalyst'
+    careers_url: 'https://www.healthcatalyst.com/job-openings'
+    enabled: true
+
+  - name: 'Hearsay Systems'
+    careers_url: 'https://www.yext.com/?utm_source=hearsay'
+    enabled: true
+
+  - name: 'HireVue'
+    careers_url: 'https://www.hirevue.com/careers'
+    enabled: true
+
+  - name: 'Houzz'
+    careers_url: 'https://www.houzz.com/jobs'
+    enabled: true
+
+  - name: 'HubSpot'
+    careers_url: 'https://www.hubspot.com/careers'
+    enabled: true
+
+  - name: 'Infoblox'
+    careers_url: 'https://www.infoblox.com/company/careers/'
+    enabled: true
+
+  - name: 'Inkling'
+    careers_url: 'https://apply.workable.com/echo360-inc/'
+    enabled: true
+
+  - name: 'Instacart'
+    careers_url: 'https://www.instacart.careers/'
+    enabled: true
+
+  - name: 'Instagram'
+    careers_url: 'https://www.instagram.com/careers'
+    enabled: true
+
+  - name: 'Ironclad'
+    careers_url: 'https://ironcladapp.com/careers'
+    enabled: true
+
+  - name: 'Jive'
+    careers_url: 'https://ignitetech.ai/software-library/jive/'
+    enabled: true
+
+  - name: 'KAYAK'
+    careers_url: 'https://www.kayak.com/careers'
+    enabled: true
+
+  - name: 'Klarna'
+    careers_url: 'https://www.klarna.com/careers/'
+    enabled: true
+
+  - name: 'Lifecode'
+    careers_url: 'https://lifecodehealth.com/careers/'
+    enabled: true
+
+  - name: 'Lilt'
+    careers_url: 'https://lilt.com/careers'
+    enabled: true
+
+  - name: 'Limbix'
+    careers_url: 'https://www.bighealth.com'
+    enabled: true
+
+  - name: 'LinkedIn'
+    careers_url: 'https://www.linkedin.com/jobs'
+    enabled: true
+
+  - name: 'LitePoint'
+    careers_url: 'https://jobs.teradyne.com/LitePoint'
+    enabled: true
+
+  - name: 'Luminate'
+    careers_url: 'https://ayndesk.com/careers'
+    enabled: true
+
+  - name: 'Mapillary'
+    careers_url: 'https://www.mapillary.com/careers?locale=ar_AR'
+    enabled: true
+
+  - name: 'MarkLogic'
+    careers_url: 'https://www.progress.com/marklogic'
+    enabled: true
+
+  - name: 'Maven'
+    careers_url: 'https://www.mavenclinic.com/careers'
+    enabled: true
+
+  - name: 'Medallia'
+    careers_url: 'https://jobs.medallia.com/'
+    enabled: true
+
+  - name: 'Mellanox'
+    careers_url: 'https://www.nvidia.com/en-us/about-nvidia/careers/'
+    enabled: true
+
+  - name: 'Meraki'
+    careers_url: 'https://careers.cisco.com/global/en/home'
+    enabled: true
+
+  - name: 'Metanautix'
+    careers_url: 'https://www.premiumtimesng.com/casino/hu/legjobb-online-kaszino-bonusz/'
+    enabled: true
+
+  - name: 'Metaswitch Networks'
+    careers_url: 'https://www.metaswitch.com'
+    enabled: true
+
+  - name: 'MongoDB'
+    careers_url: 'https://www.mongodb.com/company/careers'
+    enabled: true
+
+  - name: 'Moovit'
+    careers_url: 'https://moovitapp.com/join-us'
+    enabled: true
+
+  - name: 'Mu Sigma'
+    careers_url: 'https://www.mu-sigma.com/career/'
+    enabled: true
+
+  - name: 'Namely'
+    careers_url: 'https://vensure.com/about-us/careers/'
+    enabled: true
+
+  - name: 'Natera'
+    careers_url: 'https://www.natera.com/company/careers/'
+    enabled: true
+
+  - name: 'Netezza'
+    careers_url: 'https://www.ibm.com/us-en'
+    enabled: true
+
+  - name: 'Nimble'
+    careers_url: 'https://www.nimblerx.com/careers'
+    enabled: true
+
+  - name: 'Noom'
+    careers_url: 'https://www.noom.com/careers/job-listings/'
+    enabled: true
+
+  - name: 'Numerify'
+    careers_url: 'https://digital.ai/why-digital-ai/careers/'
+    enabled: true
+
+  - name: 'NVIDIA'
+    careers_url: 'https://www.nvidia.com/en-us/about-nvidia/careers/'
+    enabled: true
+
+  - name: 'Orchid Labs'
+    careers_url: 'https://www.orchid.com/careers/'
+    enabled: true
+
+  - name: 'Palo Alto Networks'
+    careers_url: 'https://jobs.paloaltonetworks.com/en'
+    enabled: true
+
+  - name: 'PayPal'
+    careers_url: 'https://careers.pypl.com/home/'
+    enabled: true
+
+  - name: 'PicsArt'
+    careers_url: 'https://picsart.com/careers/'
+    enabled: true
+
+  - name: 'Pocket Gems'
+    careers_url: 'https://www.pocketgems.com/careers/'
+    enabled: true
+
+  - name: 'Polychain Capital'
+    careers_url: 'https://jobs.polychain.capital/companies'
+    enabled: true
+
+  - name: 'POPSUGAR'
+    careers_url: 'https://corp.voxmedia.com/jobs/'
+    enabled: true
+
+  - name: 'Progress Software'
+    careers_url: 'https://www.progress.com/company/careers'
+    enabled: true
+
+  - name: 'Prosper'
+    careers_url: 'https://www.prosper.com:443/jobs'
+    enabled: true
+
+  - name: 'Qualtrics'
+    careers_url: 'https://www.qualtrics.com/careers/us/en'
+    enabled: true
+
+  - name: 'Quantum Circuits'
+    careers_url: 'https://quantumcircuits.com/join-our-team/'
+    enabled: true
+
+  - name: 'Rackspace'
+    careers_url: 'https://rackspace.wd1.myworkdayjobs.com/External'
+    enabled: true
+
+  - name: 'Rappi'
+    careers_url: 'https://images.rappi.com/cms-web/images/join_4f83d0801b.png?e=webp&amp;d=400x200&amp;q=80'
+    enabled: true
+
+  - name: 'Re:store'
+    careers_url: 'https://www.join-restore.com/default.xsl?sitemap=root'
+    enabled: true
+
+  - name: 'reddit'
+    careers_url: 'https://www.reddit.com/careers'
+    enabled: true
+
+  - name: 'Remix'
+    careers_url: 'https://ridewithvia.com/careers/'
+    enabled: true
+
+  - name: 'RingCentral'
+    careers_url: 'https://www.ringcentral.com/company/careers/overview.html'
+    enabled: true
+
+  - name: 'Robinhood'
+    careers_url: 'https://careers.robinhood.com/'
+    enabled: true
+
+  - name: 'Ruckus Wireless'
+    careers_url: 'https://www.ruckusnetworks.com/?utm_source=ruckus&utm_medium=redirect'
+    enabled: true
+
+  - name: 'Saba Software'
+    careers_url: 'https://www.cornerstoneondemand.com/'
+    enabled: true
+
+  - name: 'Scanntech'
+    careers_url: 'https://www.scanntech.com.br/en/careers/'
+    enabled: true
+
+  - name: 'SecurityScorecard'
+    careers_url: 'https://securityscorecard.com/company/careers/'
+    enabled: true
+
+  - name: 'SimpliSafe'
+    careers_url: 'https://careers.simplisafe.com'
+    enabled: true
+
+  - name: 'Skyscanner'
+    careers_url: 'https://www.skyscanner.com/jobs'
+    enabled: true
+
+  - name: 'Snowflake'
+    careers_url: 'https://careers.snowflake.com/us/en'
+    enabled: true
+
+  - name: 'Sourcefire'
+    careers_url: 'https://www.cisco.com/site/us/en/products/security/index.html'
+    enabled: true
+
+  - name: 'Square'
+    careers_url: 'https://block.xyz/careers/jobs?businessUnits%5B%5D=square'
+    enabled: true
+
+  - name: 'StackRox'
+    careers_url: 'https://www.redhat.com/en/jobs'
+    enabled: true
+
+  - name: 'StarkWare'
+    careers_url: 'https://starkware.co/careers/'
+    enabled: true
+
+  - name: 'Strava'
+    careers_url: 'https://www.strava.com/careers'
+    enabled: true
+
+  - name: 'Streamlabs'
+    careers_url: 'https://www.logitech.com/en-us/careers'
+    enabled: true
+
+  - name: 'Stripe'
+    careers_url: 'https://stripe.com/ae/jobs'
+    enabled: true
+
+  - name: 'Sumo Logic'
+    careers_url: 'https://www.sumologic.com/company/careers'
+    enabled: true
+
+  - name: 'Sunrun'
+    careers_url: 'https://careers.sunrun.com/'
+    enabled: true
+
+  - name: 'Telcare'
+    careers_url: 'https://www.careers.philips.com/emea/en'
+    enabled: true
+
+  - name: 'Tessian'
+    careers_url: 'https://www.proofpoint.com/us/company/careers'
+    enabled: true
+
+  - name: 'Thanx'
+    careers_url: 'https://www.thanx.com/careers'
+    enabled: true
+
+  - name: 'Threads'
+    careers_url: 'https://www.threads.com/login/?next=https%3A%2F%2Fwww.threads.com%2Fcareers%2F'
+    enabled: true
+
+  - name: 'Thumbtack'
+    careers_url: 'https://www.thumbtack.com/careers'
+    enabled: true
+
+  - name: 'Tourlane'
+    careers_url: 'https://careers.tourlane.com/'
+    enabled: true
+
+  - name: 'Tula Technology'
+    careers_url: 'https://www.tulatech.com/careers/'
+    enabled: true
+
+  - name: 'Tumblr'
+    careers_url: 'https://www.tumblr.com/jobs'
+    enabled: true
+
+  - name: 'TuneIn'
+    careers_url: 'https://cms.tunein.com/careers/'
+    enabled: true
+
+  - name: 'UiPath'
+    careers_url: 'https://www.uipath.com/careers'
+    enabled: true
+
+  - name: 'Unity Technologies'
+    careers_url: 'https://unity.com/careers'
+    enabled: true
+
+  - name: 'Verkada'
+    careers_url: 'https://www.verkada.com/careers/'
+    enabled: true
+
+  - name: 'Versa Networks'
+    careers_url: 'https://versa-networks.com/careers/'
+    enabled: true
+
+  - name: 'Weebly'
+    careers_url: 'https://careers.squareup.com/us/en'
+    enabled: true
+
+  - name: 'Whisper'
+    careers_url: 'http://whisper.sh/careers'
+    enabled: true
+
+  - name: 'Wonolo'
+    careers_url: 'https://info.wonolo.com/careers/'
+    enabled: true
+
+  - name: 'Xoom'
+    careers_url: 'https://www.xoom.com/sign-in'
+    enabled: true
+
+  - name: 'YouTube'
+    careers_url: 'https://www.youtube.com/careers'
+    enabled: true
+
+  - name: 'Zappos'
+    careers_url: 'https://amazon.jobs/content/en/teams/north-america-stores/zappos'
+    enabled: true
+
+  - name: 'Zipline'
+    careers_url: 'https://www.zipline.com/newsroom/news/announcements/zipline-to-triple-u-s-manufacturing-facility-creating-more-jobs-in-ai-and-robotics'
+    enabled: true
+
+  - name: 'ZirMed'
+    careers_url: 'https://careers.waystar.com/?vs=4980&utm_source=waystar.com-DE&utm_medium=Other&utm_campaign=waystar.com'
+    enabled: true
+
+  - name: 'Zoom'
+    careers_url: 'https://explore.zoom.us/en/careers/'
+    enabled: true
+
+  - name: 'Zum'
+    careers_url: 'https://www.ridezum.com/company/careers/'
+    enabled: true
