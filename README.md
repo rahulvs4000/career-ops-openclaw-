@@ -28,200 +28,303 @@ It is built for people who want:
 
 It is not a generic chat prompt. It is a workflow package with named modes, shared rules, and deterministic helper scripts.
 
-## Core capabilities
+## What it actually does
 
-### 1. Job description review
+This skill is built around a simple idea: every opportunity should go through the same disciplined workflow.
 
-The skill can take a job description, a job post URL, or raw role text and turn it into a structured evaluation.
+When you paste a job post or URL, it can:
 
-Typical outcomes:
+- extract the job description
+- score the role against your background
+- create a report for that specific opportunity
+- generate a tailored CV PDF
+- prepare application answers when the fit is strong enough
+- register the role in your tracker and pipeline
 
-- summarize the role clearly
-- identify fit and risk factors
-- highlight missing requirements
-- suggest whether it is worth pursuing
-- prepare the next steps if the role looks good
+When you use it over time, it becomes a job-search operating system rather than a one-off assistant.
 
-### 2. Application preparation
+## What it searches automatically
 
-The skill supports preparing the materials and context needed before applying.
+The scanner is opinionated. It does not search the entire internet randomly.
 
-This includes:
+Out of the box, it searches public job sources such as:
 
-- tailoring the CV for a specific role
-- preparing cover-letter or supporting materials
-- capturing company and role details
-- organizing the application into the tracker and pipeline
+- Ashby
+- Greenhouse
+- Lever
+- Wellfound
+- Workable
+- RemoteFront
 
-### 3. Tracking and pipeline management
+It also ships with a preloaded company watchlist so it can check real career pages directly. The default list is focused on AI, agent, solutions, forward-deployed, automation, and AI-product roles.
 
-The skill keeps job-search state organized across files so the process stays understandable and auditable.
+That watchlist includes companies such as:
 
-It supports:
+- OpenAI
+- Anthropic
+- PolyAI
+- Parloa
+- Intercom
+- Hume AI
+- ElevenLabs
+- Deepgram
+- Vapi
+- Bland AI
+- Retool
+- Airtable
+- Vercel
+- Temporal
+- Arize AI
+- RunPod
+- Glean
+- Ada
+- LivePerson
+- Sierra
+- Decagon
+- Talkdesk
+- Twilio
+- Dialpad
+- Gong
+- Genesys
+- Salesforce
+- Langfuse
+- Lindy
+- Cognigy
+- Speechmatics
+- n8n
+- Zapier
+- Make.com
+- Cohere
+- LangChain
+- Pinecone
+- Mistral AI
+- Weights & Biases
+- Palantir
+- Factorial
+- Attio
+- Tinybird
+- Clarity AI
+- TravelPerk
 
-- pipeline review
-- tracker updates
-- status normalization
-- duplicate cleanup
-- merge handling
-- verification of pipeline integrity
+The default search patterns are aimed at roles like:
 
-### 4. CV and PDF output
+- AI Product Manager
+- Solutions Architect
+- Solutions Engineer
+- Forward Deployed Engineer
+- AI Engineer
+- LLM Engineer
+- Agentic / automation roles
+- Voice AI and conversational AI roles
+- GTM engineer and business-systems automation roles
 
-The skill can prepare polished output artifacts, including PDF generation for CV-based workflows.
+It also filters out obvious noise, such as junior roles, internships, mobile roles, crypto/Web3, and unrelated tech stacks.
 
-This is useful when you need:
+## How company-site scanning works
 
-- a shareable document
-- a clean application attachment
-- a repeatable document generation workflow
+The skill does not rely on just one method.
 
-### 5. Scanning and batch processing
+It uses three layers:
 
-The skill can scan sources and process multiple opportunities in a controlled batch flow.
+1. Direct career-page scanning for specific companies.
+2. Structured Greenhouse API access when a company exposes a public Greenhouse feed.
+3. Broad search queries as a fallback for discovery.
 
-This is useful when you want to:
+In practice, that means:
 
-- review many roles efficiently
-- avoid manually handling each one from scratch
-- keep status and tracking consistent across a queue
+- if a company has a clean public jobs page, the skill can read it directly
+- if a company uses Greenhouse and exposes a public feed, the skill can read the structured listing faster
+- if the site is harder to parse, the skill falls back to web search and public indexing
 
-## How it behaves
+This is important because many modern job sites are dynamic, not simple text pages.
 
-The skill uses named modes rather than a single monolithic prompt.
+## What happens if you want a specific company
 
-Main modes:
+If you want the skill to focus on a company you care about, it can do that.
 
-- `oferta`
-- `ofertas`
-- `contacto`
-- `deep`
-- `pdf`
-- `training`
-- `project`
-- `tracker`
-- `pipeline`
-- `apply`
-- `scan`
-- `batch`
-- `auto-pipeline`
+The intended product behavior is:
 
-How routing works:
+- add the company to your tracked company list
+- point the skill at that company’s careers page
+- let the scanner check that company directly on future runs
 
-- If you call `/career-ops` with no extra input, it shows the command menu.
-- If you call `/career-ops <mode>`, it goes directly to that workflow.
-- If you paste a job description or a job URL, it automatically routes into `auto-pipeline`.
+If the company uses a common recruiting platform such as Greenhouse, Ashby, or Lever, the skill is usually able to work with that pattern immediately.
 
-## What users need to set up
+If the company has its own custom careers page, the skill can still work, but the quality depends on how accessible the page is publicly.
 
-This skill expects a small set of working files so it can operate as a real job-search system.
+If the job page is behind login, SSO, or an employee-only portal, the skill does not pretend it can see through that. In those cases it falls back to a manual flow:
 
-Required source-of-truth files:
+- you paste the job description
+- or you provide screenshots
+- or you open the page in a logged-in browser session and use the live application flow
 
-- `cv.md`
-- `config/profile.yml`
-- `portals.yml`
+## How it handles your resume and profile
 
-Required working files used by the workflow:
+The skill treats your resume as a source of truth, not something to rewrite carelessly.
 
-- `data/applications.md`
-- `data/pipeline.md`
-- `data/scan-history.tsv`
+It expects three main inputs from you:
 
-Helpful supporting files:
+- `cv.md` for your actual resume content
+- `config/profile.yml` for personal details, target roles, compensation range, and narrative
+- `article-digest.md` if you want to include deeper proof points, case studies, or fresher metrics
 
-- `interview-prep/story-bank.md`
-- `reports/`
+Its resume behavior is very specific:
 
-If the required files are missing, the skill points users to the setup guidance in `references/setup.md`.
+- it reads your base resume before evaluating any role
+- it matches job requirements against your real experience
+- it uses your stored proof points and metrics
+- it can tailor a CV for a specific role
+- it generates a polished PDF version for applications
+
+What it does not do:
+
+- it does not invent experience
+- it does not invent metrics
+- it does not silently overwrite your base resume as the truth source
+
+For tailored CV output, it adjusts language and emphasis to the job description. It can:
+
+- extract role keywords
+- rewrite the summary for the role
+- reorder bullets by relevance
+- select the most relevant projects
+- build a cleaner competency section
+
+But it is meant to stay grounded in what is already true in your underlying material.
+
+## How application support works
+
+This skill is not just for evaluating roles. It also helps when you are actually filling out an application.
+
+In live apply mode, it can:
+
+- read the current application page
+- identify the company and role
+- look up the matching report if one already exists
+- generate answers for visible form questions
+- adapt previous draft answers if you already evaluated the role earlier
+
+This includes common application questions such as:
+
+- why this role
+- why this company
+- relevant project or achievement
+- work authorization
+- salary expectations
+- how did you hear about us
+
+If the role on screen has changed from the one previously evaluated, the skill flags that and asks whether to adapt or re-evaluate.
+
+## How the pipeline and tracker behave
+
+The skill keeps a real operating history of your job search.
+
+It maintains:
+
+- a pipeline of roles to review
+- an applications tracker
+- scan history to avoid rediscovering the same jobs
+- reports for evaluated roles
+- generated PDFs and related output
+
+It also enforces cleanup rules so the system does not drift over time:
+
+- deduplicate repeated entries
+- normalize statuses
+- merge batch additions cleanly
+- verify pipeline integrity
+- prefer updating existing entries instead of creating duplicates
+
+This is one of the main reasons the skill feels operational rather than conversational.
+
+## What credentials or secrets are needed
+
+For normal use, there are very few secrets.
+
+Most users only need:
+
+- their own profile information
+- their resume content
+- Playwright/browser support so the skill can read live job pages when needed
+
+There is no required API key for basic scanning, evaluation, tracker management, or PDF generation inside this package.
+
+Optional credentials may matter in a few cases:
+
+- if you want the skill to read a page that only appears after login, you need an active logged-in browser session
+- if you want to reference a private demo or dashboard in applications, you can store its URL and password in your profile
+- if you want fully automated batch worker execution, you need to configure the batch worker command in your environment
+
+What the skill does when credentials are missing:
+
+- for public sites, it continues normally
+- for login-gated pages, it marks the role for manual follow-up instead of faking a result
+- for private or inaccessible job descriptions, it asks you to paste the JD or provide a screenshot
+
+## What setup users actually need
+
+From a product point of view, the setup is straightforward.
+
+You need:
+
+- your resume in `cv.md`
+- your personal profile in `config/profile.yml`
+- your portal and company watchlist in `portals.yml`
+- the standard tracker and pipeline files used by the workflow
+
+Once that is in place, users can:
+
+- start with `/career-ops`
+- paste a job URL
+- paste a raw job description
+- run a scan over configured portals and tracked companies
+- use apply mode while filling out an actual application
+
+## How the skill decides what to do
+
+The skill supports several named workflows, but the most important user-facing behavior is simple:
+
+- `/career-ops` shows the menu
+- `/career-ops` plus a job URL or pasted JD starts the automatic pipeline
+- `/career-ops scan` checks configured portals and tracked companies
+- `/career-ops apply` helps on a live application form
+- `/career-ops pdf` creates a tailored application-ready PDF
+- `/career-ops pipeline` works through queued opportunities
+
+## Guardrails
+
+This skill is intentionally conservative in the places that matter.
+
+It is designed to:
+
+- avoid blind mass application behavior
+- avoid auto-submitting forms on your behalf
+- discourage weak-fit opportunities
+- prefer strong, explainable matches over volume
+- verify live job state with browser-backed checks where possible
+
+That is a product choice, not an implementation detail.
 
 ## What is included in this repository
 
-This repository includes the full skill package needed to use and share the workflow:
+This repository includes the full packaged skill:
 
-- `SKILL.md` for skill routing and behavior
-- mode-specific guidance in `references/modes/`
-- setup guidance in `references/setup.md`
-- deterministic scripts in `scripts/`
-- batch workflow support in `scripts/batch/`
-- templates for state and document generation
-- example configuration and example content
-- fonts and other assets needed for document output
+- the OpenClaw skill definition
+- the mode instructions
+- the setup guide
+- the deterministic support scripts
+- the templates used for document and state handling
+- example profile and data files
+- the assets needed for polished PDF output
 
-## The user experience
+## Who this is for
 
-The intended experience is simple:
+This package is a good fit for:
 
-1. Open the skill in OpenClaw.
-2. Start with a job post, a URL, or a mode name.
-3. Let the skill decide whether the role is worth pursuing.
-4. Use the follow-up workflow to organize the application.
-5. Keep the tracker, pipeline, and documents consistent as you move forward.
+- individual job seekers who want a disciplined system
+- operators helping someone manage a high-touch search
+- people targeting AI, solutions, automation, or forward-deployed roles
+- anyone who wants one reusable workflow instead of dozens of scattered prompts
 
-The emphasis is quality over quantity.
-
-## Important behavior rules
-
-The skill intentionally avoids weak or low-confidence behavior.
-
-It follows these rules:
-
-- no blind mass-apply behavior
-- no auto-submit without human review
-- discourage weak-fit applications
-- prioritize fit and quality over volume
-- verify live job state with browser-backed checks when needed
-
-## Deterministic operations
-
-Some actions are handled by scripts so the results are consistent.
-
-These scripts cover:
-
-- CV sync checking
-- PDF generation
-- tracker merging
-- tracker deduplication
-- pipeline verification
-- status normalization
-
-This matters because job-search state needs to stay clean and reliable over time.
-
-## Dependencies
-
-This skill expects:
-
-- Node.js
-- Playwright
-- a browser runtime for browser-backed checks
-
-Most users will only need to install the package dependencies and browser binaries once.
-
-## Why this exists as a standalone package
-
-This repository is designed to be posted and reused as a public skill package.
-
-That means:
-
-- the workflow is self-contained
-- the behavior is documented in one place
-- the scripts and templates travel with the skill
-- the package can be shared without the original OpenClaw workspace
-
-## If you are a user, start here
-
-1. Read `SKILL.md` for the routing behavior.
-2. Review `references/setup.md` if your files are not ready yet.
-3. Start with `/career-ops` or paste a job description or URL.
-4. Use the mode the skill routes you into.
-
-## If you are publishing this skill
-
-This repository is the publishable package.
-
-It is meant to be cloned, installed, and used as:
-
-- a GitHub-hosted skill repository
-- a ClawHub.ai skill package
-- a reusable OpenClaw workflow for job search operations
+It is especially useful when the search is selective and high-value, not mass-market.
 
