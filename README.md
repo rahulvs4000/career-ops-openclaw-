@@ -149,6 +149,17 @@ It maintains three working files:
 - `data/applications.md` for tracking application status over time
 - `data/scan-history.tsv` for the full audit trail of what each scan found
 
+`data/applications.md` now uses canonical English status labels only. The tracker flow expects statuses such as:
+
+- `Evaluated`
+- `Applied`
+- `Responded`
+- `Interview`
+- `Offer`
+- `Rejected`
+- `Discarded`
+- `SKIP`
+
 When a role clears the threshold, it is written into `data/pipeline.md` with:
 
 - the date it was found
@@ -211,7 +222,7 @@ Typical usage looks like this:
 2. Receive a digest of new high-relevance roles
 3. Review the surfaced jobs in your OpenClaw channel
 4. Use `data/pipeline.md` and `data/applications.md` as the persistent state behind that digest
-5. Update tracker status as you move from review to application to response to interview
+5. Update tracker status using the canonical English labels as you move from review to application to response to interview
 
 For very large source lists, the underlying scalable version of the same flow is:
 
