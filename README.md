@@ -1,16 +1,26 @@
 # Career-Ops for OpenClaw
 
+## Installation
+
+Run:
+
+```bash
+npm install
+npx playwright install chromium
+```
+
+This installs the runtime dependencies used by the skill:
+
+- `playwright` for browser-based job-page extraction and PDF rendering
+- `yaml` for reading the skill's YAML config files
+
 `career-ops` is an OpenClaw skill for managing the job search process end to end.
 
 It helps you:
 
 - find relevant jobs
-- review a job description
-- judge fit before applying
-- prepare application materials
 - generate CV and supporting PDFs
 - track opportunities and pipeline status
-- run batch workflows over many roles
 
 This repository is the standalone skill package. It is meant to be shared, installed, and reused as a productized OpenClaw skill.
 
@@ -21,9 +31,9 @@ Use this skill when you want a structured job-search assistant that behaves cons
 It is built for people who want:
 
 - fewer random one-off job applications
-- more deliberate application decisions
+- more deliberate job search operations
 - repeatable tracking and status management
-- a clear process for CV and pipeline updates
+- a clear process for CV updates and PDF generation
 - script-backed reliability instead of ad hoc manual steps
 
 It is not a generic chat prompt. It is a workflow package with named modes, shared rules, and deterministic helper scripts.
@@ -63,93 +73,67 @@ Searches only run when you ask for them, typically with `/career-ops scan`. Ther
 - enabled tracked companies
 - any companies or queries you added yourself
 
-After each scan, the skill reports what happened: how many queries ran, how many jobs were found, how many were filtered out, how many were duplicates, and how many were added to the pipeline. If nothing relevant was found, the summary makes that explicit.
+The scan does not surface every match. It runs a relevance pass first and only keeps openings that clear your configured threshold. That threshold comes from your profile settings, not from hardcoded guesswork.
 
-To customize job discovery, edit `portals.yml`:
+The current relevance check combines:
 
-- `search_queries` to add or remove broad searches
-- `tracked_companies` to add your own target companies
-- `title_filter` to tighten or widen what counts as relevant
+- your target roles in `config/profile.yml`
+- your preferred companies
+- your priority keywords
+- your location preferences
+- the positive and negative title filters in `portals.yml`
+- seniority signals such as Senior, Staff, Principal, or Lead
+
+This is what decides whether a role is good enough to be surfaced. Roles below the threshold are recorded in scan history but are not delivered.
+
+To customize job discovery, edit:
+
+- `portals.yml` to add or remove search queries, tracked companies, and title filters
+- `config/profile.yml` to change your target roles, preferred companies, priority keywords, locations, threshold, and max jobs per run
 
 If you want a specific company site checked every time, add it to `tracked_companies` with its careers URL. If it has a public Greenhouse API, the skill can use that too. If the page is behind login or SSO, the skill does not fake access. It falls back to a manual path: paste the JD, provide screenshots, or use a logged-in browser session.
 
-## 2. Review a job description
+Duplicates are not delivered. Every run deduplicates against:
 
-When you paste a job post, a job URL, or raw JD text, the skill turns it into a structured review.
+- prior scan history
+- the current pipeline
+- the applications tracker
 
-It can:
+That means if you run the flow regularly, the same role should not be pushed again unless you deliberately change your state files.
 
-- extract the JD from the page
-- summarize the role clearly
-- identify requirements and signals that matter
-- pull out the parts of the job worth responding to directly
+The skill itself does not define its own Telegram, email, or webhook system anymore. It prepares the final digest, and OpenClaw should deliver that digest through whichever channel is already configured for the user session.
 
-For public pages, it prefers browser-based reading because many job sites are dynamic. If the page is simple, it can use lighter retrieval. If the page is inaccessible, it asks for the JD manually instead of pretending it read it.
+## 2. Generate CV and supporting PDFs
 
-## 3. Judge fit before applying
-
-This skill is built to help users decide whether a role is worth pursuing before spending time on it.
-
-It compares the role against your actual background, then produces a role-specific evaluation. That evaluation feeds the next steps: whether to ignore the role, track it, prepare materials, or move toward application.
-
-This is where the workflow stays intentionally selective:
-
-- it prefers strong-fit roles over high volume
-- it discourages weak-fit applications
-- it uses the same evaluation logic each time so decisions stay consistent
-
-## 4. Prepare application materials
-
-Once a role looks worthwhile, the skill helps with application prep.
-
-That includes:
-
-- role-specific application context
-- draft answers for common form questions
-- support for live application sessions
-- reuse of earlier report context when the same role is already in the system
-
-In live apply mode, it can read the current form, identify the company and role, and generate answers for visible questions like:
-
-- why this role
-- why this company
-- relevant achievement
-- work authorization
-- salary expectations
-- how you heard about the role
-
-If the role on screen does not match the role previously evaluated, it flags that and asks whether to adapt or re-evaluate.
-
-## 5. Generate CV and supporting PDFs
-
-The skill treats your materials as source-of-truth inputs, not as disposable text.
-
-It reads:
+The skill treats your materials as source-of-truth inputs, not as disposable text. It reads:
 
 - `cv.md` as the baseline record of your experience
-- `config/profile.yml` as the record of your identity, target roles, narrative, compensation, and location context
+- `config/profile.yml` as the record of your identity, target roles, narrative, and location context
 - `article-digest.md`, if you use it, as a richer source of proof points and fresher metrics
 
-That means users can customize how the skill reads and presents them by editing those files. In particular, `config/profile.yml` is where you change:
+That means users can change how the skill reads and presents them by editing those files. In particular, `config/profile.yml` is where you change:
 
 - your public profile details
 - your target role direction
 - your headline and transition story
 - your proof points
-- your compensation range
 - your work-authorization and location context
 
-For tailored output, the skill can:
+If you want a role-targeted PDF, give the skill a job post or a clear company-and-role brief. It can then:
 
-- extract keywords from the JD
+- extract keywords from the role context
 - rewrite the professional summary
 - reorder experience bullets by relevance
 - choose the most relevant projects
 - generate a polished PDF for the application
 
+If you do not provide role context, it can still generate a clean general-purpose CV PDF from your saved profile and resume data.
+
 It does not invent experience or metrics. If both `cv.md` and `article-digest.md` mention the same proof point, the richer or newer detail from `article-digest.md` is preferred.
 
-## 6. Track opportunities and pipeline status
+The output is a real `.pdf` file rendered from HTML through Playwright/Chromium. It is designed to stay ATS-friendly and uses `letter` for US/Canada and `a4` elsewhere.
+
+## 3. Track opportunities and pipeline status
 
 The skill keeps the search organized as an operating system, not a pile of notes.
 
@@ -158,51 +142,61 @@ It maintains:
 - a pipeline of roles to process
 - an applications tracker
 - scan history so the same jobs are not rediscovered endlessly
-- reports for evaluated opportunities
-- generated outputs tied to those opportunities
+- generated outputs tied to tracked opportunities
 
 It also runs cleanup and integrity rules so the system stays usable over time:
 
 - deduplicate repeated entries
 - normalize statuses
-- merge batch additions cleanly
 - verify pipeline consistency
 - update existing records instead of multiplying duplicates
 
-This is what makes repeated use practical.
+New high-relevance roles are written into `data/pipeline.md` with the date they were found and the score that caused them to pass the threshold. `data/scan-history.tsv` keeps the full audit trail, including duplicates and low-score roles that were suppressed.
 
-## 7. Run batch workflows over many roles
+A typical pipeline entry now includes:
 
-The skill can also process larger queues in batch mode.
+- found date
+- relevance score
+- company
+- role title
+- URL
+- source
 
-This is for cases where you already have a prepared list of opportunities or want to work through a large set systematically.
+That gives you both a working queue and a record of when the opportunity first appeared.
 
-Batch mode is designed to:
+## Delivery and notifications
 
-- evaluate many roles through the same core workflow
-- generate reports and outputs per role
-- create tracker additions safely
-- merge the results back into the main system after processing
+This skill now assumes channel delivery is handled by OpenClaw itself.
 
-If a role fails because the JD is inaccessible, login-gated, or the page layout breaks, the batch flow records the failure and keeps going instead of collapsing the whole run.
+The flow is:
+
+1. scan sources
+2. score the results
+3. drop duplicates
+4. keep only roles above threshold
+5. save those roles in local state
+6. return a digest
+7. let OpenClaw send that digest through the user's configured channel
+
+So the skill package is responsible for choosing what is worth surfacing. OpenClaw is responsible for how that message reaches the user.
 
 ## What users need
 
 Most users need only:
 
+- `portals.yml`
 - `cv.md`
 - `config/profile.yml`
-- `portals.yml`
 - the tracker and pipeline files used by the workflow
-- Playwright/browser support for live job pages
+- Playwright/browser support for dynamic job pages and PDF generation
 
-There is no required API key for normal scanning, evaluation, tracker management, or PDF generation.
+There is no required API key for normal scanning, pipeline management, tracker management, or PDF generation.
 
 Optional credentials matter only in a few cases:
 
 - a logged-in browser session for login-gated pages
-- demo credentials if you want to share a private demo in applications
-- a configured batch worker command if you want fully automated batch execution
+- whatever OpenClaw channel credentials are already required by the host deployment
+- demo credentials if you want to share a private demo inside your CV or portfolio links
 
 ## Guardrails
 
@@ -210,11 +204,12 @@ This skill is intentionally conservative in the places that matter.
 
 It is designed to:
 
-- avoid blind mass application behavior
-- avoid auto-submitting forms on your behalf
-- discourage weak-fit opportunities
-- prefer strong, explainable matches over volume
+- avoid pretending a private page was read when it was not
+- avoid auto-submitting anything on your behalf
+- keep search data deduplicated and auditable
+- surface only roles that clear the configured relevance threshold
 - verify live job state with browser-backed checks where possible
+- keep generated documents anchored to your real source material
 
 That is a product choice, not an implementation detail.
 
@@ -227,7 +222,7 @@ This repository includes the full packaged skill:
 - the setup guide
 - the deterministic support scripts
 - the templates used for document and state handling
-- example profile and data files
+- example profile config files
 - the assets needed for polished PDF output
 
 ## Who this is for

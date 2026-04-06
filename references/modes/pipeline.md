@@ -1,62 +1,51 @@
-# Modo: pipeline — Inbox de URLs (Second Brain)
+# Modo: pipeline - Inbox de URLs y mantenimiento de cola
 
-Procesa URLs de ofertas acumuladas en `data/pipeline.md`. El usuario añade URLs; luego ejecuta `/career-ops pipeline` para procesarlas.
+Usa este modo para registrar, verificar y organizar URLs de ofertas en `data/pipeline.md`.
+
+Si el usuario pega una o varias URLs sin subcomando, tratarlo como intake de `pipeline`.
 
 ## Workflow
 
-1. Leer `data/pipeline.md` y tomar items `- [ ]` en sección `Pendientes`.
-2. Para cada URL pendiente:
-   a. Calcular siguiente `REPORT_NUM` secuencial leyendo `reports/`.
-   b. Extraer JD con prioridad:
-      - Playwright-like browser snapshot (`browser` tool or equivalent)
-      - WebFetch
-      - WebSearch
-   c. Si la URL es inaccesible: marcar `- [!]` con nota y continuar.
-   d. Ejecutar `auto-pipeline` (evaluación A-F, report, PDF cuando aplique, tracker).
-   e. Mover a `Procesadas`: `- [x] #NNN | URL | Empresa | Rol | Score/5 | PDF ✓/✗`.
-3. Si hay muchas URLs pendientes, parallelizar workers con límites de estabilidad del entorno de navegación.
-4. Al finalizar mostrar resumen:
-
-```text
-| # | Empresa | Rol | Score | PDF | Acción recomendada |
-```
+1. Leer `data/pipeline.md` y tomar items `- [ ]` en la seccion `Pendientes`.
+2. Si el usuario pego nuevas URLs en el mensaje actual:
+   - normalizarlas
+   - evitar duplicados contra `applications.md`, `scan-history.tsv` y `pipeline.md`
+   - anadirlas a `Pendientes`
+3. Para cada URL pendiente:
+   - intentar verificar que siga activa
+   - extraer empresa y rol cuando la pagina sea accesible
+   - usar navegador primero para portales dinamicos; usar fetch solo como fallback seguro
+   - si la URL es inaccesible o requiere login, marcar `- [!]` con una nota clara
+4. Mover items verificados a `Procesadas` con el formato normalizado.
+5. Mostrar resumen final con:
+   - URLs recibidas
+   - nuevas anadidas
+   - duplicadas ignoradas
+   - verificadas correctamente
+   - inaccesibles o privadas
 
 ## Formato de `pipeline.md`
 
 ```markdown
 ## Pendientes
-- [ ] https://jobs.example.com/posting/123
-- [ ] https://boards.greenhouse.io/company/jobs/456 | Company Inc | Senior PM
-- [!] https://private.url/job — Error: login required
+- [ ] 2026-04-06 | 84 | OpenAI | Forward Deployed Engineer | https://openai.com/careers/... | OpenAI careers
+- [!] 2026-04-06 | private | Example Co | AI PM | https://private.url/job | login required
 
 ## Procesadas
-- [x] #143 | https://jobs.example.com/posting/789 | Acme Corp | AI PM | 4.2/5 | PDF ✓
+- [x] 2026-04-06 | 84 | OpenAI | Forward Deployed Engineer | https://openai.com/careers/... | active
 ```
 
-## Detección de JD desde URL
+El primer campo es `found_on`. El segundo es el score de relevancia usado para decidir si el rol fue suficientemente fuerte para enviarse.
 
-1. Browser snapshot
-2. WebFetch fallback
-3. WebSearch final
+## Verificacion de URLs
+
+Orden recomendado:
+
+1. Browser snapshot para portales dinamicos
+2. WebFetch para paginas estaticas
 
 Casos especiales:
 
-- LinkedIn: puede requerir login, entonces anotar error y pedir JD manual.
-- PDF: leer `PDF` con herramienta de lectura disponible.
-- `local:` prefix: `local:...` hace referencia a archivo `jds/...`.
-
-## Numeración automática
-
-1. Leer archivos en `reports/`.
-2. Extraer prefijo numérico (`###`).
-3. Siguiente número = máximo + 1.
-
-## Sincronización previa
-
-Antes de procesar:
-
-```bash
-node scripts/cv-sync-check.mjs
-```
-
-Si hay desajustes, advertir y continuar con cautela.
+- LinkedIn puede requerir login; si no hay sesion valida, anotar el bloqueo
+- `local:` prefix sigue apuntando a archivos `jds/...` cuando el usuario guarda una copia manual del JD
+- nunca asumir que una pagina privada sigue activa solo porque la URL responde

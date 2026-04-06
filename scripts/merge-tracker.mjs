@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * merge-tracker.mjs — Merge batch tracker additions into applications.md
+ * merge-tracker.mjs - Merge tracker additions into applications.md
  *
  * Handles multiple TSV formats:
  * - 9-col: num\tdate\tcompany\trole\tstatus\tscore\tpdf\treport\tnotes
@@ -11,7 +11,7 @@
  * If duplicate with higher score → update in-place, update report link
  * Validates status against states.yml (rejects non-canonical, logs warning)
  *
- * Run: node career-ops/merge-tracker.mjs [--dry-run] [--verify]
+ * Run: node scripts/merge-tracker.mjs [--dry-run] [--verify]
  */
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, existsSync } from 'fs';
@@ -356,3 +356,4 @@ if (VERIFY && !DRY_RUN) {
     process.exit(1);
   }
 }
+

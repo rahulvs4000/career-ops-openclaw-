@@ -1,64 +1,64 @@
-# Modo: pdf — Generación de PDF ATS-Optimizado
+# Modo: pdf - Generacion de PDF ATS-Optimizado
 
 ## Pipeline completo
 
-1. Lee `cv.md` como fuentes de verdad
-2. Pide al usuario el JD si no está en contexto (texto o URL)
-3. Extrae 15-20 keywords del JD
-4. Detecta idioma del JD → idioma del CV (EN default)
-5. Detecta ubicación empresa → formato papel:
-   - US/Canada → `letter`
-   - Resto del mundo → `a4`
-6. Detecta arquetipo del rol → adapta framing
-7. Reescribe Professional Summary inyectando keywords del JD + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [domain del JD].")
-8. Selecciona top 3-4 proyectos más relevantes para la oferta
-9. Reordena bullets de experiencia por relevancia al JD
-10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
-11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
-12. Genera HTML completo desde template + contenido personalizado
-13. Escribe HTML a `/tmp/cv-candidate-{company}.html`
-14. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-15. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
+1. Leer `cv.md`, `config/profile.yml` y `article-digest.md` si existe.
+2. Preguntar si el usuario quiere:
+   - un PDF general
+   - un PDF adaptado a una empresa o rol concreto
+3. Si hay contexto de rol:
+   - extraer 15-20 keywords utiles
+   - detectar idioma y ajustar el contenido
+   - adaptar summary, proyectos y orden de bullets con base en experiencia real
+4. Si no hay contexto de rol:
+   - generar una version general usando los roles objetivo y la narrativa guardada en `profile.yml`
+5. Detectar formato papel:
+   - US/Canada -> `letter`
+   - resto del mundo -> `a4`
+6. Generar HTML completo desde template + contenido personalizado
+7. Escribir HTML a `/tmp/cv-candidate-{company-or-general}.html`
+8. Ejecutar: `node generate-pdf.mjs /tmp/cv-candidate-{company-or-general}.html output/cv-candidate-{company-or-general}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+9. Reportar ruta del PDF, numero de paginas y, si hubo contexto de rol, cobertura aproximada de keywords
 
 ## Reglas ATS (parseo limpio)
 
 - Layout single-column (sin sidebars, sin columnas paralelas)
-- Headers estándar: "Professional Summary", "Work Experience", "Education", "Skills", "Certifications", "Projects"
-- Sin texto en imágenes/SVGs
-- Sin info crítica en headers/footers del PDF (ATS los ignora)
+- Headers estandar: "Professional Summary", "Work Experience", "Education", "Skills", "Certifications", "Projects"
+- Sin texto en imagenes/SVGs
+- Sin info critica en headers/footers del PDF (ATS los ignora)
 - UTF-8, texto seleccionable (no rasterizado)
 - Sin tablas anidadas
-- Keywords del JD distribuidas: Summary (top 5), primer bullet de cada rol, Skills section
+- Keywords del rol distribuidas: Summary, primeros bullets, Skills section
 
-## Diseño del PDF
+## Diseno del PDF
 
 - **Fonts**: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
 - **Fonts self-hosted**: `fonts/`
-- **Header**: nombre en Space Grotesk 24px bold + línea gradiente `linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%))` 2px + fila de contacto
+- **Header**: nombre en Space Grotesk 24px bold + linea gradiente + fila de contacto
 - **Section headers**: Space Grotesk 13px, uppercase, letter-spacing 0.05em, color cyan primary
 - **Body**: DM Sans 11px, line-height 1.5
-- **Company names**: color accent purple `hsl(270,70%,45%)`
-- **Márgenes**: 0.6in
+- **Company names**: color accent purple
+- **Margenes**: 0.6in
 - **Background**: blanco puro
 
-## Orden de secciones (optimizado "6-second recruiter scan")
+## Orden de secciones
 
-1. Header (nombre grande, gradiente, contacto, link portfolio)
-2. Professional Summary (3-4 líneas, keyword-dense)
-3. Core Competencies (6-8 keyword phrases en flex-grid)
-4. Work Experience (cronológico inverso)
-5. Projects (top 3-4 más relevantes)
+1. Header
+2. Professional Summary
+3. Core Competencies
+4. Work Experience
+5. Projects
 6. Education & Certifications
-7. Skills (idiomas + técnicos)
+7. Skills
 
-## Estrategia de keyword injection (ético, basado en verdad)
+## Estrategia de keyword injection (etico, basado en verdad)
 
-Ejemplos de reformulación legítima:
-- JD dice "RAG pipelines" y CV dice "LLM workflows with retrieval" → cambiar a "RAG pipeline design and LLM orchestration workflows"
-- JD dice "MLOps" y CV dice "observability, evals, error handling" → cambiar a "MLOps and observability: evals, error handling, cost monitoring"
-- JD dice "stakeholder management" y CV dice "collaborated with team" → cambiar a "stakeholder management across engineering, operations, and business"
+Ejemplos de reformulacion legitima:
+- el rol dice "RAG pipelines" y el CV dice "LLM workflows with retrieval" -> cambiar a "RAG pipeline design and LLM orchestration workflows"
+- el rol dice "MLOps" y el CV dice "observability, evals, error handling" -> cambiar a "MLOps and observability: evals, error handling, cost monitoring"
+- el rol dice "stakeholder management" y el CV dice "collaborated with team" -> cambiar a "stakeholder management across engineering, operations, and business"
 
-**NUNCA añadir skills que el candidato no tiene. Solo reformular experiencia real con el vocabulario exacto del JD.**
+**NUNCA anadir skills que el candidato no tiene. Solo reformular experiencia real con el vocabulario exacto del rol.**
 
 ## Template HTML
 
@@ -72,24 +72,24 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{EMAIL}}` | (from profile.yml) |
 | `{{LINKEDIN_URL}}` | [from profile.yml] |
 | `{{LINKEDIN_DISPLAY}}` | [from profile.yml] |
-| `{{PORTFOLIO_URL}}` | [from profile.yml] (o /es según idioma) |
-| `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] (o /es según idioma) |
+| `{{PORTFOLIO_URL}}` | [from profile.yml] |
+| `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] |
 | `{{LOCATION}}` | [from profile.yml] |
 | `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
-| `{{SUMMARY_TEXT}}` | Summary personalizado con keywords |
+| `{{SUMMARY_TEXT}}` | Summary personalizado |
 | `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
-| `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-8 |
+| `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` x 6-8 |
 | `{{SECTION_EXPERIENCE}}` | Work Experience / Experiencia Laboral |
 | `{{EXPERIENCE}}` | HTML de cada trabajo con bullets reordenados |
 | `{{SECTION_PROJECTS}}` | Projects / Proyectos |
 | `{{PROJECTS}}` | HTML de top 3-4 proyectos |
-| `{{SECTION_EDUCATION}}` | Education / Formación |
-| `{{EDUCATION}}` | HTML de educación |
+| `{{SECTION_EDUCATION}}` | Education / Formacion |
+| `{{EDUCATION}}` | HTML de educacion |
 | `{{SECTION_CERTIFICATIONS}}` | Certifications / Certificaciones |
 | `{{CERTIFICATIONS}}` | HTML de certificaciones |
 | `{{SECTION_SKILLS}}` | Skills / Competencias |
 | `{{SKILLS}}` | HTML de skills |
 
-## Post-generación
+## Post-generacion
 
-Actualizar tracker si la oferta ya está registrada: cambiar PDF de ❌ a ✅.
+Si la oportunidad ya existe en `data/applications.md`, actualizar la columna PDF a `OK`.

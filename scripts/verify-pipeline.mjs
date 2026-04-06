@@ -8,10 +8,10 @@
  * 3. All report links point to existing files
  * 4. Scores match format X.XX/5 or N/A or DUP
  * 5. All rows have proper pipe-delimited format
- * 6. No pending TSVs in tracker-additions/ (only in merged/ or archived/)
+ * 6. No pending TSVs in tracker-additions/ compatibility folders
  * 7. states.yml canonical IDs for cross-system consistency
  *
- * Run: node career-ops/verify-pipeline.mjs
+ * Run: node scripts/verify-pipeline.mjs
  */
 
 import { readFileSync, readdirSync, existsSync } from 'fs';
@@ -51,7 +51,9 @@ const CAREER_OPS = detectProjectRoot();
 const APPS_FILE = existsSync(join(CAREER_OPS, 'data/applications.md'))
   ? join(CAREER_OPS, 'data/applications.md')
   : join(CAREER_OPS, 'applications.md');
-const ADDITIONS_DIR = join(CAREER_OPS, 'batch/tracker-additions');
+const ADDITIONS_DIR = existsSync(join(CAREER_OPS, 'tracker-additions'))
+  ? join(CAREER_OPS, 'tracker-additions')
+  : join(CAREER_OPS, 'batch', 'tracker-additions');
 const REPORTS_DIR = join(CAREER_OPS, 'reports');
 const STATES_FILE = existsSync(join(CAREER_OPS, 'templates/states.yml'))
   ? join(CAREER_OPS, 'templates/states.yml')
@@ -79,7 +81,7 @@ function ok(msg) { console.log(`✅ ${msg}`); }
 // --- Read applications.md ---
 if (!existsSync(APPS_FILE)) {
   console.log('\n📊 No applications.md found. This is normal for a fresh setup.');
-  console.log('   The file will be created when you evaluate your first offer.\n');
+  console.log('   The file will be created when you start tracking roles.\n');
   process.exit(0);
 }
 const content = readFileSync(APPS_FILE, 'utf-8');
@@ -214,3 +216,4 @@ if (errors === 0 && warnings === 0) {
 }
 
 process.exit(errors > 0 ? 1 : 0);
+

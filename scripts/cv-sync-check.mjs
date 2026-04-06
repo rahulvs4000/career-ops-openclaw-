@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 /**
- * cv-sync-check.mjs — Validates that the career-ops setup is consistent.
+ * cv-sync-check.mjs - Validates that the career-ops setup is consistent.
  *
  * Checks:
  * 1. cv.md exists
  * 2. config/profile.yml exists and has required fields
- * 3. No hardcoded metrics in _shared.md or batch/batch-prompt.md
+ * 3. No hardcoded metrics in shared instruction files
  * 4. article-digest.md freshness (if exists)
  */
 
@@ -47,7 +47,6 @@ const projectRoot = detectProjectRoot();
 const warnings = [];
 const errors = [];
 
-// 1. Check cv.md exists
 const cvPath = join(projectRoot, 'cv.md');
 if (!existsSync(cvPath)) {
   errors.push('cv.md not found in project root. Create it with your CV in markdown format.');
@@ -58,7 +57,6 @@ if (!existsSync(cvPath)) {
   }
 }
 
-// 2. Check profile.yml exists
 const profilePath = join(projectRoot, 'config', 'profile.yml');
 if (!existsSync(profilePath)) {
   errors.push('config/profile.yml not found. Copy from config/profile.example.yml and fill in your details.');
@@ -66,39 +64,33 @@ if (!existsSync(profilePath)) {
   const profileContent = readFileSync(profilePath, 'utf-8');
   const requiredFields = ['full_name', 'email', 'location'];
   for (const field of requiredFields) {
-    if (!profileContent.includes(field) || profileContent.includes(`"Jane Smith"`)) {
+    if (!profileContent.includes(field) || profileContent.includes('"Jane Smith"')) {
       warnings.push(`config/profile.yml may still have example data. Check field: ${field}`);
       break;
     }
   }
 }
 
-// 3. Check for hardcoded metrics in prompt files
 const filesToCheck = [
   { path: join(__dirname, '..', 'references', 'modes', '_shared.md'), name: '_shared.md' },
-  { path: join(__dirname, 'batch', 'batch-prompt.md'), name: 'batch-prompt.md' },
 ];
 
-// Pattern: numbers that look like hardcoded metrics (e.g., "170+ hours", "90% self-service")
 const metricPattern = /\b\d{2,4}\+?\s*(hours?|%|evals?|layers?|tests?|fields?|bases?)\b/gi;
 
 for (const { path, name } of filesToCheck) {
   if (!existsSync(path)) continue;
   const content = readFileSync(path, 'utf-8');
-
-  // Skip lines that are clearly instructions (contain "NEVER hardcode" etc.)
   const lines = content.split('\n');
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (line.includes('NEVER hardcode') || line.includes('NUNCA hardcode') || line.startsWith('#') || line.startsWith('<!--')) continue;
     const matches = line.match(metricPattern);
     if (matches) {
-      warnings.push(`${name}:${i + 1} — Possible hardcoded metric: "${matches[0]}". Should this be read from cv.md/article-digest.md?`);
+      warnings.push(`${name}:${i + 1} - Possible hardcoded metric: "${matches[0]}". Should this be read from cv.md/article-digest.md?`);
     }
   }
 }
 
-// 4. Check article-digest.md freshness
 const digestPath = join(projectRoot, 'article-digest.md');
 if (existsSync(digestPath)) {
   const stats = statSync(digestPath);
@@ -108,7 +100,6 @@ if (existsSync(digestPath)) {
   }
 }
 
-// Output results
 console.log('\n=== career-ops sync check ===\n');
 
 if (errors.length === 0 && warnings.length === 0) {
